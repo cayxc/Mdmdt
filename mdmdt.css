@@ -1,39 +1,43 @@
 :root {
   --bg-color: rgb(240, 240, 240);
   --bg-color2: rgb(225, 225, 225);
-  --bg-color3: rgba(165, 187, 192, .15);
+  --bg-color3: rgba(165, 187, 192, .25);
   --border-color: #d3d3d3ff;
   --text-color: #000;
   --text-grey: #666;
-  --text-code: #2f4875;
+  --text-code: #273c62;
+  --text-code2: rgba(39, 60, 98, 0.62);
   --title-color: #18222f;
   --md-char-color: rgba(72, 93, 108, 0.75);
-  --grey-color: rgb(204, 204, 204);
-  --grey-color2: rgba(204, 204, 204, 0.4);
-  --grey-color3: rgba(204, 204, 204, 0.15);
-  --green-color: #00b46eff;
-  --green-color2: rgba(0, 180, 110, 0.3);
-  --orange-color: #fa5f1d;
-  --red-color: #ea0000;
-  --other-color1: rgb(155, 217, 191);
-  --other-color2: rgba(250, 95, 29, 0.45);
+
+  --color-1: #20a162; /*翠绿*/
+  --color-1-0-a: rgba(32, 161, 98, 0.15);
+  --color-1-a: #b9dec9;
+
+  --color-2: #f43e06; /*银朱*/
+  --color-2-0-a: rgba(244, 62, 6, 0.25);;
+
+  --color-3: rgb(204, 204, 204);
+  --color-3-0-a: rgba(204, 204, 204, 0.4);
+  --color-3-0-b: rgba(204, 204, 204, 0.15);
+
+  --color-4: #fbc82f; /*雅梨黄*/
+  --color-4-1: #ffdfaa; /*雅梨黄*/
 
   --meta-content-color: var(--md-char-color);
-  --primary-color: var(--green-color);
+  --primary-color: var(--color-1);
   --primary-btn-border-color: var(--bg-color2);
-  --primary-btn-text-color: var(--green-color);
+  --primary-btn-text-color: var(--color-1);
   --window-border: 1px solid var(--border-color);
   --active-file-bg-color: var(--bg-color2);
-  --active-file-text-color: var(--green-color);
-  --active-file-border-color: var(--green-color);
+  --active-file-text-color: var(--color-1);
+  --active-file-border-color: var(--color-1);
   --side-bar-bg-color: var(--bg-color);
   --item-hover-bg-color: var(--bg-color2);
-  --item-hover-text-color: var(--green-color);
+  --item-hover-text-color: var(--color-1);
   --monospace: monospace;
-  --select-text-bg-color: var(--green-color2);
-
+  --select-text-bg-color: var(--color-1-0-a);
 }
-
 :root {
   font-family: "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   font-size: 62.5%;
@@ -41,14 +45,14 @@
   color: var(--text-color);
   letter-spacing: .1rem;
 }
-
 :root {
-  --mermaid-theme: base; /*or base, dark, forest, neutral, night */
+  --mermaid-theme: forest; /*or base, dark, forest, neutral, night */
   --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
-  --mermaid-sequence-numbers: on; /* or "on", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
-  --mermaid-flowchart-curve: linear /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/;
-  --mermaid--gantt-left-padding: 75; /* see https://github.com/typora/typora-issues/issues/1665*/
+  --mermaid-sequence-numbers: on;
+  --mermaid-flowchart-curve: linear;
+  --mermaid--gantt-left-padding: 75;
 }
+
 
 body {
   font-size: 16px;
@@ -74,7 +78,7 @@ h5.md-focus:before,
 h6.md-focus:before {
   font-size: 1.2rem;
   left: -3rem;
-  color: var(--green-color);
+  color: var(--color-1);
 }
 h3.md-focus:before {
   top: .9rem;
@@ -136,14 +140,14 @@ hr {
 
 a, div.md-def-link, span.md-url {
   text-decoration: none;
-  color: var(--orange-color);
+  color: var(--color-2);
   cursor: pointer;
   font-size: 1.6rem;
 }
 a:hover,
 div.md-def-link:hover,
 span.md-url:hover {
-  color: var(--green-color);
+  color: var(--color-1);
 }
 div.md-def-link .md-def-url,
 .md-link .md-url {
@@ -155,12 +159,12 @@ div.md-def-link .md-def-name::after,
 .md-link .md-before,
 .md-link .md-after,
 .md-link .md-meta {
-  color: var(--orange-color);
+  color: var(--color-2);
 }
 div.md-def-link .md-def-title::before,
 div.md-def-link .md-def-title::after,
 .md-link .md-link-title {
-  color: var(--green-color);
+  color: var(--color-1);
 }
 
 p {
@@ -169,7 +173,7 @@ p {
 
 strong {
   font-weight: bold;
-  color: var(--green-color);
+  color: var(--color-1);
 }
 
 u {
@@ -187,15 +191,15 @@ del {
   font-size: 1.6rem;
   color: var(--text-grey);
   text-decoration: line-through;
-  text-decoration-color: var(--orange-color);
-  -moz-text-decoration-color: var(--orange-color);
+  text-decoration-color: var(--color-2);
+  -moz-text-decoration-color: var(--color-2);
 }
 .footnotes .md-def-name::before,
 .footnotes .md-def-name::after {
   color: var(--text-code);
 }
 mark {
-  background-color: var(--green-color2);
+  background-color: var(--color-1);
   padding: 0.2rem 1rem;
   border-radius: .4rem;
 }
@@ -212,12 +216,12 @@ span.md-image span.md-image-before-src,
 span.md-image span.md-image-input-src-btn::before,
 span.md-image span.md-image-pick-file-btn::before,
 span.md-image span.md-image-after-src {
-  color: var(--green-color);
+  color: var(--color-1);
 }
 span.md-image span.md-image-input-src-btn,
 span.md-image span.md-image-src-span,
 span.md-image span.md-image-pick-file-btn {
-  color: var(--green-color);
+  color: var(--color-1);
 }
 .md-image-btn {
   background: var(--bg-color2);
@@ -248,7 +252,7 @@ ol li {
 
 code, p code {
   margin: 1rem 0;
-  border: 1px solid var(--border-color);
+  /*border: 1px solid var(--border-color);*/
   background: var(--bg-color2);
   font-size: 1.4rem;
   box-sizing: border-box;
@@ -256,12 +260,12 @@ code, p code {
   padding: 0.6rem 1rem;
   line-height: 1.8;
   color: var(--text-code);
-  vertical-align: initial;
+  vertical-align: text-bottom;
 }
 pre, p pre {
   margin: 1rem 0;
   padding: 1.8rem;
-  border: 1px solid var(--border-color);
+  /*border: 1px solid var(--border-color);*/
   background: var(--bg-color2) !important;
   font-size: 1.4rem !important;
   box-sizing: border-box;
@@ -279,7 +283,7 @@ pre pre {
 
 p code {
   line-height: 1.5;
-  padding: 0.2rem 1rem !important;
+  padding: 0.3rem 1rem !important;
 }
 
 sup, sub {
@@ -293,7 +297,7 @@ blockquote {
   background: var(--bg-color3);
   box-sizing: border-box;
   border-right: 1rem solid transparent;
-  border-left: .4rem solid var(--green-color);
+  border-left: .4rem solid var(--color-1);
   border-radius: 0.8rem;
   overflow: hidden;
 }
@@ -301,8 +305,9 @@ blockquote p:first-child {
   margin-top: 0;
 }
 blockquote code {
-  background: var(--bg-color3);
-  padding: 0.2rem 1rem !important;
+  background: var(--text-code2);
+  color: var(--bg-color);
+  padding: 0.3rem 1rem !important;
 }
 kbd {
   display: inline-block;
@@ -387,8 +392,9 @@ input#md-grid-height {
 }
 table code {
   line-height: 1.6;
-  padding: 0.2rem 1rem !important;
-  background: var(--bg-color3);
+  padding: 0.3rem 1rem !important;
+  background: var(--text-code2);
+  color: var(--bg-color);
 }
 
 /*input*/
@@ -412,7 +418,7 @@ li.task-list-item > input[type=checkbox]:checked,
 #write input[type=checkbox]:checked {
   content: "";
   display: inline-block;
-  background: rgb(2, 189, 102);
+  background: var(--color-1);
   border-color: transparent;
   text-align: center;
   color: var(--bg-color);
@@ -454,36 +460,36 @@ span.md-comment {
   background: var(--bg-color) !important;
 }
 #typora-source .CodeMirror-activeline pre {
-  background: var(--grey-color3) !important;
+  background: var(--color-3-0-b) !important;
 }
 #typora-source .CodeMirror-activeline .CodeMirror-linebackground {
   background: transparent !important;
 }
 #typora-source .CodeMirror-lines .cm-header {
-  color: var(--orange-color) !important;
+  color: var(--color-2) !important;
 }
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-  border-left: 3px solid var(--orange-color);
+  border-left: 3px solid var(--color-2);
 }
 .cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property,
 .cm-s-typora-default .cm-link {
-  color: var(--orange-color);
+  color: var(--color-2);
 }
 .cm-s-inner .cm-comment, .cm-s-inner.cm-comment, .cm-overlay {
   color: var(--md-char-color);
 }
 .cm-s-typora-default .cm-string {
-  color: var(--green-color);
+  color: var(--color-1);
 }
 .cm-s-typora-default .cm-code, .cm-s-typora-default .cm-comment {
   color: var(--text-code);
 }
 .cm-s-typora-default .cm-tag {
-  color: var(--red-color);
+  color: #e31570;
 }
 
 .cm-attribute {
-  color: var(--orange-color);
+  color: var(--color-2);
 }
 
 /*#toc-dropmenu*/
@@ -632,7 +638,7 @@ span.md-comment {
 }
 .outline-content .outline-item-active .outline-label,
 .outline-content .outline-item:hover .outline-label {
-  color: var(--green-color) !important;
+  color: var(--color-1) !important;
   background: var(--bg-color2) !important;
 }
 
@@ -655,7 +661,7 @@ span.md-comment {
 }
 #file-library-list .file-list-item:hover {
   border-radius: 0.5rem;
-  color: var(--orange-color);
+  color: var(--color-2);
   background: var(--bg-color2);
 }
 #sidebar-loading-template {
@@ -680,7 +686,7 @@ span.md-comment {
   color: var(--title-color);
 }
 .sidebar-tab-btn:hover {
-  color: var(--green-color);
+  color: var(--color-1);
 }
 .file-tree-node {
   position: relative;
@@ -764,7 +770,7 @@ span.md-comment {
   background: var(--bg-color);
 }
 #write div.md-toc-tooltip .md-delete-toc:hover {
-  color: var(--green-color);
+  color: var(--color-1);
   background: var(--bg-color2);
 }
 
@@ -791,7 +797,7 @@ span.md-comment {
 .cm-s-inner .CodeMirror-line::selection,
 .cm-s-inner .CodeMirror-line > span::selection,
 .cm-s-inner .CodeMirror-line > span > span::selection {
-  background: var(--green-color2);
+  background: var(--color-1-0-a);
 }
 .cm-s-inner .CodeMirror-line::-moz-selection,
 .cm-s-inner .CodeMirror-line > span::-moz-selection,
@@ -839,149 +845,34 @@ span.md-comment {
   padding: 0 .2rem;
 }
 
-/*
- * Sequence Diagrams
- * Flowcharts
- * Requirement
- * --- common parts
- */
-.md-diagram-panel.md-fences-adv-panel rect {
-  rx: .6rem;
-  ry: .6rem;
-  color: var(--text-color);
-  fill: var(--bg-color);
-}
-.md-diagram-panel.md-fences-adv-panel rect#start,
-.md-diagram-panel.md-fences-adv-panel rect#end,
-.md-diagram-panel.md-fences-adv-panel rect#st,
-.md-diagram-panel.md-fences-adv-panel rect#e {
-  rx: 2rem;
-  ry: 2rem;
-}
-.md-diagram-panel.md-fences-adv-panel rect.actor,
-.md-diagram-panel.md-fences-adv-panel g polygon,
-.md-diagram-panel.md-fences-adv-panel .nodes rect,
-.md-diagram-panel.md-fences-adv-panel rect.req
-{
-  stroke: var(--green-color) !important;
-  fill: var(--other-color1) !important;
-}
-.md-diagram-panel.md-fences-adv-panel .messageText,
-.md-diagram-panel.md-fences-adv-panel .loopText,
-.md-diagram-panel.md-fences-adv-panel .loopText > tspan{
-  fill: var(--text-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel line{
-  stroke: var(--text-color) !important;
-}
-/*Gantt Charts*/
-.md-diagram-panel.md-fences-adv-panel g line,
-.md-diagram-panel.md-fences-adv-panel .relationshipLine {
-  stroke: var(--text-color) !important;
-  fill: var(--text-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel g .loopLine {
-  stroke: var(--green-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel g.tick line {
-  stroke: var(--md-char-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.section0{
-  fill: var(--green-color2) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.section2{
-  fill: var(--other-color2) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.task.active0,
-.md-diagram-panel.md-fences-adv-panel rect.task.active1,
-.md-diagram-panel.md-fences-adv-panel rect.task.active2 {
-  stroke: var(--green-color) !important;
-  fill: var(--other-color1) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.task.task0,
-.md-diagram-panel.md-fences-adv-panel rect.task.task2,
-.md-diagram-panel.md-fences-adv-panel rect.task.task3{
-  stroke: var(--other-color1) !important;
-  fill: var(--green-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.task.doneCrit1 {
-  stroke: var(--orange-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.task.activeCrit1 {
-  stroke: var(--orange-color) !important;
-  fill: var(--other-color1) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.task.crit1 {
-  stroke: var(--orange-color) !important;
-  fill: var(--red-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.task.task1  {
-  stroke: var(--other-color1) !important;
-  fill: var(--green-color) !important;
-}
-/* State Diagrams */
-.md-diagram-panel.md-fences-adv-panel .state-end{
-  fill: var(--green-color) !important;
-  stroke: var(--bg-color) !important;
-}
-/*Pie Charts*/
-.md-diagram-panel.md-fences-adv-panel .pieOuterCircle {
-  /*stroke:var(--text-color) !important;*/
-  /*fill: var(--green-color) !important;*/
-}
-.md-diagram-panel.md-fences-adv-panel .pieCircle {
-  /*stroke: var(--text-color) !important;*/
-}
-.md-diagram-panel.md-fences-adv-panel .pieTitleText,
-.md-diagram-panel.md-fences-adv-panel .legend text
-{
-  fill:var(--text-color) !important;
-}
-/*Gitgraph Diagrams / Commit Flow*/
-.md-diagram-panel.md-fences-adv-panel .label0
-{
-  fill:var(--green-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel .arrow
-{
-  stroke-width: .6rem !important;
-}
-.md-diagram-panel.md-fences-adv-panel .arrow0
-{
-  stroke:var(--green-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel .arrow1
-{
-  stroke:var(--orange-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel .commit0{
-  stroke:var(--green-color) !important;
-  fill: var(--green-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel .commit1
-{
-  stroke:var(--orange-color) !important;
-  fill:var(--orange-color) !important;
+/*dark*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1b1b1f;
+    --bg-color2: rgb(40, 42, 47);
+    --bg-color3: rgba(40, 42, 50, 0.8);
+    --color-3: #868686;
+    --border-color: rgb(56, 59, 59);
+    --text-color: #c2c2c2;
+    --text-grey: #868686;
+    --text-code: #aed8ee;
+    --title-color: var(--text-color);
+    --md-char-color: #667c89ff;
+    --mermaid-theme:dark;
+  }
+  #typora-sidebar {
+    border-right-color: var(--border-color);
+  }
+  /*code*/
+  .btn-default {
+    background: var(--border-color);
+  }
+  table code, blockquote code{
+    color: var(--text-code);
+  }
 }
 
-.md-diagram-panel.md-fences-adv-panel .commit
-{
-  r: 1rem;
-}
-.md-diagram-panel.md-fences-adv-panel .commit-merge
-{
-  r: .6rem;
-  stroke:var(--bg-color) !important;
-  fill:var(--bg-color) !important;
-}
-.md-diagram-panel.md-fences-adv-panel .commit-label-bkg{
-  fill: var(--other-color2) !important;
-}
-.md-diagram-panel.md-fences-adv-panel rect.label1{
-  fill: var(--orange-color) !important;
-}
-
-/*@media*/
+/*@media print*/
 @media print {
   table,
   pre {
@@ -991,6 +882,7 @@ span.md-comment {
     word-wrap: break-word;
   }
 }
+/*@media screen*/
 @media screen and (max-width: 992px) {
   #write {
     padding: 0 3.6rem 3.2rem;
@@ -1024,26 +916,3 @@ span.md-comment {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /*--bg-color: #191c20ff;*/
-    --bg-color: #202122;
-    --bg-color2: rgb(48, 52, 54);
-    --bg-color3: rgba(184, 204, 208, 0.1);
-    --grey-color: #868686;
-    --border-color: rgb(56, 59, 59);
-    --text-color: #c2c2c2;
-    --text-grey: #868686;
-    --text-code: #95def6ff;
-    --title-color: var(--text-color);
-    --md-char-color: #667c89ff;
-  }
-  #typora-sidebar {
-    border-right-color: var(--border-color);
-  }
-  .btn-default {
-    background: var(--border-color);
-  }
-
-
-}
