@@ -1,7 +1,7 @@
 :root {
   --bg-color: rgb(240, 240, 240);
   --bg-color2: rgb(225, 225, 225);
-  --bg-color3: rgba(165, 187, 192, .25);
+  --bg-color3: rgba(165, 187, 192, .15);
   --border-color: #d3d3d3ff;
   --text-color: #000;
   --text-grey: #666;
@@ -10,19 +10,18 @@
   --title-color: #18222f;
   --md-char-color: rgba(72, 93, 108, 0.75);
 
-  --color-1: #20a162; /*翠绿*/
-  --color-1-0-a: rgba(32, 161, 98, 0.15);
-  --color-1-a: #b9dec9;
+  --color-1: #2bae85; /*铜绿*/
+  --color-1-0-a: rgba(43, 174, 133, 0.15);
 
-  --color-2: #f43e06; /*银朱*/
-  --color-2-0-a: rgba(244, 62, 6, 0.25);;
+  --color-2: #fc6315; /*燕颔红*/
+  --color-2-0-a: rgba(252, 99, 21, 0.25);;
 
   --color-3: rgb(204, 204, 204);
   --color-3-0-a: rgba(204, 204, 204, 0.4);
-  --color-3-0-b: rgba(204, 204, 204, 0.15);
+  --color-3-0-b: rgba(204, 204, 204, 0.25);
 
   --color-4: #feba07; /*琥珀黄*/
-  --color-4-0-a: rgba(254, 186, 7, 0.25);
+  --color-4-0-a: rgba(254, 186, 7, 0.18);
 
   --meta-content-color: var(--md-char-color);
   --primary-color: var(--color-1);
@@ -149,6 +148,9 @@ div.md-def-link:hover,
 span.md-url:hover {
   color: var(--color-1);
 }
+a:hover{
+  text-decoration: underline;
+}
 div.md-def-link .md-def-url,
 .md-link .md-url {
   text-decoration: none;
@@ -181,7 +183,7 @@ u {
 }
 
 em {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 sup, sub, .footnotes {
@@ -208,6 +210,7 @@ img {
   border-radius: .8rem;
   margin-top: 1rem;
   overflow: hidden;
+  max-width: 100%;
 }
 span.md-image,
 span.md-image span.md-content,
@@ -289,24 +292,27 @@ p code {
 sup, sub {
   font-size: 1.2rem;
 }
+sup.md-footnote{
+  background: transparent;
+  padding: 0 .2rem;
+}
 
 /*blockquote*/
 blockquote {
   margin: 1rem 0;
   padding: 2rem;
-  background: var(--bg-color3);
+  background: var(--color-3-0-b);
   box-sizing: border-box;
   border-right: 1rem solid transparent;
   border-left: .4rem solid var(--color-1);
   border-radius: 0.8rem;
-  overflow: hidden;
 }
 blockquote p:first-child {
   margin-top: 0;
 }
 blockquote code {
   background: var(--color-4-0-a);
-  color: var(--bg-color);
+  color: var(--title-color);
   padding: 0.3rem 1rem !important;
 }
 kbd {
@@ -519,6 +525,7 @@ span.md-comment {
   top: -0.5rem;
   background: var(--border-color);
 }
+
 
 .outline-content li ul {
   margin-left: 2.6rem;
@@ -822,7 +829,7 @@ span.md-comment {
 .cm-s-inner .cm-property { color: #1b9f72; }
 .cm-s-inner .cm-qualifier { color: #dc7b45; }
 .cm-s-inner .cm-tag { color: #e32e73; }
-.cm-s-inner .cm-tag.cm-bracket {color: #6ac0df;}
+.cm-s-inner .cm-tag.cm-bracket {color: #01a2da;}
 .cm-s-inner .cm-error {
   color: var(--bg-color);
   background-color: #ee3658;
@@ -855,9 +862,10 @@ span.md-comment {
     --border-color: rgb(56, 59, 59);
     --text-color: #c2c2c2;
     --text-grey: #868686;
-    --text-code: #aed8ee;
+    --text-code: #90bad3;
     --title-color: var(--text-color);
     --md-char-color: #667c89ff;
+    --color-4-0-a: rgba(254, 186, 7, 0.3);
     --mermaid-theme:dark;
   }
   #typora-sidebar {
@@ -867,8 +875,11 @@ span.md-comment {
   .btn-default {
     background: var(--border-color);
   }
+  blockquote {
+    background: var(--bg-color3);
+  }
   table code, blockquote code{
-    /*color: var(--text-code);*/
+    color: var(--text-color);
   }
 }
 
