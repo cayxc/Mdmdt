@@ -1,27 +1,21 @@
 :root {
-  --bg-color: rgb(240, 240, 240);
-  --bg-color2: rgb(225, 225, 225);
-  --bg-color3: rgba(165, 187, 192, .15);
+  --bg-color: rgb(250, 250, 250);
+  --bg-color2: rgb(240, 240, 242);
+  --bg-color3: rgba(240, 240, 244, 0.8);
   --border-color: #d3d3d3ff;
   --text-color: #000;
   --text-grey: #666;
-  --text-code: #273c62;
+  --text-code: #223372;
   --text-code2: rgba(39, 60, 98, 0.62);
   --title-color: #18222f;
+  --title-color2: rgb(34, 45, 86);
   --md-char-color: rgba(72, 93, 108, 0.75);
 
-  --color-1: #2bae85; /*铜绿*/
-  --color-1-0-a: rgba(43, 174, 133, 0.15);
-
-  --color-2: #fc6315; /*燕颔红*/
-  --color-2-0-a: rgba(252, 99, 21, 0.25);;
-
-  --color-3: rgb(204, 204, 204);
-  --color-3-0-a: rgba(204, 204, 204, 0.4);
-  --color-3-0-b: rgba(204, 204, 204, 0.25);
-
-  --color-4: #feba07; /*琥珀黄*/
-  --color-4-0-a: rgba(254, 186, 7, 0.18);
+  --color-1: #365ec7;
+  --color-1-0-a: rgba(110, 150, 253, 0.15);
+  --color-1-0-b: rgba(110, 150, 253, 0.05);
+  --color-2: #e38603;
+  --color-1-0-c: rgba(43, 135, 238, 0.3);
 
   --meta-content-color: var(--md-char-color);
   --primary-color: var(--color-1);
@@ -136,17 +130,19 @@ hr {
   background: var(--border-color);
   box-sizing: border-box;
 }
-
+a{
+  font-weight: 500;
+}
 a, div.md-def-link, span.md-url {
   text-decoration: none;
-  color: var(--color-2);
+  color: var(--color-1);
   cursor: pointer;
   font-size: 1.6rem;
 }
 a:hover,
 div.md-def-link:hover,
 span.md-url:hover {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 a:hover{
   text-decoration: underline;
@@ -161,7 +157,7 @@ div.md-def-link .md-def-name::after,
 .md-link .md-before,
 .md-link .md-after,
 .md-link .md-meta {
-  color: var(--color-2);
+  color: var(--color-1);
 }
 div.md-def-link .md-def-title::before,
 div.md-def-link .md-def-title::after,
@@ -175,7 +171,7 @@ p {
 
 strong {
   font-weight: bold;
-  color: var(--color-1);
+  color: var(--title-color);
 }
 
 u {
@@ -202,6 +198,7 @@ del {
 }
 mark {
   background-color: var(--color-1);
+  color: var(--bg-color);
   padding: 0.2rem 1rem;
   border-radius: .4rem;
 }
@@ -209,8 +206,6 @@ mark {
 img {
   border-radius: .8rem;
   margin-top: 1rem;
-  overflow: hidden;
-  max-width: 100%;
 }
 span.md-image,
 span.md-image span.md-content,
@@ -234,7 +229,7 @@ span.md-image span.md-image-pick-file-btn {
 }
 
 ul {
-  margin-left: -4rem;
+  margin-left: -1.2rem;
 }
 ul li {
   list-style: none;
@@ -244,15 +239,11 @@ ul li li {
   margin-left: 2.5rem;
 }
 
-ol {
-  margin-left: -1rem;
-}
 ol li {
   margin-left: 0;
 }
 
 /*code*/
-
 code, p code {
   margin: 1rem 0;
   /*border: 1px solid var(--border-color);*/
@@ -287,6 +278,7 @@ pre pre {
 p code {
   line-height: 1.5;
   padding: 0.3rem 1rem !important;
+  background: var(--color-1-0-a);
 }
 
 sup, sub {
@@ -301,19 +293,21 @@ sup.md-footnote{
 blockquote {
   margin: 1rem 0;
   padding: 2rem;
-  background: var(--color-3-0-b);
+  background: var( --bg-color3);
   box-sizing: border-box;
   border-right: 1rem solid transparent;
-  border-left: .5rem solid var(--color-1);
+  border-left: .4rem solid var(--color-1);
   border-radius: 0.8rem;
 }
 blockquote p:first-child {
   margin-top: 0;
 }
 blockquote code {
-  background: var(--color-4-0-a);
-  color: var(--title-color);
+  background: var(--color-1-0-a);
   padding: 0.3rem 1rem !important;
+}
+blockquote blockquote{
+  background: var(--color-1-0-b);
 }
 kbd {
   display: inline-block;
@@ -327,6 +321,9 @@ kbd {
   vertical-align: text-top;
   font-size: 1.4rem;
   box-shadow: none;
+}
+::selection{
+  background: var(--color-1-0-c);
 }
 /*table*/
 figure.table-figure {
@@ -399,8 +396,7 @@ input#md-grid-height {
 table code {
   line-height: 1.6;
   padding: 0.3rem 1rem !important;
-  background: var(--color-4-0-a);
-  color: var(--title-color);
+  background: var(--color-1-0-a);
 }
 
 /*input*/
@@ -446,7 +442,9 @@ span.md-comment {
   color: var(--md-char-color);
   opacity: 1;
 }
-
+.md-image-btn.selected, .md-image-btn:hover{
+  background: var(--color-2);
+}
 #write pre.md-meta-block:empty:before {
   color: var(--text-code);
 }
@@ -466,7 +464,7 @@ span.md-comment {
   background: var(--bg-color) !important;
 }
 #typora-source .CodeMirror-activeline pre {
-  background: var(--color-3-0-b) !important;
+  background: var( --bg-color3) !important;
 }
 #typora-source .CodeMirror-activeline .CodeMirror-linebackground {
   background: transparent !important;
@@ -518,13 +516,14 @@ span.md-comment {
 .outline-content li::before {
   content: '';
   width: .1rem;
-  height: 100%;
+  height: calc(100% + 0.5rem);
   position: absolute;
   z-index: 20;
   left: 0;
   top: -0.5rem;
   background: var(--border-color);
 }
+
 
 .outline-content li ul {
   margin-left: 2.6rem;
@@ -542,7 +541,7 @@ span.md-comment {
 .outline-content > li .outline-item::before {
   content: '';
   width: 1.5rem;
-  height: 100%;
+  height: 50%;
   position: absolute;
   left: -1rem;
   bottom: 50%;
@@ -556,7 +555,7 @@ span.md-comment {
 .outline-content > li ul > li:last-child > .outline-item::after {
   content: '';
   width: 1.5rem;
-  height: 100%;
+  height: 75%;
   position: absolute;
   z-index: 30;
   left: -1rem;
@@ -699,9 +698,7 @@ span.md-comment {
   padding-left: 0;
   margin-left: 0;
 }
-/*.file-node-content {
-  padding-right: 0;
-}*/
+
 .file-library-node .file-node-children {
   margin-left: 1.2rem;
 }
@@ -802,13 +799,12 @@ span.md-comment {
 .cm-s-inner.CodeMirror-focused div.CodeMirror-selected,
 .cm-s-inner .CodeMirror-line::selection,
 .cm-s-inner .CodeMirror-line > span::selection,
-.cm-s-inner .CodeMirror-line > span > span::selection {
-  background: var(--color-1-0-a);
-}
+.cm-s-inner .CodeMirror-line > span > span::selection,
 .cm-s-inner .CodeMirror-line::-moz-selection,
 .cm-s-inner .CodeMirror-line > span::-moz-selection,
 .cm-s-inner .CodeMirror-line > span > span::-moz-selection {
-  background: var(--bg-color3);
+  background: var(--color-2);
+  color: var(--title-color);
 }
 .cm-s-inner .CodeMirror-activeline-background { background: transparent; }
 .cm-s-inner .cm-keyword { color: #bb59fd; }
@@ -855,17 +851,22 @@ span.md-comment {
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #1b1b1f;
-    --bg-color2: rgb(40, 42, 47);
+    --bg-color2: rgb(40, 42, 50);
     --bg-color3: rgba(40, 42, 50, 0.8);
-    --color-3: #868686;
-    --border-color: rgb(56, 59, 59);
-    --text-color: #c2c2c2;
+    --border-color: rgb(49, 52, 56);
+    --text-color: #d0d0d0;
     --text-grey: #868686;
-    --text-code: #90bad3;
+    --text-code: #d7ddff;
     --title-color: var(--text-color);
     --md-char-color: #667c89ff;
-    --color-4-0-a: rgba(254, 186, 7, 0.3);
     --mermaid-theme:dark;
+  }
+  mark {
+    color: var(--text-color);
+  }
+  kbd {
+    background: var(--title-color2);
+    color: var(--text-color);
   }
   #typora-sidebar {
     border-right-color: var(--border-color);
@@ -873,12 +874,6 @@ span.md-comment {
   /*code*/
   .btn-default {
     background: var(--border-color);
-  }
-  blockquote {
-    background: var(--bg-color3);
-  }
-  table code, blockquote code{
-    color: var(--text-color);
   }
 }
 
