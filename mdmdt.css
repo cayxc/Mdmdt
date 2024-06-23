@@ -304,7 +304,7 @@ blockquote {
   background: var(--color-3-0-b);
   box-sizing: border-box;
   border-right: 1rem solid transparent;
-  border-left: .4rem solid var(--color-1);
+  border-left: .5rem solid var(--color-1);
   border-radius: 0.8rem;
 }
 blockquote p:first-child {
@@ -518,14 +518,13 @@ span.md-comment {
 .outline-content li::before {
   content: '';
   width: .1rem;
-  height: calc(100% + 0.5rem);
+  height: 100%;
   position: absolute;
   z-index: 20;
   left: 0;
   top: -0.5rem;
   background: var(--border-color);
 }
-
 
 .outline-content li ul {
   margin-left: 2.6rem;
@@ -543,7 +542,7 @@ span.md-comment {
 .outline-content > li .outline-item::before {
   content: '';
   width: 1.5rem;
-  height: 50%;
+  height: 100%;
   position: absolute;
   left: -1rem;
   bottom: 50%;
