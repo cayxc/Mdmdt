@@ -5,17 +5,32 @@
   --border-color: #d3d3d3ff;
   --text-color: #000;
   --text-grey: #666;
-  --text-code: #223372;
+  --text-code: #2f479f;
   --text-code2: rgba(39, 60, 98, 0.62);
-  --title-color: #18222f;
+  --title-color: #1d2738;
   --title-color2: rgb(34, 45, 86);
   --md-char-color: rgba(72, 93, 108, 0.75);
 
-  --color-1: #365ec7;
-  --color-1-0-a: rgba(110, 150, 253, 0.15);
-  --color-1-0-b: rgba(110, 150, 253, 0.05);
+  --color-1: #3d68d5;
+  --color-1-0-a: rgba(61, 104, 213, 0.15);
+  --color-1-0-b: rgba(61, 104, 213, 0.05);
+
   --color-2: #e38603;
-  --color-1-0-c: rgba(43, 135, 238, 0.3);
+  --color-2-0-a: rgba(227, 134, 3, 0.15);
+  --color-2-0-b: rgba(227, 134, 3, 0.05);
+  --color-2-0-c: rgba(227, 134, 3, 0.4);
+
+  --color-3: #03b736;
+  --color-3-0-a: rgba(3, 183, 54, 0.15);
+  --color-3-0-b: rgba(3, 183, 54, 0.05);
+
+  --color-4: #8250df;
+  --color-4-0-a: rgba(130, 80, 223, 0.15);
+  --color-4-0-b: rgba(130, 80, 223, 0.05);
+
+  --color-5: #e30f2e;
+  --color-5-0-a: rgba(227, 15, 46, 0.15);
+  --color-5-0-b: rgba(227, 15, 46, 0.05);
 
   --meta-content-color: var(--md-char-color);
   --primary-color: var(--color-1);
@@ -45,7 +60,6 @@
   --mermaid-flowchart-curve: linear;
   --mermaid--gantt-left-padding: 75;
 }
-
 
 body {
   font-size: 16px;
@@ -204,8 +218,10 @@ mark {
 }
 
 img {
+  display: block;
+  max-width: 100%;
   border-radius: .8rem;
-  margin-top: 1rem;
+  margin: 2rem auto 1.8rem;
 }
 span.md-image,
 span.md-image span.md-content,
@@ -227,26 +243,84 @@ span.md-image span.md-image-pick-file-btn {
 span.md-image span.md-image-pick-file-btn {
   border-left-color: var(--border-color);
 }
-
-ul {
-  margin-left: -1.2rem;
-}
 ul li {
   list-style: none;
   text-decoration: none;
 }
-ul li li {
-  margin-left: 2.5rem;
+ul{
+  padding-left: 3.2rem !important;
+  & ol{
+    padding-left:3.2rem !important;
+  }
+}
+ol{
+  padding-left: 3.2rem !important;
+  & ul{
+    padding-left: 1.6rem !important;
+  }
 }
 
-ol li {
-  margin-left: 0;
+blockquote, .md-alert {
+  margin: 1rem 0;
+  padding: 2rem;
+  background: var( --bg-color3);
+  box-sizing: border-box;
+  border-right: 1rem solid transparent;
+  border-left: .4rem solid var(--color-1);
+  border-radius: 0.8rem;
+}
+blockquote p:first-child,
+.md-alert  p:first-child{
+  margin-top: 0;
+}
+blockquote code,
+.md-alert code {
+  background: var(--color-1-0-a);
+  padding: 0.3rem 1rem !important;
+}
+blockquote blockquote{
+  background: var( --bg-color3);
+}
+
+.md-alert.md-alert-note {
+  border-left-color: var(--color-1);
+  background: var(--color-1-0-b);
+  color: var(--color-1) !important;
+}
+
+.md-alert.md-alert-caution{
+  border-left-color: var(--color-2);
+  background: var(--color-2-0-b);
+  color: var(--color-2) !important;;
+}
+.md-alert.md-alert-caution .md-alert-text-caution{
+  color: var(--color-2);
+}
+
+.md-alert.md-alert-tip {
+  border-left-color: var(--color-3);
+  background: var(--color-3-0-b);
+  color: var(--color-3) !important;
+}
+
+.md-alert.md-alert-important {
+  border-left-color: var(--color-4);
+  background: var(--color-4-0-b);
+  color: var(--color-4) !important;
+}
+
+.md-alert.md-alert-warning{
+  border-left-color: var(--color-5);
+  background: var(--color-5-0-b);
+  color: var(--color-5)  !important;
+}
+.md-alert.md-alert-warning .md-alert-text-warning{
+  color: var(--color-5);
 }
 
 /*code*/
 code, p code {
   margin: 1rem 0;
-  /*border: 1px solid var(--border-color);*/
   background: var(--bg-color2);
   font-size: 1.4rem;
   box-sizing: border-box;
@@ -259,7 +333,6 @@ code, p code {
 pre, p pre {
   margin: 1rem 0;
   padding: 1.8rem;
-  /*border: 1px solid var(--border-color);*/
   background: var(--bg-color2) !important;
   font-size: 1.4rem !important;
   box-sizing: border-box;
@@ -289,26 +362,6 @@ sup.md-footnote{
   padding: 0 .2rem;
 }
 
-/*blockquote*/
-blockquote {
-  margin: 1rem 0;
-  padding: 2rem;
-  background: var( --bg-color3);
-  box-sizing: border-box;
-  border-right: 1rem solid transparent;
-  border-left: .4rem solid var(--color-1);
-  border-radius: 0.8rem;
-}
-blockquote p:first-child {
-  margin-top: 0;
-}
-blockquote code {
-  background: var(--color-1-0-a);
-  padding: 0.3rem 1rem !important;
-}
-blockquote blockquote{
-  background: var(--color-1-0-b);
-}
 kbd {
   display: inline-block;
   border: none;
@@ -323,7 +376,7 @@ kbd {
   box-shadow: none;
 }
 ::selection{
-  background: var(--color-1-0-c);
+  background: var(--color-2-0-c);
 }
 /*table*/
 figure.table-figure {
@@ -398,7 +451,10 @@ table code {
   padding: 0.3rem 1rem !important;
   background: var(--color-1-0-a);
 }
-
+/*btn*/
+.btn.focus, .btn:focus, .btn:hover{
+  color: var(--color-1);
+}
 /*input*/
 input[type=checkbox],
 li.task-list-item > input[type=checkbox],
@@ -526,7 +582,7 @@ span.md-comment {
 
 
 .outline-content li ul {
-  margin-left: 2.6rem;
+  margin-left: -.8rem;
 }
 
 .outline-content li .outline-item {
@@ -641,10 +697,14 @@ span.md-comment {
 .outline-content .outline-item:hover::after {
   width: 1rem !important;
 }
-.outline-content .outline-item-active .outline-label,
+.outline-content .outline-item-active .outline-label{
+  color: var(--color-1);
+  background: var(--bg-color2);
+}
+
 .outline-content .outline-item:hover .outline-label {
-  color: var(--color-1) !important;
-  background: var(--bg-color2) !important;
+  color: var(--color-2);
+  background: var(--bg-color2);
 }
 
 /*file-library-list*/
@@ -803,8 +863,7 @@ span.md-comment {
 .cm-s-inner .CodeMirror-line::-moz-selection,
 .cm-s-inner .CodeMirror-line > span::-moz-selection,
 .cm-s-inner .CodeMirror-line > span > span::-moz-selection {
-  background: var(--color-2);
-  color: var(--title-color);
+  background: var(--color-2-0-c);
 }
 .cm-s-inner .CodeMirror-activeline-background { background: transparent; }
 .cm-s-inner .cm-keyword { color: #bb59fd; }
@@ -856,11 +915,12 @@ span.md-comment {
     --border-color: rgb(49, 52, 56);
     --text-color: #d0d0d0;
     --text-grey: #868686;
-    --text-code: #d7ddff;
+    --text-code: #c9cffd;
     --title-color: var(--text-color);
     --md-char-color: #667c89ff;
     --mermaid-theme:dark;
   }
+
   mark {
     color: var(--text-color);
   }
