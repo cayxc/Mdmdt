@@ -51,7 +51,7 @@
   font-size: 62.5%;
   background-color: var(--bg-color);
   color: var(--text-color);
-  letter-spacing: .1rem;
+  letter-spacing: .05rem;
 }
 :root {
   --mermaid-theme: forest; /*or base, dark, forest, neutral, night */
@@ -144,7 +144,7 @@ hr {
   background: var(--border-color);
   box-sizing: border-box;
 }
-a{
+a {
   font-weight: 500;
 }
 a, div.md-def-link, span.md-url {
@@ -158,7 +158,7 @@ div.md-def-link:hover,
 span.md-url:hover {
   color: var(--color-2);
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 div.md-def-link .md-def-url,
@@ -213,7 +213,7 @@ del {
 mark {
   background-color: var(--color-1);
   color: var(--bg-color);
-  padding: 0.2rem 1rem;
+  padding: .1rem .4rem;
   border-radius: .4rem;
 }
 
@@ -243,79 +243,48 @@ span.md-image span.md-image-pick-file-btn {
 span.md-image span.md-image-pick-file-btn {
   border-left-color: var(--border-color);
 }
-ul li {
-  list-style: none;
-  text-decoration: none;
+ul,ol{
+  margin-left: 0;
+  padding-left: 4rem;
 }
-ul{
-  padding-left: 3.2rem !important;
-  & ol{
-    padding-left:3.2rem !important;
-  }
+ol li > ul{
+  padding-left: 2.2rem;
 }
-ol{
-  padding-left: 3.2rem !important;
-  & ul{
-    padding-left: 1.6rem !important;
-  }
+dl dd {
+  margin-left: 4rem;
 }
-
-blockquote, .md-alert {
-  margin: 1rem 0;
-  padding: 2rem;
-  background: var( --bg-color3);
-  box-sizing: border-box;
-  border-right: 1rem solid transparent;
-  border-left: .4rem solid var(--color-1);
-  border-radius: 0.8rem;
+#write ul,
+#write ol,
+#write dl{
+  list-style: auto;
+  margin: 1rem auto;
 }
-blockquote p:first-child,
-.md-alert  p:first-child{
+#write ul,
+#write ol,
+#write dl{
+  list-style: auto;
+  margin: 1rem auto;
+}
+#write ul li,
+#write ol li,
+#write dl dt,
+#write dl dd{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+#write ul > li > p,
+#write dl > dt > p,
+#write dl > dd > p,
+#write ol > li > p{
+  margin: 0 0 0 -0.5rem;
+}
+#write ul li input,
+#write ol li input,
+#write dl dt input,
+#write dl dd input{
+  margin-left: -2.8rem;
   margin-top: 0;
-}
-blockquote code,
-.md-alert code {
-  background: var(--color-1-0-a);
-  padding: 0.3rem 1rem !important;
-}
-blockquote blockquote{
-  background: var( --bg-color3);
-}
-
-.md-alert.md-alert-note {
-  border-left-color: var(--color-1);
-  background: var(--color-1-0-b);
-  color: var(--color-1) !important;
-}
-
-.md-alert.md-alert-caution{
-  border-left-color: var(--color-2);
-  background: var(--color-2-0-b);
-  color: var(--color-2) !important;;
-}
-.md-alert.md-alert-caution .md-alert-text-caution{
-  color: var(--color-2);
-}
-
-.md-alert.md-alert-tip {
-  border-left-color: var(--color-3);
-  background: var(--color-3-0-b);
-  color: var(--color-3) !important;
-}
-
-.md-alert.md-alert-important {
-  border-left-color: var(--color-4);
-  background: var(--color-4-0-b);
-  color: var(--color-4) !important;
-}
-
-.md-alert.md-alert-warning{
-  border-left-color: var(--color-5);
-  background: var(--color-5-0-b);
-  color: var(--color-5)  !important;
-}
-.md-alert.md-alert-warning .md-alert-text-warning{
-  color: var(--color-5);
+  top: .5rem;
 }
 
 /*code*/
@@ -354,10 +323,71 @@ p code {
   background: var(--color-1-0-a);
 }
 
+
+/*blockquote*/
+blockquote,
+.md-alert {
+  margin: 1rem 0;
+  padding: 2rem;
+  background: var(--bg-color3);
+  box-sizing: border-box;
+  border-right: 1rem solid transparent;
+  border-left: .4rem solid var(--color-1);
+  border-radius: 0.8rem;
+}
+blockquote p:first-child,
+.md-alert p:first-child {
+  margin-top: 0;
+}
+blockquote code,
+.md-alert code {
+  background: var(--color-1-0-a);
+  padding: 0.3rem 1rem !important;
+}
+blockquote blockquote {
+  background: var(--bg-color3);
+}
+
+.md-alert.md-alert-note {
+  border-left-color: var(--color-1);
+  background: var(--color-1-0-b);
+  color: var(--color-1) !important;
+}
+
+.md-alert.md-alert-caution {
+  border-left-color: var(--color-2);
+  background: var(--color-2-0-b);
+  color: var(--color-2) !important;;
+}
+.md-alert.md-alert-caution .md-alert-text-caution {
+  color: var(--color-2);
+}
+
+.md-alert.md-alert-tip {
+  border-left-color: var(--color-3);
+  background: var(--color-3-0-b);
+  color: var(--color-3) !important;
+}
+
+.md-alert.md-alert-important {
+  border-left-color: var(--color-4);
+  background: var(--color-4-0-b);
+  color: var(--color-4) !important;
+}
+
+.md-alert.md-alert-warning {
+  border-left-color: var(--color-5);
+  background: var(--color-5-0-b);
+  color: var(--color-5) !important;
+}
+.md-alert.md-alert-warning .md-alert-text-warning {
+  color: var(--color-5);
+}
+
 sup, sub {
   font-size: 1.2rem;
 }
-sup.md-footnote{
+sup.md-footnote {
   background: transparent;
   padding: 0 .2rem;
 }
@@ -370,12 +400,11 @@ kbd {
   border-image: none;
   border-radius: .4rem;
   padding: 0 .6rem;
-  margin-right: 0.6rem;
   vertical-align: text-top;
   font-size: 1.4rem;
   box-shadow: none;
 }
-::selection{
+::selection {
   background: var(--color-2-0-c);
 }
 /*table*/
@@ -452,7 +481,7 @@ table code {
   background: var(--color-1-0-a);
 }
 /*btn*/
-.btn.focus, .btn:focus, .btn:hover{
+.btn.focus, .btn:focus, .btn:hover {
   color: var(--color-1);
 }
 /*input*/
@@ -498,7 +527,7 @@ span.md-comment {
   color: var(--md-char-color);
   opacity: 1;
 }
-.md-image-btn.selected, .md-image-btn:hover{
+.md-image-btn.selected, .md-image-btn:hover {
   background: var(--color-2);
 }
 #write pre.md-meta-block:empty:before {
@@ -520,7 +549,7 @@ span.md-comment {
   background: var(--bg-color) !important;
 }
 #typora-source .CodeMirror-activeline pre {
-  background: var( --bg-color3) !important;
+  background: var(--bg-color3) !important;
 }
 #typora-source .CodeMirror-activeline .CodeMirror-linebackground {
   background: transparent !important;
@@ -582,7 +611,7 @@ span.md-comment {
 
 
 .outline-content li ul {
-  margin-left: -.8rem;
+  margin-left: 2.4rem;
 }
 
 .outline-content li .outline-item {
@@ -697,7 +726,7 @@ span.md-comment {
 .outline-content .outline-item:hover::after {
   width: 1rem !important;
 }
-.outline-content .outline-item-active .outline-label{
+.outline-content .outline-item-active .outline-label {
   color: var(--color-1);
   background: var(--bg-color2);
 }
@@ -918,7 +947,7 @@ span.md-comment {
     --text-code: #c9cffd;
     --title-color: var(--text-color);
     --md-char-color: #667c89ff;
-    --mermaid-theme:dark;
+    --mermaid-theme: dark;
   }
 
   mark {

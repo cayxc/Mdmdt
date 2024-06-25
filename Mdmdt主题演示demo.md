@@ -12,11 +12,13 @@
 
 # 文本
 
-这些是文本样式效果： [这是超链接](typora.io), **这是加粗文本**, *这是斜体字*,  `this is code style` ， <u>这是下划线样式</u>,  ~~这是删除线效果~~,   ==这是文字高亮效果==，上下标: $\LaTeX$, X^2^, H~2~O,  😀 🇨🇳 🐲 <span style='background:var(--color-2-0-c)'> 这是选中效果 </span>, <kbd>Command+Q</kbd> 🐳
+这些是文本样式效果： [这是超链接](typora.io),  **这是加粗文本**,  *这是斜体字*,  `this is code style` ， <u>这是下划线样式</u>,   ~~这是删除线效果~~,   ==这是文字高亮效果==， 上下标: $\LaTeX$, X^2^, H~2~O,   <span style='background:var(--color-2-0-c)'> 这是选中效果 </span>, <kbd>Command+Q</kbd>  🐳 😀 🇨🇳
 
-[链接引用]: www.xxx-xx.xxx
+[链接引用]: www.xxx-xx.xxx	"这是引用标题"
 
 [^注脚]: 这是注脚效果
+
+<!-- 这是注释内容...... -->
 
 # 图片
 
@@ -24,18 +26,30 @@
 
 # 列表
 
-1. ordered list item 1.
-2. ordered list item 2.
-   + sub-unordered list item 1.
-   + sub-unordered list item 2.
-     + [x] something is DONE.
-     + [ ] something is not TODO.
+这是有序和无序列表样式：
+
+1. 这是有序列表 1
+2. 这是有序列表 2
+   + 这是无序列表 1
+   + 这是无序列表 2
+     + [x] Something is DONE.
+     + [ ] Something is Not TODO.
+
+这是有序和无序列表样式：
+
+- 这是无序列表
+- 这是无序列表
+- 这是无序列表
+  1. 这是有序列表 a
+  2. 这是有序列表 b
+  3. 这是有序列表 c
+
 
 # 表格
 
 | Left-Aligned            |                Center Aligned                | Right Aligned |
 | :---------------------- | :------------------------------------------: | ------------: |
-| This is the first line  | some wordy text and some code `this is code` |          $160 |
+| This is the first line  |  `this is code` some wordy text and some code |          $160 |
 | This is the second line |     some code: `this is code` centered      |      $1200.99 |
 | This is the third line  |                   are neat                   |            $1 |
 
