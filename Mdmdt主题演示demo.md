@@ -2,7 +2,7 @@
 
 [English Document](www.dafdf)
 
-**Mdmdt**是 markdown minimalism document theme 的缩写，意为：Markdown极简文档主题，是轻度定制的个性化Typora主题。
+**Mdmdt**是 markdown minimalism document theme 的缩写，意为：Markdown极简文档主题。**Mdmdt**[^1]是轻度定制的个性化Typora主题 。
 
 **Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
 
@@ -12,11 +12,11 @@
 
 # 文本
 
-这些是文本样式效果： [这是超链接](typora.io),  **这是加粗文本**,  *这是斜体字*,  `this is code style` ， <u>这是下划线样式</u>,   ~~这是删除线效果~~,   ==这是文字高亮效果==， 上下标: $\LaTeX$, X^2^, H~2~O,   <span style='background:var(--color-2-0-c)'> 这是选中效果 </span>, <kbd>Command+Q</kbd>  🐳 😀 🇨🇳
+这些是文本样式效果： [这是超链接](typora.io),  **这是加粗文本**,  *这是斜体字*,  `this is code style` ， <u>这是下划线样式</u>,   ~~这是删除线效果~~,   ==这是文字高亮效果==， 上下标: $\LaTeX$, X^2^, H~2~O,   <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>, <kbd>Command+Q</kbd>  🐳 😀 🇨🇳
 
-[链接引用]: www.xxx-xx.xxx	"这是引用标题"
+[链接引用]: https://github.com/cayxc/mdmdt	"链接标题"
 
-[^注脚]: 这是注脚效果
+[^1]: *Forked* from https://github.com/cayxc/mdmdt
 
 <!-- 这是注释内容...... -->
 

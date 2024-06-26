@@ -72,8 +72,6 @@
 >
 > 注意：使用 **mdtht.js导出html时，**请选择和 mdtht.js 配套的 css 样式文件!
 
-
-
 **mdth.tjs导出html效果图**
 
 ---
