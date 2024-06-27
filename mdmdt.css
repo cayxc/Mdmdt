@@ -54,7 +54,7 @@
   letter-spacing: .05rem;
 }
 :root {
-  --mermaid-theme: forest; /*or base, dark, forest, neutral, night */
+  --mermaid-theme: neutral; /*or base, dark, forest, neutral, night */
   --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
   --mermaid-sequence-numbers: on;
   --mermaid-flowchart-curve: linear;
@@ -168,6 +168,8 @@ mark {
   color: var(--bg-color);
   padding: 0 .4rem;
   border-radius: .4rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 img {
@@ -299,6 +301,8 @@ p code {
   line-height: 1.5;
   padding: 0.3rem 1rem !important;
   background: var(--color-1-0-a);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 pre .CodeMirror-sizer {
   padding-left: 1rem;
@@ -309,7 +313,7 @@ blockquote,
 .md-alert {
   margin: 1.6rem 0;
   padding: 1.6rem;
-  background: var(--bg-color3);
+  background: var(--color-1-0-b);
   box-sizing: border-box;
   border-right: 1rem solid transparent;
   border-left: .4rem solid var(--color-1);
@@ -323,21 +327,13 @@ blockquote code,
 .md-alert code {
   background: var(--color-1-0-a);
   padding: 0.3rem 1rem !important;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 blockquote blockquote {
-  background: var(--bg-color3);
+  background: var(--color-1-0-b);
 }
 
-#write {
-  width: 100%;
-  max-width: 140rem;
-  margin: 0 auto;
-  padding: 0 10rem 7.2rem;
-  overflow-x: hidden;
-}
-#write > *:first-child {
-  margin-top: 3.2rem !important;
-}
 .md-alert.md-alert-note {
   border-left-color: var(--color-1);
   background: var(--color-1-0-b);
@@ -393,9 +389,13 @@ kbd {
   vertical-align: text-top;
   font-size: 1.4rem;
   box-shadow: none;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 ::selection {
   background: var(--color-2-0-c);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 /*table*/
 figure.table-figure {
@@ -523,7 +523,16 @@ span.md-comment {
 #write pre.md-meta-block:empty:before {
   color: var(--text-code);
 }
-
+#write {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 10rem 7.2rem;
+  overflow-x: hidden;
+}
+#write > *:first-child {
+  margin-top: 3.2rem !important;
+}
 /*typora-source*/
 #typora-source .CodeMirror-lines {
   width: 100%;
