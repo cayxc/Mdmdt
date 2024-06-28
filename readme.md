@@ -21,13 +21,13 @@ Compared to the default theme style, the following aspects have been mainly modi
 
 # Design sketch
 
-**Light Color Theme:**
+**Light Theme:**
 
 ![mdmdt-light](./img/mdmdt-light.png)
 
 ---
 
-**Dark Color Theme:**
+**Dark Theme:**
 
 ![mdmdt-dark](./img/mdmdt-dark.png)
 
