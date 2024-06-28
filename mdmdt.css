@@ -527,18 +527,21 @@ span.md-comment {
   width: 100%;
   max-width: 140rem;
   margin: 0 auto;
-  padding: 0 10rem 7.2rem;
+  padding: 0 10rem 3.2rem;
   overflow-x: hidden;
 }
 #write > *:first-child {
   margin-top: 3.2rem !important;
+}
+#typora-sidebar {
+  border-right-color: var(--border-color);
 }
 /*typora-source*/
 #typora-source .CodeMirror-lines {
   width: 100%;
   max-width: 140rem;
   margin: 0 auto;
-  padding: 0 10rem;
+  padding: 3.2rem 10rem;
   box-sizing: border-box;
 }
 #typora-source .CodeMirror-lines pre {
@@ -950,7 +953,6 @@ span.md-comment {
     --md-char-color: #667c89ff;
     --mermaid-theme: dark;
   }
-
   mark {
     color: var(--text-color);
   }
@@ -980,10 +982,10 @@ span.md-comment {
 /*@media screen*/
 @media screen and (max-width: 992px) {
   #write {
-    padding: 0 3.6rem 3.2rem;
+    padding: 0 3.2rem 3.2rem;
   }
   #typora-source .CodeMirror-lines {
-    padding: 0 3.6rem;
+    padding: 3.2rem;
   }
 }
 
@@ -992,7 +994,7 @@ span.md-comment {
     padding: 0 6rem 3.2rem;
   }
   #typora-source .CodeMirror-lines {
-    padding: 0 6rem;
+    padding: 3.2rem 6rem;
   }
 }
 
