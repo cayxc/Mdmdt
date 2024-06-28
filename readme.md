@@ -1,83 +1,83 @@
-# 关于Mdmdt主题
+# About Mdmdt theme
 
-[English Document](./readme.en.md)
+[中文文档](./readme.zh.md)
 
-**Mdmdt**是markdown minimalism document theme的缩写，意为：Markdown极简文档主题，是轻度定制的个性化Typora主题。
+**Mdmdt** is the abbreviation for Markdown Minimalism document theme, meaning: Markdown Minimalist Document Theme, which is a lightly customized personalized Typora theme.
 
-**Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
+The purpose of the **Mdmdt** theme is to create a minimalist document style, allowing users to more intuitively distinguish different block contents while focusing on the document content itself.
 
-相比于默认主题风格主要修改了以下几个方面：
-1. 简洁舒适的配色风格
-2. 添加圆角样式
-3. 标题样式
-4. 表格样式
-5. 引用框样式
-6. 图片样式
-7. 代码高亮样式
-8. 文件树样式
-9. 文档列表样式：改为卡片结构
-10. 大纲样式：添加了目录树状线结构，目录层次更加简洁明了
-11. 自动跟随系统的亮色/暗色主题模式（可单独设置亮/暗主题)
+Compared to the default theme style, the following aspects have been mainly modified:
+1. A simple and comfortable color scheme style
+2. Add rounded corner style
+3. Title Style
+4. Table Style
+5. Reference box style
+6. Image Style
+7. Code Highlight Style
+8. File Tree Style
+9. Document list style: changed to card structure
+10. Outline style: Added a directory tree structure, making the directory hierarchy more concise and clear
+11. Automatically follow the bright/dark theme mode of the system (the bright/dark theme can be set separately)
 
-# 效果图
+# Design sketch
 
-亮色主题：
+**Light Color Theme:**
 
 ![mdmdt-light](./img/mdmdt-light.png)
 
 ---
 
-黑色主题：
+**Dark Color Theme:**
 
 ![mdmdt-dark](./img/mdmdt-dark.png)
 
 ---
 
-文本框样式：
+**Text Box Style:**
 
 ![mdmdt-1](./img/mdmdt-1.png)
 
 ---
 
-源码模式：
+**Source Code Mode:**
 
 ![mdmdt-1](./img/mdmdt-3.png)
 ![mdmdt-1](./img/mdmdt-4.png)
 
-# 如何使用
+# How to use it
 
-使用自定义主题非常简单，方法如下：
-1. 打开 `偏好设置` -> `外观` -> `打开主题文件夹`
-2. 将下载好的 `mdmdt.cs文件` 复制到主题文件夹下
-3. **退出 Typora 重新打开**，在 `菜单栏` -> `主题` 选择 **Mdmdt** 主题，完成主题切换。
+Using custom themes is very simple, as follows:
+
+1. Open `Preferences` -> `Appearance` -> `Open Theme Folder`
+2. Copy the downloaded `mdmdt.cs`  file to the theme folder.
+3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt** theme and complete the theme switch.
 
 > [!NOTE]
-> **注意：**mdmdt.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题。
+> **Note:** The mdmdt.css file contains both bright and dark themes, which will automatically switch between bright and dark themes according to the system mode.
 
-##### 使用单独的亮色/暗色主题
+##### Use separate Light/Dark theme
 
-如果只想使用单独的亮色或暗色主题，方法如下：
-1. 打开 `偏好设置` -> `外观` -> `打开主题文件夹`
-2. 复制 `mdmdt-light.css` 或者 `mdmdt-dark.css` 到 `主题文件夹下`
-3. 重新打开Typora，在 `菜单栏` -> `主题` 选择 **Mdmdt Ligh** 或者 **mdmdt Dark** 主题，完成主题切换。
+If you only want to use a separate bright or dark theme, the method is as follows:
+1. Open `Preferences` -> `Appearance` -> `Open Theme Folder`
+2. Copy `mdmdt-light.css` or `mdmdt-dark.css ` to the theme folder.
+3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt Light** or **Mdmdt Dark** theme and complete the theme switch.
 
-# 导出html自动生成侧边栏目录和样式的
+# Export HTML to automatically generate sidebar directories and styles
 
-想要在导出的 .html 文件中 **自动生成侧边栏目录及样式**， 可以使用 **Mdtht**插件。
+**To automatically generate sidebar directories and styles in the exported HTML file**, you can use the **Mdtht** plugin.
 
-插件主页地址：[Gitub-Mdtht](https://github.com/cayxc/Mdmdt)   [Gitee-Mdtht](https://gitee.com/cayxc/mdtht)
+Plugin homepage address：[Gitub-Mdtht](https://github.com/cayxc/Mdmdt)   [Gitee-Mdtht](https://gitee.com/cayxc/mdtht)
 
-该插件配置简单（就是导入js和css），提供了丰富的功能，具体参考插件主页详情。
-
+The plugin has a simple configuration (importing JavaScript and CSS) and provides rich features. Please refer to the plugin homepage for details.
 > [!IMPORTANT]
 >
-> 注意：使用 **mdtht.js导出html时，**请选择和 mdtht.js 配套的 **mdtht.css** 样式文件。
+> **Attention**: When **exporting HTML using  mdtht. js**, please select the **mdtht. css** style file that matches mdtht. js.
 
-**mdth.tjs导出为 html 效果图（亮色）**
+**Export mdth.tjs as an HTML rendering (light theme)**
 
 ---
 
-<img src="./img/mdmdt-2.png" alt="mdmdt-2" style="zoom:50%;" /> **mdth.tjs导出为 html 效果图（暗色）**
+<img src="./img/mdmdt-2.png" alt="mdmdt-2" style="zoom:50%;" />**Export mdth.tjs as an HTML rendering (dark theme)**
 
 ---
 
@@ -85,7 +85,5 @@
 
 ---
 
-🐳 如果您喜欢该文档样式风格，还请给一个 star 😄，使用过程中有什么问题请及时提交 issues，看到后我会第一时间处理。
-
-
+🐳 If you like the style of this document, please provide a star 😄， If there are any issues during use, please submit them in a timely manner and I will handle them as soon as I see them.
 
