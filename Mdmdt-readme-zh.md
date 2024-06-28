@@ -1,7 +1,5 @@
 # 关于Mdmdt主题
 
-[English Document](www.dafdf)
-
 **Mdmdt**是markdown minimalism document theme的缩写，意为：Markdown极简文档主题，是轻度定制的个性化Typora主题。
 
 **Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
