@@ -1,3 +1,4 @@
+![mdmdt-theme](./img/mdmdt-cover.png)
 # About Mdmdt theme
 
 [中文文档](./readme.zh.md)
@@ -21,13 +22,13 @@ Compared to the default theme style, the following aspects have been mainly modi
 
 # Design sketch
 
-**Light Theme:**
+**Light Color Theme:**
 
 ![mdmdt-light](./img/mdmdt-light.png)
 
 ---
 
-**Dark Theme:**
+**Dark Color Theme:**
 
 ![mdmdt-dark](./img/mdmdt-dark.png)
 

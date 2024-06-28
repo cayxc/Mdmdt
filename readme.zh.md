@@ -1,3 +1,4 @@
+![mdmdt-theme](./img/mdmdt-cover.png)
 # 关于Mdmdt主题
 
 [English Document](./readme.md)
