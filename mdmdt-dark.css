@@ -1,8 +1,8 @@
 :root {
   --bg-color: #1b1b1f;
   --bg-color2: rgb(40, 42, 50);
-  --bg-color3: rgba(40, 42, 50, 0.8);
   --border-color: rgb(49, 52, 56);
+
   --text-color: #d0d0d0;
   --text-grey: #868686;
   --text-code: #c9cffd;
@@ -35,7 +35,7 @@
   --meta-content-color: var(--md-char-color);
   --primary-color: var(--color-1);
   --primary-btn-border-color: var(--bg-color2);
-  --primary-btn-text-color: var(--color-1);
+  --primary-btn-text-color: var(--text-color);
   --window-border: 1px solid var(--border-color);
   --active-file-bg-color: var(--bg-color2);
   --active-file-text-color: var(--color-1);
@@ -66,27 +66,6 @@ body {
   line-height: 1.5;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-h3.md-focus:before,
-h4.md-focus:before,
-h5.md-focus:before,
-h6.md-focus:before {
-  font-size: 1.2rem;
-  left: -3rem;
-  color: var(--color-1);
-}
-h3.md-focus:before {
-  top: .9rem;
-}
-h4.md-focus:before {
-  top: .75rem;
-}
-h5.md-focus:before {
-  top: .35rem;
-}
-h6.md-focus:before {
-  top: .3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,10 +99,25 @@ h6 {
   font-size: 1.6rem;
 }
 
-h5, h6 {
-  & + p {
-    margin-top: -0.8rem;
-  }
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+  font-size: 1.2rem;
+  left: -3rem;
+  color: var(--color-1);
+}
+h3.md-focus:before {
+  top: .9rem;
+}
+h4.md-focus:before {
+  top: .75rem;
+}
+h5.md-focus:before {
+  top: .35rem;
+}
+h6.md-focus:before {
+  top: .3rem;
 }
 
 hr {
@@ -149,10 +143,6 @@ u {
 
 em {
   font-weight: 400;
-}
-
-sup, sub {
-  font-size: 1rem;
 }
 
 del {
@@ -227,33 +217,33 @@ a:hover,
   text-decoration: none;
   color: var(--color-1);
 }
-
-ul, ol {
+ul{
   margin-left: 0;
-  padding-left: 4rem;
+  padding-left: 3.8rem;
 }
-ol li > ul {
-  padding-left: 2.2rem;
+ol {
+  margin-left: 0;
+  padding-left: 4.2rem;
 }
-dl dd {
-  margin-left: 4rem;
+ol ul {
+  padding-left: 3rem;
 }
+ul ol {
+  padding-left: 3.8rem;
+}
+
 
 #write ul,
-#write ol,
-#write dl {
+#write ol{
   list-style: auto;
   margin: 1rem auto;
 }
 #write ul li,
-#write ol li,
-#write dl dt,
-#write dl dd {
+#write ol li{
   margin-bottom: 1rem;
 }
-#write ul > li > p,
-#write dl > dt > p,
-#write dl > dd > p {
+
+#write ul > li > p{
   margin: 0 0 0 -0.4rem;
 }
 
@@ -261,14 +251,11 @@ dl dd {
   margin: 0 0 0 -0.8rem;
 }
 #write ul li input,
-#write ol li input,
-#write dl dt input,
-#write dl dd input {
+#write ol li input{
   margin-left: -2.8rem;
   margin-top: 0;
   top: .5rem;
 }
-
 /*code*/
 code, p code {
   margin: 1.6rem 0;
@@ -277,7 +264,6 @@ code, p code {
   box-sizing: border-box;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  line-height: 1.8;
   color: var(--text-code);
   vertical-align: text-bottom;
 }
@@ -296,11 +282,9 @@ pre pre {
   background: transparent !important;
   padding: .5rem 1rem;
   border: none;
-  vertical-align: middle;
 }
 
 p code {
-  line-height: 1.5;
   padding: 0.3rem 1rem !important;
   background: var(--color-1-0-a);
   box-decoration-break: clone;
@@ -321,10 +305,7 @@ blockquote,
   border-left: .4rem solid var(--color-1);
   border-radius: 0.8rem;
 }
-blockquote p:first-child,
-.md-alert p:first-child {
-  margin-top: 0;
-}
+
 blockquote code,
 .md-alert code {
   background: var(--color-1-0-a);
@@ -341,6 +322,9 @@ blockquote blockquote {
   background: var(--color-1-0-b);
   color: var(--color-1) !important;
 }
+.md-alert.md-alert-note .md-alert-text-note {
+  color: var(--color-1);
+}
 
 .md-alert.md-alert-caution {
   border-left-color: var(--color-2);
@@ -356,11 +340,17 @@ blockquote blockquote {
   background: var(--color-3-0-b);
   color: var(--color-3) !important;
 }
+.md-alert.md-alert-tip .md-alert-text-tip {
+  color: var(--color-3);
+}
 
 .md-alert.md-alert-important {
   border-left-color: var(--color-4);
   background: var(--color-4-0-b);
   color: var(--color-4) !important;
+}
+.md-alert.md-alert-important .md-alert-text-important {
+  color: var(--color-4);
 }
 
 .md-alert.md-alert-warning {
@@ -371,20 +361,25 @@ blockquote blockquote {
 .md-alert.md-alert-warning .md-alert-text-warning {
   color: var(--color-5);
 }
-
 sup, sub {
   font-size: 1.2rem;
+  padding: 0 .1rem;
 }
 sup.md-footnote {
   background: transparent;
   padding: 0 .2rem;
+  color: var(--color-1);
+}
+sup.md-footnote:hover {
+  color: var(--color-2);
+  cursor: pointer;
 }
 
 kbd {
   display: inline-block;
   border: none;
-  background: var(--title-color2);
   color: var(--text-color);
+  background: var(--color-2);
   border-image: none;
   border-radius: .4rem;
   padding: 0 .6rem;
@@ -470,6 +465,8 @@ input#md-grid-height {
 table code {
   padding: 0.3rem 1rem !important;
   background: var(--color-1-0-a);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 /*btn*/
 .btn.focus, .btn:focus, .btn:hover {
@@ -553,7 +550,7 @@ span.md-comment {
   background: var(--bg-color) !important;
 }
 #typora-source .CodeMirror-activeline pre {
-  background: var(--bg-color3) !important;
+  background: var(--bg-color2) !important;
   border-radius: 0.6rem;
 }
 #typora-source .CodeMirror-activeline .CodeMirror-linebackground {

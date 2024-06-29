@@ -4,7 +4,7 @@
 
 **Mdmdt**是 markdown minimalism document theme 的缩写，意为：Markdown极简文档主题。
 
-**Mdmdt**[^1] 是轻度定制的个性化Typora主题 。**Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
+**Mdmdt**[^1]是轻度定制的个性化Typora主题 。**Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
 
 > [!NOte]
 >
@@ -21,7 +21,7 @@
 
 # 图片
 
-<img src="/Users/cayxc/Desktop/未命名文件夹/mdmdt-cover.png" alt="mdmdt-cover" style="zoom:80%;" />
+<img src="./img/mdmdt-cover.png" alt="mdmdt-cover" style="zoom:80%;" />
 
 # 列表
 
@@ -79,8 +79,8 @@
 
 | Left-Aligned            |                Center Aligned                | Right Aligned |
 | :---------------------- | :------------------------------------------: | ------------: |
-| This is the first line  |  `this is code` some wordy text and some code |          $160 |
-| This is the second line |     some code: `this is code` centered      |      $1200.99 |
+| This is the first line  | `this is code` some wordy text and some code |          $160 |
+| This is the second line |      some code: `this is code` centered      |      $1200.99 |
 | This is the third line  |                   are neat                   |            $1 |
 
 # 引用文本框
