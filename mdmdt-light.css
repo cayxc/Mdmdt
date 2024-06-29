@@ -254,9 +254,12 @@ dl dd {
 
 #write ul > li > p,
 #write dl > dt > p,
-#write dl > dd > p,
+#write dl > dd > p {
+  margin: 0 0 0 -0.8rem;
+}
+
 #write ol > li > p {
-  margin: 0 0 0 -0.5rem;
+  margin: 0 0 0 -0.4rem;
 }
 #write ul li input,
 #write ol li input,
