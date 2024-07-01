@@ -620,7 +620,7 @@ span.md-comment {
   position: absolute;
   z-index: 20;
   left: 0;
-  top: -0.5rem;
+  top: -0.7rem;
   background: var(--border-color);
 }
 
@@ -747,6 +747,18 @@ span.md-comment {
 .outline-content .outline-item:hover .outline-label {
   color: var(--color-2);
   background: var(--bg-color2);
+}
+
+/*ty-on-outline-filter(catalog search style)*/
+.ty-on-outline-filter .outline-content li::before,
+.ty-on-outline-filter .outline-content li::after,
+.ty-on-outline-filter .outline-content .outline-item::before,
+.ty-on-outline-filter .outline-content .outline-item::after{
+  display: none;
+}
+.ty-on-outline-filter .outline-content > li > ul,
+.ty-on-outline-filter .outline-content .outline-item{
+  margin-left: 0;
 }
 
 /*file-library-list*/
