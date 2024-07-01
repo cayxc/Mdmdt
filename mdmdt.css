@@ -463,11 +463,17 @@ button#md-resize-grid {
   display: block;
   width: 100%;
   margin: 1rem auto 0;
+  border-radius: .4rem;
+  color: var(--bg-color);
+}
+button#md-resize-grid:hover{
+  background: var(--color-2);
 }
 input#md-grid-width,
 input#md-grid-height {
   text-align: center !important;
   padding-left: 0 !important;
+  border-radius: .4rem;
 }
 table code {
   padding: 0.3rem 1rem !important;
