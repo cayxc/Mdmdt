@@ -483,7 +483,7 @@ table code {
 }
 /*btn*/
 .btn.focus, .btn:focus, .btn:hover {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 /*input*/
 input[type=checkbox],
@@ -962,6 +962,7 @@ span.md-comment {
     --text-code: #c9cffd;
     --title-color: var(--text-color);
     --md-char-color: #667c89ff;
+    --item-hover-text-color: var(--color-2);
     --mermaid-theme: dark;
   }
   mark {
@@ -973,6 +974,9 @@ span.md-comment {
   }
   #typora-sidebar {
     border-right-color: var(--border-color);
+  }
+  .sidebar-tab-btn:hover{
+    color: var(--color-2);
   }
   /*code*/
   .btn-default {

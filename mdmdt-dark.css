@@ -49,7 +49,7 @@
   --active-file-border-color: var(--color-1);
   --side-bar-bg-color: var(--bg-color);
   --item-hover-bg-color: var(--bg-color2);
-  --item-hover-text-color: var(--color-1);
+  --item-hover-text-color: var(--color-2);
   --monospace: monospace;
   --select-text-bg-color: var(--color-1-0-a);
 }
@@ -483,7 +483,7 @@ table code {
 }
 /*btn*/
 .btn.focus, .btn:focus, .btn:hover {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 /*input*/
 input[type=checkbox],
@@ -793,7 +793,7 @@ span.md-comment {
   color: var(--title-color);
 }
 .sidebar-tab-btn:hover {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 .file-tree-node {
   position: relative;

@@ -486,7 +486,7 @@ input{
   border-radius: .4rem;
 }
 .btn.focus, .btn:focus, .btn:hover {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 /*input*/
 input[type=checkbox],
