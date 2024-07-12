@@ -67,7 +67,7 @@ If you only want to use a separate bright or dark theme, the method is as follow
 
 **To automatically generate sidebar directories and styles in the exported HTML file**, you can use the **Mdtht** plugin.
 
-Plugin homepage address：[Gitub-Mdtht](https://github.com/cayxc/Mdtht)   [Gitee-Mdtht](https://gitee.com/cayxc/mdtht)
+Plugin homepage address：[Mdtht-Github](https://github.com/cayxc/Mdtht)   [Mdtht-Gitee](https://gitee.com/cayxc/mdtht)
 
 The plugin has a simple configuration (importing JavaScript and CSS) and provides rich features. Please refer to the plugin homepage for details.
 > [!IMPORTANT]
