@@ -66,7 +66,7 @@
 
 想要在导出的 .html 文件中 **自动生成侧边栏目录及样式**， 可以使用 **Mdtht**插件。
 
-插件主页地址：[Gitub-Mdtht](https://github.com/cayxc/Mdtht)   [Gitee-Mdtht](https://gitee.com/cayxc/mdtht)
+插件主页地址：[Mdtht-Github](https://github.com/cayxc/Mdtht)   [Mdtht-Gitee](https://gitee.com/cayxc/mdtht)
 
 该插件配置简单（就是导入js和css），提供了丰富的功能，具体参考插件主页详情。
 
