@@ -486,7 +486,7 @@ table code {
   color: var(--color-2);
 }
 /*input*/
-input[type=checkbox],
+html input[type=checkbox],
 li.task-list-item > input[type=checkbox],
 #write input[type=checkbox] {
   border-radius: 0.3rem;
@@ -496,13 +496,13 @@ li.task-list-item > input[type=checkbox],
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
   padding: 0;
-  line-height: 1.1;
+  line-height: 1;
 }
 
-input[type=checkbox]:checked,
+html input[type=checkbox]:checked,
 li.task-list-item > input[type=checkbox]:checked,
 #write input[type=checkbox]:checked {
   content: "";
@@ -512,7 +512,7 @@ li.task-list-item > input[type=checkbox]:checked,
   text-align: center;
   color: var(--bg-color);
 }
-input[type=checkbox]:checked:after,
+html input[type=checkbox]:checked:after,
 li.task-list-item > input[type=checkbox]:checked:after,
 #write input[type=checkbox]:checked:after {
   content: "\2713"; /*2713 or 2714*/
@@ -625,7 +625,7 @@ span.md-comment {
 }
 
 .outline-content li ul {
-  margin-left: 2.4rem;
+  margin-left: 2.2rem;
 }
 
 .outline-content li .outline-item {
@@ -742,11 +742,26 @@ span.md-comment {
   color: var(--color-1);
   background: var(--bg-color2);
 }
-
 .outline-content .outline-item:hover .outline-label {
   color: var(--color-2);
   background: var(--bg-color2);
 }
+.outline-expander{
+  padding-left: 0;
+  width: auto;
+}
+.outline-expander:before{
+  font-size: 1rem;
+  padding: 0 .3rem 0 0;
+  margin-top: -.2rem;
+}
+.outline-content .outline-item-active .outline-expander::before{
+  color: var(--color-1);
+}
+.outline-content .outline-item:hover .outline-expander::before {
+  color: var(--color-2);
+}
+
 /*ty-on-outline-filter(catalog search style)*/
 .ty-on-outline-filter .outline-content li::before,
 .ty-on-outline-filter .outline-content li::after,
@@ -843,6 +858,8 @@ span.md-comment {
 /*md-notification-container*/
 #md-notification:before {
   font-size: 1.8rem;
+  top: auto;
+  bottom: .8rem;
 }
 #md-notification p,
 #md-notification .ty-enter-mode-warning-body {
@@ -960,13 +977,60 @@ span.md-comment {
   z-index: 50;
   padding: 0 .2rem;
 }
+/*export html*/
+body.typora-export{
+  padding-left: 0;
+  padding-right: 0;
+}
+.typora-export-show-outline .typora-export-content{
+  max-width: 100%;
+}
+.typora-export-sidebar{
+  margin-right: 0;
+}
+.typora-export-sidebar .outline-content{
+  padding-top: 1.8rem;
+}
+.typora-export-sidebar .outline-content li,
+.typora-export-sidebar .outline-content li .outline-label
+{
+  background: var(--bg-color);
+}
+.typora-export .outline-item:hover{
+  margin-right: 0;
+}
+.typora-export-sidebar .outline-content li .outline-label
+{
+  color: var(--text-color);
+}
+.typora-export-sidebar .outline-content .outline-item-active > .outline-item,
+.typora-export-sidebar .outline-content .outline-item-active > .outline-item .outline-label
+{
+  background: var(--bg-color2);
+  color: var(--color-1);
+}
+.typora-export-sidebar .outline-content .outline-item-active > .outline-item::after,
+.typora-export-sidebar .outline-content .outline-item-active > .outline-item::before
+{
+  width: 1rem;
+}
+.typora-export-sidebar .outline-content .outline-item-active::before
+{
+  width: .1rem !important;
+}
+/*scroll style*/
+html,
+.outline-content{
+  scrollbar-color: var(--border-color) var(--bg-color2);
+  scrollbar-width: thin;
+}
 
 /*dark*/
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #1b1b1f;
     --bg-color2: rgb(40, 42, 50);
-    --border-color: rgb(49, 52, 56);
+    --border-color: rgb(60, 62, 70);
     --text-color: #d0d0d0;
     --text-grey: #868686;
     --text-code: #c9cffd;
