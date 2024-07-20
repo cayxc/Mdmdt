@@ -216,9 +216,11 @@ span.md-image span.md-image-input-src-btn::before,
 span.md-image span.md-image-pick-file-btn::before {
   color: var(--color-1);
 }
-
-.md-image-btn {
+span.md-image-btn {
   background: var(--bg-color2);
+}
+span.md-image-btn:hover::before{
+  color: var(--bg-color) !important;
 }
 span.md-image span.md-image-pick-file-btn {
   border-left-color: var(--border-color);
