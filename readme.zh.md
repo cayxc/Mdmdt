@@ -1,11 +1,11 @@
+
 ![mdmdt-theme](./img/mdmdt-cover.png)
 # 关于Mdmdt主题
 
-[English Document](./readme.md)
+#### [English Document](./readme.md)
 
-**Mdmdt**是markdown minimalism document theme的缩写，意为：Markdown极简文档主题，是轻度定制的个性化Typora主题。
-
-**Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
+**Mdmdt** 是 markdown minimalism document theme 的缩写，意为：**Markdown极简文档主题**。
+**Mdmdt **是深度定制的个性化Typora主题，其目的是打造一个 **清爽极简** 的文档样式。
 
 相比于默认主题风格主要修改了以下几个方面：
 1. 简洁舒适的配色风格
@@ -22,28 +22,28 @@
 
 # 效果图
 
-亮色主题：
-
+### 亮色主题：
 ![mdmdt-light](./img/mdmdt-light.png)
-
----
-
 黑色主题：
-
 ![mdmdt-dark](./img/mdmdt-dark.png)
-
 ---
 
-文本框样式：
+### 源码模式：
+![mdmdt-source-light](./img/mdmdt-source-light.png)
 
-![mdmdt-1](./img/mdmdt-1.png)
-
+![mdmdt-source-dark](./img/mdmdt-source-dark.png)
+---
 ---
 
-源码模式：
+### 其他样式：
 
-![mdmdt-1](./img/mdmdt-3.png)
-![mdmdt-1](./img/mdmdt-4.png)
+![mdmdt-list](./img/mdmdt-list.png)
+![mdmdt-mermaid](./img/mdmdt-mermaid.png)
+![mdmdt-ui-1](./img/mdmdt-ui-1.png)
+![mdmdt-ui-2](./img/mdmdt-ui-2.png)
+![mdmdt-ui-3](./img/mdmdt-ui-3.jpg)
+![mdmdt-ui-4](./img/mdmdt-ui-4.png)
+![mdmdt-ui-5](./img/mdmdt-ui-5.png)
 
 # 如何使用
 
@@ -62,23 +62,39 @@
 2. 复制 `mdmdt-light.css` 或者 `mdmdt-dark.css` 到 `主题文件夹下`
 3. 重新打开Typora，在 `菜单栏` -> `主题` 选择 **Mdmdt Ligh** 或者 **mdmdt Dark** 主题，完成主题切换。
 
-# 导出html自动生成侧边栏目录和样式的
+# 导出html
 
-想要在导出的 .html 文件中 **自动生成侧边栏目录及样式**， 可以使用 **Mdtht**插件。
+想要导出 html 文件可以直接选择当前主题导出 html
 
-插件主页地址：[Mdtht-Github](https://github.com/cayxc/Mdtht)   [Mdtht-Gitee](https://gitee.com/cayxc/mdtht)
+**如果想要导出的 html 文件能自定义更多样式，可以使用 Mdtht 插件：**
 
-该插件配置简单（就是导入js和css），提供了丰富的功能，具体参考插件主页详情。
+插件主页地址：[Mdtht-Gitub地址](https://github.com/cayxc/Mdtht)   [Mdtht-Gitee地址](https://gitee.com/cayxc/mdtht)
 
-> [!IMPORTANT]
->
-> 注意：使用 **mdtht.js导出html时**，请选择和 mdtht.js 配套的 **mdtht.css** 样式文件。
+该插件提供了如下丰富功能：
 
-**mdth.tjs导出为 html 效果图（亮色）**
+1. 跟随系统自动切换亮色/暗色模式。
+2. 手动切换亮色/暗色模式。
+3. 自动生成目录编号和正文区标题索引。
+4. 可选择将第一个标题转换为文章标题，并将标题居中。
+5. 根据正文中标题的位置自动纠正目录层级。
+6. 显示/隐藏目录索引编号。
+7. 3种目录按钮样式切换。
+8. 根据当前阅读区位置自动追踪到所在目录和上层目录。
+9. 一键展开收起子目录。
+10. 一键展开收起侧边栏。
+11. 目录搜索。
+12. 代码高亮。
+13. 文字阴影模式。
+
+ **mdtht.js** 插件具体详情请参考插件主页。
+
+
+
+**mdtht.js导出为 html 效果图（亮色）**
 
 ---
 
-<img src="./img/mdmdt-2.png" alt="mdmdt-2" style="zoom:50%;" /> **mdth.tjs导出为 html 效果图（暗色）**
+<img src="./img/mdmdt-2.png" alt="mdmdt-2" style="zoom:50%;" /> **mdtht.js导出为 html 效果图（暗色）**
 
 ---
 

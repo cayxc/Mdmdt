@@ -2,48 +2,37 @@
 
 [English Document](./readme.md)
 
-**Mdmdt**是 markdown minimalism document theme 的缩写，意为：Markdown极简文档主题。
-
-**Mdmdt**[^1]是轻度定制的个性化Typora主题 。**Mdmdt**主题的目的是打造一个风格极简的文档样式，让使用者在专注于文档内容本身的同时能更加直观地分辨出不同的区块内容。
-
+**Mdmdt** 是markdown minimalism document theme 的缩写，意为：**Markdown极简文档主题**。
+**Mdmdt**[^1]是深度定制的个性化Typora主题，其目的是打造一个**清爽极简**的文档样式。
 > [!NOte]
 >
 > **注意：**mdmdd.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题 `this is code style`
 
-# 文本
-
+## 文本
 这些是文本样式效果： [这是超链接](typora.io),  **这是加粗文本**,  *这是斜体字*,  `this is code style` ， <u>这是下划线样式</u>,   ~~这是删除线效果~~,   ==这是文字高亮效果==， 上下标: $\LaTeX$, X^2^, H~2~O,   <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>, <kbd>Command+Q</kbd>  🐳 😀 🇨🇳
-
 [链接引用]: https://github.com/cayxc/mdmdt	"链接标题"
 [^1]: *Forked* from https://github.com/cayxc/mdmdt
-
 <!-- 这是注释内容...... -->
-
-# 图片
-
-<img src="./img/mdmdt-cover.png" alt="mdmdt-cover" style="zoom:80%;" />
 
 # 列表
 
-这是有序和无序列表样式：
+这是嵌套列表样式：
 
-1. 这是有序列表 1
-2. 这是有序列表 2
-   + 这是无序列表 1
-   + 这是无序列表 2
-     + [x] Something is DONE.
-     + [ ] Something is Not TODO.
+1. 这是有序列表 A
+2. 这是有序列表 B
+   - This is Item 1.
+   - This is Item 2. 
+      - [x] Something is Not TODO.
+      - [ ] Something is DONE.
 
-这是有序和无序列表样式：
+- K是有序列表 A
+- B是有序列表 B
+   1. BBhis is Item 1.
+   2. 有序列表 Item 2. 
+      - [ ] Something is Not TODO.
+      - [x] Something is DONE.
 
-- 这是无序列表
-- 这是无序列表
-- 这是无序列表
-  1. 这是有序列表 a
-  2. 这是有序列表 b
-  3. 这是有序列表 c
-
-# Code
+# 代码
 
 单行代码：`composer require --dev barryvdh/laravel-ide-helper`
 
@@ -75,7 +64,7 @@
  }
 ```
 
-# 表格
+# 表格样式
 
 | Left-Aligned            |                Center Aligned                | Right Aligned |
 | :---------------------- | :------------------------------------------: | ------------: |
@@ -84,7 +73,14 @@
 | This is the third line  |                   are neat                   |            $1 |
 
 # 引用文本框
+
 > This is a Normal text box ...... `this is code style`
+
+> [!NOTE]
+>
+> This is a Note text box ......
+>
+> > This is a Note text box ......
 
 > [!NOTE]
 >
@@ -106,17 +102,85 @@
 >
 > This is a Caution text box ......
 
-# Title
+# 图片
 
-## This is H2
+![mdmdt-4.png 加载失败...](./img/mdmdt-42.png)
 
-### This is H3
+# 图表Mermaid
 
-#### This is H4
+以下是 **Mermaid图表** 部分示例，更多图表类型请参考：[Mermaid图表](https://mermaid.js.org)
 
-##### This is H5
+```mermaid
+flowchart LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+```mermaid
+stateDiagram-v2
+    [*] --> Active
 
-###### This is h6
+    state Active {
+        [*] --> NumLockOff
+        NumLockOff --> NumLockOn : EvNumLockPressed
+        NumLockOn --> NumLockOff : EvNumLockPressed
+        --
+        [*] --> CapsLockOff
+        CapsLockOff --> CapsLockOn : EvCapsLockPressed
+        CapsLockOn --> CapsLockOff : EvCapsLockPressed
+        --
+        [*] --> ScrollLockOff
+        ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+        ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+    }
+```
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding GANTT diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :until isadded
+    Functionality added                 :milestone, isadded, 2014-01-25, 0d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h
+```
+
+# 一级标题1
+
+## 二级标题2
+
+### 三级标题3
+
+#### 四级标题4
+##### 五级标题5
+
+###### 六级标题6
+
+# TOC目录
+
+以下是 [TOC] 目录样式
 
 [TOC]	
-

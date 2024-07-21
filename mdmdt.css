@@ -1,10 +1,12 @@
 /*
+ * ------------------------------------------------------------------------
  * mdmdt.css
  * (c) 2024
  * Author: cayxc
  * Homepage:  https://gitee.com/cayxc/mdmdt  https://github.com/cayxc/Mdmdt
  * License: Apache-2.0
- */
+ * ------------------------------------------------------------------------
+*/
 :root {
   --bg-color: rgb(250, 250, 250);
   --bg-color2: rgb(237, 237, 239);
@@ -51,7 +53,7 @@
   --select-text-bg-color: var(--color-1-0-a);
   --monospace: monospace;
 
-  /*--mermaid-theme: neutral; */ /*or base, dark, forest, neutral, night */
+  /*--mermaid-theme: neutral;*/ /*or base, dark, forest, neutral, night*/
   --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
   --mermaid-sequence-numbers: on;
   --mermaid-flowchart-curve: linear;
@@ -75,7 +77,11 @@ body {
   background: var(--bg-color);
 }
 
-/*scroll style*/
+/*
+ * ------------------------
+ * scroll style
+ * ------------------------
+*/
 html,
 body div,
 body pre,
@@ -97,8 +103,10 @@ header {
 }
 
 /*
+ * -----------------------------------
  * h1 ~ h6
  * p, strong, dl, em, u, kbd, hr, mark
+ * -----------------------------------
 */
 h1, h2, h3, h4, h5, h6 {
   position: relative;
@@ -196,13 +204,16 @@ mark {
   -webkit-box-decoration-break: clone;
 }
 /*
+ * ------------------------
  * image
+ * ------------------------
 */
 img {
   display: block;
   max-width: 100%;
   border-radius: 8px;
   margin: 0 auto 16px;
+  color: var(--md-char-color);
 }
 span.md-image,
 span.md-image span.md-content,
@@ -226,21 +237,22 @@ span.md-image span.md-image-pick-file-btn {
   border-left-color: var(--border-color);
 }
 /*
- * a
- * link
+ * ------------------------
+ * a, link
+ * ------------------------
 */
 a {
   font-weight: 500;
   text-decoration: none;
   color: var(--color-1);
-  cursor: pointer;
   font-size: 16px;
 }
 a:hover,
+.md-link a:hover,
 .footnotes a:hover {
   color: var(--color-1);
   text-decoration: underline;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .unibody-window a:hover,
 content a:hover {
@@ -262,44 +274,60 @@ content a:hover {
   color: var(--color-1);
 }
 /*
- * ul
- * ol
+ * ------------------------
+ * ul, ol
+ * ------------------------
 */
+
 ul {
   margin-left: 0;
-  padding-left: 38px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 36px;
 }
 ol {
   margin-left: 0;
-  padding-left: 42px;
-}
-ol ul {
-  padding-left: 30px;
-}
-ul ol {
-  padding-left: 38px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 40px;
 }
 
-#write ul,
-#write ol {
-  list-style: auto;
-  margin: 10px auto;
-}
-#write ul li,
-#write ol li {
+ul li,
+ol li {
   margin-bottom: 10px;
 }
 
-#write ul > li > p {
-  margin: 0 0 0 -4px;
+ul > li > p {
+  margin: 0 0 0 -2px;
 }
 
-#write ol > li > p {
-  margin: 0 0 0 -8px;
+ol > li > p {
+  margin: 0 0 0 -6px;
+}
+input[type="checkbox"] + p{
+  margin-left: 6px !important;
+}
+ul > .task-list-item > input{
+  margin-left: -18px;
+}
+ul ul{
+  margin-left: -3px;
+}
+ol ol{
+  margin-left: -7px;
+}
+ol > li > ul{
+  margin-left: -7px;
+}
+
+ul > li > ol{
+  margin-left: -7px;
 }
 
 /*
+ * ------------------------
  * code
+ * ------------------------
 */
 code, tt {
   margin: 16px 0;
@@ -347,7 +375,9 @@ h2 code {
   padding: 2px 6px !important;
 }
 /*
+ * ------------------------
  * pre
+ * ------------------------
 */
 pre {
   margin: 16px 0;
@@ -371,7 +401,9 @@ pre .CodeMirror-sizer {
 }
 
 /*
+ * ------------------------
  * blockquote
+ * ------------------------
 */
 blockquote,
 .md-alert {
@@ -433,9 +465,9 @@ blockquote blockquote {
   color: var(--color-5);
 }
 /*
- * sup
- * sub
- * kbd
+ * ------------------------
+ * sup, sub, kbd
+ * ------------------------
 */
 sup, sub {
   font-size: 12px;
@@ -470,7 +502,9 @@ kbd {
 }
 
 /*
+ * ------------------------
  * table
+ * ------------------------
 */
 figure.table-figure {
   margin-top: 24px !important;
@@ -533,7 +567,9 @@ button#md-resize-grid:hover {
 }
 
 /*
+ * ------------------------
  * btn
+ * ------------------------
 */
 .btn,
 .btn-default,
@@ -574,7 +610,11 @@ button#md-resize-grid:hover {
   color: var(--color-1);
 }
 
-/*select*/
+/*
+ * ------------------------
+ * select
+ * ------------------------
+ */
 select {
   border-radius: 5px !important;
   border: 1px solid var(--border-color) !important;
@@ -583,7 +623,11 @@ select {
 option {
   background: var(--bg-color);
 }
-/*select*/
+/*
+ * ------------------------
+ * textarea
+ * ------------------------
+ */
 textarea {
   outline: none;
   padding: 5px;
@@ -594,7 +638,9 @@ textarea {
   font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif !important;
 }
 /*
+ * ------------------------
  * input
+ * ------------------------
 */
 html input,
 input {
@@ -682,17 +728,6 @@ input[type="radio"]:checked::after {
   -moz-border-radius: 50%;
 }
 
-#write ul li input,
-#write ol li input {
-  margin-left: -28px;
-}
-
-li.task-list-item {
-  margin-left: 20px;
-}
-li.task-list-item p {
-  margin-left: 10px;
-}
 span.md-comment {
   color: var(--md-char-color);
   opacity: 1;
@@ -703,6 +738,8 @@ span.md-comment {
 #write pre.md-meta-block:empty:before {
   color: var(--text-code);
 }
+
+/* #write */
 #write {
   width: 100%;
   max-width: 1400px;
@@ -714,9 +751,15 @@ span.md-comment {
 #typora-sidebar {
   border-right-color: var(--border-color);
 }
+
 /*
+ * ------------------------
  * typora-source
+ * ------------------------
 */
+#typora-source .CodeMirror-sizer{
+  padding-right: 0 !important;
+}
 #typora-source .CodeMirror-lines {
   width: 100%;
   max-width: 1400px;
@@ -764,7 +807,11 @@ span.md-comment {
   color: var(--color-2);
 }
 
-/* #toc-dropmenu */
+/*
+ * ------------------------
+ * #toc-dropmenu
+ * ------------------------
+*/
 #toc-dropmenu {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -779,8 +826,10 @@ span.md-comment {
   margin-bottom: 0;
 }
 /*
+ * ------------------------
  * sidebar
  * toc-content
+ * ------------------------
 */
 .outline-content {
   padding: 16px 16px 16px 18px;
@@ -795,15 +844,14 @@ span.md-comment {
 .outline-content li::before {
   content: '';
   width: 1px;
-  height: calc(100% + 6px);
+  height: calc(100% + 5px);
   position: absolute;
   z-index: 30;
   left: 0;
-  top: -6px;
+  top: 0;
   background: var(--border-color);
 }
 .outline-content > li:first-of-type::before {
-  height: 100%;
   top: 0;
 }
 .outline-content li a {
@@ -949,8 +997,10 @@ span.md-comment {
 }
 
 /*
+ * --------------------------
  * file-library-list
  * file-library-search-result
+ * --------------------------
 */
 #file-library-list,
 #file-library-search-result {
@@ -1021,7 +1071,9 @@ span.md-comment {
   background-color: var(--color-2-0-c);
 }
 /*
+ * ------------------------
  * file-library tree
+ * ------------------------
 */
 #file-library-tree {
   padding-top: 8px;
@@ -1067,7 +1119,11 @@ span.md-comment {
   color: var(--text-grey);
 }
 
-/*md-notification-container*/
+/*
+ * ------------------------
+ * md-notification-container
+ * ------------------------
+*/
 #md-notification {
   position: relative;
 }
@@ -1093,7 +1149,9 @@ span.md-comment {
 }
 
 /*
+ * ------------------------
  * TOC md-toc
+ * ------------------------
 */
 .md-toc {
   font-size: 14px;
@@ -1121,7 +1179,9 @@ span.md-comment {
 }
 
 /*
+ * ------------------------
  * code colors
+ * ------------------------ 
 */
 .cm-s-inner {
   background-color: transparent !important;
@@ -1177,7 +1237,7 @@ span.md-comment {
   text-decoration: underline;
   color: var(--text-code) !important;
 }
-/* apply to code fences with plan text */
+/* apply to code fences with plan text*/
 .md-fences {
   background-color: var(--bg-color2);
   color: var(--text-grey);
@@ -1196,7 +1256,9 @@ span.md-comment {
   border-radius: 5px;
 }
 /*
+ * ------------------------
  * export html
+ * ------------------------ 
 */
 body.typora-export {
   padding-left: 0;
@@ -1322,9 +1384,11 @@ body.typora-export {
 }
 
 /**
+ * --------------------------------------
  * unibody-window
  * Control UI on Windows/Linux (optional)
- */
+ * --------------------------------------
+*/
 .unibody-window #megamenu-menu-sidebar {
   --bg-color: #1b1b1f;
   --bg-color2: rgb(40, 42, 50);
@@ -1414,9 +1478,7 @@ body.typora-export {
   margin: 0 !important;
 }
 
-/*
- * .megamenu-menu
-}*/
+/* .megamenu-men */
 .megamenu-menu-panel .btn {
   padding: 6px 12px;
 }
@@ -1573,7 +1635,7 @@ body.typora-export {
   color: var(--color-1) !important;
 }
 
-/*context menu*/
+/* context menu */
 .context-menu {
   border-radius: 5px !important;
   padding: 5px !important;
@@ -1592,8 +1654,10 @@ body.typora-export {
 }
 
 /*
+ * ------------------------
  * UI-controls
  * dialogs
+ * ------------------------
 */
 #md-searchpanel input,
 #md-replace-type-label,
@@ -1616,7 +1680,7 @@ body.typora-export {
   line-height: 30px;
 }
 
-/*footer*/
+/* footer */
 #footer-word-count-info {
   border-radius: 5px;
   padding: 6px;
@@ -1635,7 +1699,9 @@ body.typora-export {
 }
 
 /**
+ * ---------------------------------
  * Control UI on Mac (optional)
+ * ---------------------------------
 */
 #typora-quick-open {
   background-color: var(--bg-color);
@@ -1661,8 +1727,10 @@ body.typora-export {
   color: var(--color-2) !important;
 }
 /*
+ * ------------------------
  * #root
  * .ty-preferences
+ * ------------------------
 */
 .sidebar {
   position: relative;
@@ -1741,18 +1809,43 @@ body.typora-export {
 #md-notification{
   top: -6px;
 }
-
-/*
- * diagram
-*/
-.md-diagram-panel-preview{
-  margin-top: 12px;
+.md-show-hint::after{
+  background: var(--color-1-0-b) !important;
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--color-1) !important;
 }
 
 /*
+ * ------------------------
+ * diagram
+ * ------------------------
+*/
+.md-diagram-panel{
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-color: var(--border-color) !important;
+  background: var(--bg-color2) !important;
+}
+.md-diagram{
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.md-diagram-panel > svg{
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/*
+ * ------------------------
  * dark style
+ * ------------------------
 */
 @media (prefers-color-scheme: dark) {
+  /* colors */
   :root {
     --bg-color: #1b1b1f;
     --bg-color2: rgb(40, 42, 50);
@@ -1768,6 +1861,7 @@ body.typora-export {
 
     --color-2-0-a: rgba(245, 145, 2, 0.3);
     --color-2-0-b: rgba(245, 145, 2, 0.12);
+    --color-2-0-c: rgba(245, 145, 2, 0.4);
 
     --color-3-0-a: rgba(3, 183, 54, 0.3);
     --color-3-0-b: rgba(3, 183, 54, 0.12);
@@ -1781,7 +1875,7 @@ body.typora-export {
     --md-char-color: #667c89ff;
     --mermaid-theme: dark;
   }
-  /*scroll style*/
+  /* scroll style */
   html,
   body div,
   body pre,
@@ -1813,7 +1907,9 @@ body.typora-export {
 }
 
 /*
+ * ------------------------
  * @media print
+ * ------------------------
 */
 @media print {
   table,
@@ -1825,7 +1921,9 @@ body.typora-export {
   }
 }
 /*
+ * ------------------------
  * @media screen
+ * ------------------------
 */
 @media screen and (max-width: 992px) {
   #write {
