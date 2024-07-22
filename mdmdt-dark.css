@@ -277,7 +277,6 @@ content a:hover {
  * ul, ol
  * ------------------------
 */
-
 ul {
   margin-left: 0;
   margin-top: 10px;
@@ -310,7 +309,7 @@ ul > .task-list-item > input{
   margin-left: -18px;
 }
 ul ul{
-  margin-left: -3px;
+  margin-left: -2px;
 }
 ol ol{
   margin-left: -7px;
@@ -320,7 +319,7 @@ ol > li > ul{
 }
 
 ul > li > ol{
-  margin-left: -7px;
+  margin-left: -2px;
 }
 
 /*
@@ -1388,16 +1387,33 @@ body.typora-export {
  * Control UI on Windows/Linux (optional)
  * --------------------------------------
 */
-.unibody-window ul > li > p {
-  margin: 0;
+body.unibody-window{
+  letter-spacing: 1px;
 }
-.unibody-window ol > li > p {
-  margin: 0;
+.unibody-window ul,
+.unibody-window ol{
+  padding-left: 34px;
+}
+.unibody-window ul ul,
+.unibody-window ol ol,
+.unibody-window ul > li > ol,
+.unibody-window ol > li > ul{
+  margin-left: 0;
 }
 
-.unibody-window #megamenu-menu-sidebar {
-  overflow: hidden;
+.unibody-window ol > li > p,
+.unibody-window ul > li > p{
+  margin: 0;
+}
+.unibody-window input[type="checkbox"] + p{
+  margin-left: 8px !important;
+}
+.unibody-window ul > .task-list-item > input{
+  margin-left: -16px;
+}
+#megamenu-menu-sidebar {
   border-right: 1px solid var(--border-color);
+  box-shadow: none;
 }
 #megamenu-menu-sidebar .megamenu-menu-list {
   border: none;

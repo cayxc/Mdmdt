@@ -16,6 +16,29 @@
 
 # 列表
 
+这些是列表样式效果:
+
+
+1. 这是有序列表 A
+2. 这是有序列表 B
+
+- This is Item 1.
+- This is Item 2. 
+- [x] Something is Not TODO.
+- [ ] Something is DONE.
+---
+
+1. 这是有序列表 A
+2. 这是有序列表 B
+   1. 这是有序列表 A
+   2. 这是有序列表 B
+
+- This is Item 1.
+- This is Item 2.
+   - This is Item 1.
+   - This is Item 2. 
+
+---
 这是嵌套列表样式：
 
 1. 这是有序列表 A
@@ -25,10 +48,10 @@
       - [x] Something is Not TODO.
       - [ ] Something is DONE.
 
-- K是有序列表 A
-- B是有序列表 B
-   1. BBhis is Item 1.
-   2. 有序列表 Item 2. 
+- 这是有序列表 A
+- 这是有序列表 B
+   1. This is Item 1.
+   2. This is Item 2. 
       - [ ] Something is Not TODO.
       - [x] Something is DONE.
 
