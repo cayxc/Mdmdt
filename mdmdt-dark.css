@@ -1388,6 +1388,13 @@ body.typora-export {
  * Control UI on Windows/Linux (optional)
  * --------------------------------------
 */
+.unibody-window ul > li > p {
+  margin: 0;
+}
+.unibody-window ol > li > p {
+  margin: 0;
+}
+
 .unibody-window #megamenu-menu-sidebar {
   overflow: hidden;
   border-right: 1px solid var(--border-color);

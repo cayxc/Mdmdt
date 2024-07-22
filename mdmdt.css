@@ -1389,6 +1389,13 @@ body.typora-export {
  * Control UI on Windows/Linux (optional)
  * --------------------------------------
 */
+.unibody-window ul > li > p {
+  margin: 0;
+}
+.unibody-window ol > li > p {
+  margin: 0;
+}
+
 .unibody-window #megamenu-menu-sidebar {
   --bg-color: #1b1b1f;
   --bg-color2: rgb(40, 42, 50);
