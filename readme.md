@@ -22,21 +22,22 @@ Compared to the default theme style, the following aspects have been mainly modi
 
 # Design sketch
 
-### Light theme:
+#### Light theme
+
 ![mdmdt-light](./img/mdmdt-light.png)
-### Dark theme:
+#### Dark theme
 
 ![mdmdt-dark](./img/mdmdt-dark.png)
+
 ---
 
-### Source code mode:
+#### Source code mode
+
 ![mdmdt-source-light](./img/mdmdt-source-light.png)
 
 ![mdmdt-source-dark](./img/mdmdt-source-dark.png)
 
----
-
-### Other styles:
+#### Other styles
 
 ![mdmdt-list](./img/mdmdt-list.png)
 ![mdmdt-mermaid](./img/mdmdt-mermaid.png)

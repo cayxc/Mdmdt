@@ -23,20 +23,24 @@
 
 # 效果图
 
-### 亮色主题：
+#### 亮色主题
+
 ![mdmdt-light](./img/mdmdt-light.png)
-黑色主题：
+
+#### 黑色主题
+
 ![mdmdt-dark](./img/mdmdt-dark.png)
+
 ---
 
-### 源码模式：
+#### 源码模式
+
 ![mdmdt-source-light](./img/mdmdt-source-light.png)
 
 ![mdmdt-source-dark](./img/mdmdt-source-dark.png)
----
----
 
-### 其他样式：
+---
+#### 其他样式
 
 ![mdmdt-list](./img/mdmdt-list.png)
 ![mdmdt-mermaid](./img/mdmdt-mermaid.png)
