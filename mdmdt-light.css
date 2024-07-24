@@ -1388,28 +1388,44 @@ body.typora-export {
  * Control UI on Windows/Linux (optional)
  * --------------------------------------
 */
-body.unibody-window{
+body.unibody-window,
+body.typora-export{
   letter-spacing: 1px;
 }
 .unibody-window ul,
-.unibody-window ol{
+.typora-export ul{
   padding-left: 34px;
+}
+
+.unibody-window ol,
+.typora-export ol{
+  padding-left: 36px;
 }
 .unibody-window ul ul,
 .unibody-window ol ol,
 .unibody-window ul > li > ol,
-.unibody-window ol > li > ul{
+.unibody-window ol > li > ul,
+.typora-export ul ul,
+.typora-export ol ol,
+.typora-export ul > li > ol,
+.typora-export ol > li > ul{
   margin-left: 0;
 }
 
-.unibody-window ol > li > p,
-.unibody-window ul > li > p{
+.unibody-window ul > li > p,
+.typora-export ul > li > p{
   margin: 0;
 }
-.unibody-window input[type="checkbox"] + p{
+.unibody-window ol > li > p,
+.typora-export ol > li > p{
+  margin: 0 0 0 -2px;
+}
+.unibody-window input[type="checkbox"] + p,
+.typora-export input[type="checkbox"] + p{
   margin-left: 8px !important;
 }
-.unibody-window ul > .task-list-item > input{
+.unibody-window ul > .task-list-item > input,
+.typora-export ul > .task-list-item > input{
   margin-left: -16px;
 }
 .unibody-window #megamenu-menu-sidebar {

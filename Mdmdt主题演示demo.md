@@ -4,7 +4,6 @@
 
 **Mdmdt** 是markdown minimalism document theme 的缩写，意为：**Markdown极简文档主题**。
 **Mdmdt**[^1]是深度定制的个性化Typora主题，其目的是打造一个**清爽极简**的文档样式。
-
 > [!NOte]
 >
 > **注意：**mdmdd.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题 `this is code style`
@@ -55,9 +54,6 @@
    2. This is Item 2. 
       - [ ] Something is Not TODO.
       - [x] Something is DONE.
-
-
-[^1]: *Forked* from https://github.com/cayxc/mdmdt
 
 # 代码
 
