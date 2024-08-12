@@ -66,6 +66,7 @@ html {
   color: var(--text-color);
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
