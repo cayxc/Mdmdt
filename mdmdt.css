@@ -1267,6 +1267,7 @@ body.typora-export {
 }
 .typora-export-show-outline .typora-export-content {
   max-width: 100%;
+  height: 100vh;
 }
 .typora-export-sidebar {
   margin-right: 0;
