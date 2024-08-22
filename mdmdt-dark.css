@@ -280,20 +280,20 @@ content a:hover {
 */
 ul {
   margin-left: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-left: 36px;
 }
 ol {
   margin-left: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-left: 40px;
 }
 
 ul li,
 ol li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 ul > li > p {
