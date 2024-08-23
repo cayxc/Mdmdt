@@ -746,6 +746,7 @@ span.md-comment {
   margin: 0 auto;
   padding: 0 96px 32px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #typora-sidebar {
