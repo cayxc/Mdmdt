@@ -303,11 +303,8 @@ ul > li > p {
 ol > li > p {
   margin: 0 0 0 -6px;
 }
-input[type="checkbox"] + p {
-  margin-left: 6px !important;
-}
 ul > .task-list-item > input {
-  margin-left: -18px;
+  margin-left: -22px;
 }
 ul ul {
   margin-left: -2px;
@@ -741,7 +738,6 @@ span.md-comment {
 /* #write */
 #write {
   width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
   padding: 0 96px 32px;
   overflow-x: hidden;
@@ -1265,9 +1261,12 @@ body.typora-export {
   padding-left: 0;
   padding-right: 0;
 }
-.typora-export-show-outline .typora-export-content {
-  max-width: 100%;
+.typora-export-content,
+.typora-export-show-outline .typora-export-content{
+  width: 100vw;
+  max-width: 1920px;
   height: 100vh;
+  margin: 0 auto;
 }
 .typora-export-sidebar {
   margin-right: 0;
@@ -1427,13 +1426,10 @@ body.typora-export {
 .typora-export #write ol > li > p {
   margin: 0 0 0 -2px;
 }
-.unibody-window #write input[type="checkbox"] + p,
-.typora-export #write input[type="checkbox"] + p {
-  margin-left: 8px !important;
-}
+
 .unibody-window #write ul > .task-list-item > input,
 .typora-export #write ul > .task-list-item > input {
-  margin-left: -16px;
+  margin-left: -22px;
 }
 
 .unibody-window #megamenu-menu-sidebar {
@@ -1906,43 +1902,6 @@ body.typora-export {
   }
   pre {
     word-wrap: break-word;
-  }
-}
-/*
- * ------------------------
- * @media screen
- * ------------------------
-*/
-@media screen and (max-width: 992px) {
-  #write {
-    padding: 0 32px 32px;
-  }
-  #typora-source .CodeMirror-lines {
-    padding: 32px;
-  }
-}
-
-@media screen and (min-width: 993px)  and (max-width: 1200px) {
-  #write {
-    padding: 0 64px 32px;
-  }
-  #typora-source .CodeMirror-lines {
-    padding: 32px 64px;
-  }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1920px) {
-  #write {
-    padding: 0 96px 32px;
-  }
-}
-
-@media screen and (min-width: 1921px) {
-  #write {
-    max-width: 1600px;
-  }
-  #typora-source .CodeMirror-lines {
-    max-width: 1600px;
   }
 }
 
