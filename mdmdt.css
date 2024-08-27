@@ -830,7 +830,7 @@ span.md-comment {
  * ------------------------
 */
 .outline-content {
-  padding: 16px 16px 16px 18px;
+  padding: 16px;
   font-size: 14px !important;
 }
 .outline-content li {
