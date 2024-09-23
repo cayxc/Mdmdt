@@ -176,7 +176,7 @@ p {
 
 strong {
   font-weight: bold;
-  color: var(--title-color);
+  color: white;
 }
 
 u {
