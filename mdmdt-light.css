@@ -84,6 +84,7 @@ body {
 */
 ::-webkit-scrollbar {
   width: 8px !important;
+  height: 8px !important;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--border-color) !important;
@@ -752,7 +753,7 @@ span.md-comment {
   padding: 0 96px 32px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding: 6px;
+  scroll-padding: 10px;
 }
 
 #typora-sidebar {
