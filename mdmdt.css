@@ -15,7 +15,7 @@
   --text-grey: #666;
   --text-code: #2f479f;
   --title-color: #070909;
-  --border-color: #d3d3d3ff;
+  --border-color: #d2d2d2;
 
   --color-1: #3e69d7;
   --color-1-0-a: rgba(62, 105, 215, 0.15);
@@ -66,7 +66,6 @@ html {
   color: var(--text-color);
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -83,7 +82,17 @@ body {
  * scroll style
  * ------------------------
 */
-html,
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color) !important;
+  border-radius: 4px !important;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color2) !important;
+}
+body,
 body div,
 body pre,
 body ul,
@@ -744,6 +753,7 @@ span.md-comment {
   padding: 0 96px 32px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding: 6px;
 }
 
 #typora-sidebar {
@@ -1266,7 +1276,7 @@ body.typora-export {
 .typora-export-content,
 .typora-export-show-outline .typora-export-content{
   width: 100vw;
-  max-width: 1920px;
+  max-width: 2560px;
   height: 100vh;
   margin: 0 auto;
 }
@@ -1921,15 +1931,21 @@ body.typora-export {
     --mermaid-theme: dark;
   }
   /* scroll style */
-  html,
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-grey) !important;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-color2) !important;
+  }
+  body,
   body div,
   body pre,
   body ul,
   body section,
   body content,
   body #write {
-    scrollbar-color: var(--text-grey) var(--bg-color2) !important;
     scrollbar-width: thin !important;
+    scrollbar-color: var(--text-grey) var(--bg-color2) !important;
   }
   strong{
     color: white;
@@ -1969,6 +1985,35 @@ body.typora-export {
   }
 }
 
+/*
+ * ------------------------
+ * @media print
+ * ------------------------
+*/
+@media print {
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+  }
+}
 
+/*
+ * ------------------------
+ * @media screen
+ * ------------------------
+*/
+@media screen and (max-width: 768px) {
+  #write{
+    padding: 0 32px 32px;
+  }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  #write {
+    padding: 0 64px 32px;
+  }
+}
 
