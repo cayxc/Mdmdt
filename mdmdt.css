@@ -479,7 +479,6 @@ blockquote blockquote {
 */
 sup, sub {
   font-size: 12px;
-  padding: 0 10px;
 }
 sup.md-footnote {
   background: transparent;
