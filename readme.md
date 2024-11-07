@@ -5,10 +5,9 @@
 ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt.svg)
 ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
 ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt.svg)
-![GitHub stars](https://img.shields.io/github/stars/cayxc/Mdmdt.svg)
+![GitHub stars](https://img.shields.io/github/stars/cayxc/Mdmdt?&color=orange)
 ![GitHub downloads](https://img.shields.io/github/downloads/cayxc/Mdmdt/total)
 
----
 #### [中文文档](./readme.zh.md)
 
 **Mdmdt** is an abbreviation for Markdown Minimalism Document Theme, meaning: Markdown Minimalism Document Theme.
