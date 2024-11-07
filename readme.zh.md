@@ -2,6 +2,13 @@
 ![mdmdt-theme](./img/mdmdt-cover.png)
 # 关于Mdmdt主题
 
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt?include_prereleases&color=blue&logo=hack-the-box)
+![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt?style=flat&logo=github&color=red)
+![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
+![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=github&color=turquoise)
+![GitHub Repo stars](https://img.shields.io/github/stars/cayxc/Mdmdt?style=flat&logo=github&color=green)
+![GitHub downloads](https://img.shields.io/github/downloads/cayxc/Mdmdt/total)
+
 #### [English Document](./readme.md)
 
 **Mdmdt** 是 markdown minimalism document theme 的缩写，意为：**Markdown极简文档主题**。
