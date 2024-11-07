@@ -1,5 +1,9 @@
 ![mdmdt-theme](./img/mdmdt-cover.png)
 # About Mdmdt theme
+![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt.svg)
+![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
+![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt.svg)
+![GitHub stars](https://img.shields.io/github/stars/cayxc/Mdmdt.svg)
 
 #### [中文文档](./readme.zh.md)
 
