@@ -1,7 +1,7 @@
 ![mdmdt-theme](./img/mdmdt-cover.png)
 # About Mdmdt theme
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc?include_prereleases)
+![Latest Release Version](https://img.shields.io/github/v/release/cayxc/Mdmdt)
 ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt.svg)
 ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
 ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt.svg)
