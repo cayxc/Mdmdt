@@ -5,7 +5,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt?style=flat&logo=issues&color=red)
 ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
 ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=forks&color=turquoise)
-![GitHub Repo stars](https://img.shields.io/github/stars/cayxc/Mdmdt?style=flat&logo=stars&color=green)
+![GitHub Repo stars](https://img.shields.io/github/stars/cayxc/Mdmdt?style=flat&logo=github&color=green)
 ![GitHub downloads](https://img.shields.io/github/downloads/cayxc/Mdmdt/total?style=flat&logo=downloads&color=yellow)
 
 #### [中文文档](./readme.zh.md)
