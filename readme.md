@@ -1,11 +1,13 @@
 ![mdmdt-theme](./img/mdmdt-cover.png)
 # About Mdmdt theme
 
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc?include_prereleases)
 ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt.svg)
 ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
 ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt.svg)
 ![GitHub stars](https://img.shields.io/github/stars/cayxc/Mdmdt.svg)
-![GitHub downloads](https://img.shields.io/github/downloads/cayxc/Mdmdt/total?logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiPjxwYXRoIGQ9Ik0zNjIuNjYgNDIxLjMxVjg4YzAtMTMuMjUgMTAuNzUtMjQgMjQtMjRoMjUwLjY5YzEzLjI1IDAgMjQgMTAuNzUgMjQgMjR2MzMzLjMxYzAgOC44NCA3LjE2IDE2IDE2IDE2aDE2OS4zN2MxNC4yNSAwIDIxLjM5IDE3LjIzIDExLjMxIDI3LjMxbC0zMjkuMDkgMzI5LjFjLTkuMzcgOS4zNy0yNC41NyA5LjM3LTMzLjk0IDBsLTMyOS4wNC0zMjkuMWMtMTAuMDgtMTAuMDgtMi45NC0yNy4zMSAxMS4zMS0yNy4zMWgxNjkuMzljOC44NCAwIDE2LTcuMTYgMTYtMTZ6IG0tMjA4LjAxIDQ2NGg3MTQuNjljOC44NCAwIDE2IDcuMTYgMTYgMTZWOTQ0YzAgOC44NC03LjE2IDE2LTE2IDE2SDE1NC42NWMtOC44NCAwLTE2LTcuMTYtMTYtMTZ2LTQyLjY5YzAtOC44NCA3LjE2LTE2IDE2LTE2eiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==)
+![GitHub downloads](https://img.shields.io/github/downloads/cayxc/Mdmdt/total)
+
 ---
 #### [中文文档](./readme.zh.md)
 
