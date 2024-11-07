@@ -4,7 +4,7 @@
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt?include_prereleases&color=blue&logo=hack-the-box)
 ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt?style=flat&logo=github&color=red)
 ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg)
-![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=github&color=yellow)
+![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=github&color=#5be504)
 ![GitHub Repo stars](https://img.shields.io/github/stars/cayxc/Mdmdt?style=flat&logo=github&color=green)
 ![GitHub downloads](https://img.shields.io/github/downloads/cayxc/Mdmdt/total)
 
