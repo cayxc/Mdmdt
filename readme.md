@@ -11,6 +11,7 @@
 #### [中文文档](./readme.zh.md)
 
 **Mdmdt** is an abbreviation for Markdown Minimalism Document Theme, meaning: Markdown Minimalism Document Theme.
+
 **Mdmdt** is a deeply customized personalized Typora theme, aimed at creating a **refreshing and minimalist** document style.
 
 Compared to the default theme style, the following aspects have been mainly modified:
