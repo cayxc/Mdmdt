@@ -74,6 +74,12 @@
 2. 复制 `mdmdt-light.css` 或者 `mdmdt-dark.css` 到 `主题文件夹下`
 3. 重新打开Typora，在 `菜单栏` -> `主题` 选择 **Mdmdt Ligh** 或者 **mdmdt Dark** 主题，完成主题切换。
 
+# 字体选择建议
+
+为了获取较好的文字和代码显示效果，建议在电脑上安装 `PingFang字体` 和 `monospace字体`。
+
+本主题文字默认字体为 PingFang 字体，代码默认字体为 monospace 字体。提示：MAC 上已自带这两种字体，无需额外安装。
+
 # 导出html
 
 想要导出 html 文件可以直接选择当前主题导出 html
