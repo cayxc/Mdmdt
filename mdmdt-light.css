@@ -798,12 +798,11 @@ span.md-comment {
 .md-htmlblock:hover .md-htmlblock-container,
 .md-htmlblock:hover .md-rawblock-tooltip,
 .md-math-block:hover .md-math-container,
-.md-math-block:hover .md-rawblock-tooltip {
-  background: var(--color-1-0-b);
-}
-.md-rawblock-on-edit:hover .md-rawblock-tooltip {
+.md-math-block:hover .md-rawblock-tooltip,
+.md-rawblock-on-edit:hover .md-rawblock-tooltip{
   background: var(--bg-color2);
 }
+
 /* #write */
 #write {
   width: 100%;
