@@ -746,6 +746,67 @@ span.md-comment {
   color: var(--text-code);
 }
 
+/*md-htmlblock*/
+.md-htmlblock-panel,
+.md-htmlblock-container,
+.md-htmlblock-container .md-htmlblock-panel-placeholder {
+  background: transparent;
+}
+.md-htmlblock-container,
+.md-math-container {
+  border-radius: 8px;
+  background: var(--bg-color);
+}
+.md-math-container {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.md-rawblock-on-edit .md-htmlblock-panel,
+.md-rawblock-on-edit .md-mathblock-panel {
+  border-radius: 8px;
+  background: var(--bg-color2);
+  padding: 5px 10px;
+}
+.md-mathblock-panel .md-rawblock-control {
+  background: transparent;
+}
+.md-mathblock-panel .code-tooltip {
+  box-shadow: none;
+  margin: 16px 6px 0;
+  border-top: 1px solid var(--border-color);
+  border-radius: 0;
+}
+.md-rawblock-on-edit .md-rawblock-input {
+  padding: 0;
+  background: transparent;
+}
+.md-rawblock .md-rawblock-tooltip {
+  height: auto;
+  margin-top: -10px;
+  float: right;
+  border-radius: 5px;
+  background: var(--bg-color2);
+  animation: none !important;
+}
+.md-rawblock .md-rawblock-tooltip span {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.md-rawblock .md-rawblock-tooltip-edit-btn:hover {
+  background: transparent;
+}
+
+.md-htmlblock:hover .md-htmlblock-container,
+.md-htmlblock:hover .md-rawblock-tooltip,
+.md-math-block:hover .md-math-container,
+.md-math-block:hover .md-rawblock-tooltip {
+  background: var(--color-1-0-b);
+}
+.md-rawblock-on-edit:hover .md-rawblock-tooltip {
+  background: var(--bg-color2);
+}
+
 /* #write */
 #write {
   width: 100%;
@@ -1274,7 +1335,7 @@ body.typora-export {
   padding-right: 0;
 }
 .typora-export-content,
-.typora-export-show-outline .typora-export-content{
+.typora-export-show-outline .typora-export-content {
   width: 100vw;
   max-width: 2560px;
   height: 100vh;
@@ -1947,7 +2008,7 @@ body.typora-export {
     scrollbar-width: thin !important;
     scrollbar-color: var(--text-grey) var(--bg-color2) !important;
   }
-  strong{
+  strong {
     color: white;
   }
   mark {
@@ -1961,7 +2022,9 @@ body.typora-export {
     border-right: 1px solid var(--border-color);
     box-shadow: none;
   }
-
+  .CodeMirror div.CodeMirror-cursor {
+    border-color: var(--text-color);
+  }
   .export-detail,
   .export-item.active,
   .export-items-list-control {
@@ -2006,7 +2069,7 @@ body.typora-export {
  * ------------------------
 */
 @media screen and (max-width: 768px) {
-  #write{
+  #write {
     padding: 0 32px 32px;
   }
 }
