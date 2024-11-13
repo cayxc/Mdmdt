@@ -54,6 +54,12 @@ Compared to the default theme style, the following aspects have been mainly modi
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
 ![mdmdt-ui-5](./img/mdmdt-ui-5.png)
 
+# Font selection suggestions
+
+To achieve better text and code display effects, it is recommended to install `PingFang font` and `monospace font` on the computer.
+
+The default font for this theme text is PingFang font, and the default font for code is monospace font. Tip: These two fonts are already built-in on the Mac and do not require additional installation.
+
 # How to use it
 
 Using custom themes is very simple, as follows:
@@ -71,12 +77,6 @@ If you only want to use a separate bright or dark theme, the method is as follow
 1. Open `Preferences` -> `Appearance` -> `Open Theme Folder`
 2. Copy `mdmdt-light.css` or `mdmdt-dark.css ` to the theme folder.
 3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt Light** or **Mdmdt Dark** theme and complete the theme switch.
-
-# Font selection suggestions
-
-To achieve better text and code display effects, it is recommended to install `PingFang font` and `monospace font` on the computer.
-
-The default font for this theme text is PingFang font, and the default font for code is monospace font. Tip: These two fonts are already built-in on the MAC and do not require additional installation.
 
 # Export HTML
 
