@@ -192,6 +192,7 @@ strong {
 
 u {
   text-decoration-color: var(--title-color);
+  text-underline-offset: 4px;
 }
 
 em {
