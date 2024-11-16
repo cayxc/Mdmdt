@@ -808,7 +808,6 @@ span.md-comment {
   width: 100%;
   margin: 0 auto;
   padding: 0 96px 32px;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding: 10px;
 }
