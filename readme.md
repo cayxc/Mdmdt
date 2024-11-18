@@ -54,12 +54,6 @@ Compared to the default theme style, the following aspects have been mainly modi
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
 ![mdmdt-ui-5](./img/mdmdt-ui-5.png)
 
-# Font selection suggestions
-
-To achieve better text and code display effects, it is recommended to install `PingFang font` and `monospace font` on the computer.
-
-The default font for this theme text is PingFang font, and the default font for code is monospace font. Tip: These two fonts are already built-in on the Mac and do not require additional installation.
-
 # How to use it
 
 Using custom themes is very simple, as follows:

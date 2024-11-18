@@ -57,12 +57,6 @@
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
 ![mdmdt-ui-5](./img/mdmdt-ui-5.png)
 
-# 字体选择建议
-
-为了获取较好的文字和代码显示效果，建议在电脑上安装 `PingFang字体` 和 `monospace字体`。
-
-本主题文字默认字体为 PingFang 字体，代码默认字体为 monospace 字体。提示：Mac 上已自带这两种字体，无需额外安装。
-
 # 如何使用
 
 使用自定义主题非常简单，方法如下：
