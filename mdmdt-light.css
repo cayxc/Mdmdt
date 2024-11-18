@@ -73,8 +73,11 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif !important;
+  font-family: "PingFang SC", Helvetica, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif !important;
   background: var(--bg-color);
+}
+body.os-windows{
+  font-family: Helvetica, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif !important;
 }
 
 /*
@@ -407,7 +410,11 @@ pre pre {
 pre .CodeMirror-sizer {
   padding-left: 10px;
 }
-
+/*windows下code字体*/
+.os-windows pre,
+.os-windows code {
+  font-family: initial !important;
+}
 /*
  * ------------------------
  * blockquote
@@ -811,6 +818,7 @@ span.md-comment {
   padding: 0 96px 32px;
   scroll-behavior: smooth;
   scroll-padding: 10px;
+  overflow-x: scroll;
 }
 
 #typora-sidebar {
