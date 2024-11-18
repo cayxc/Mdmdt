@@ -1837,6 +1837,7 @@ body.typora-export {
 .typora-quick-open-item,
 .md-hover-tip .code-tooltip-content {
   border-radius: 5px;
+  overflow-x: scroll;
 }
 .code-tooltip.md-hover-tip,
 .md-hover-tip .code-tooltip-content,
