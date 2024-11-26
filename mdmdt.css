@@ -194,7 +194,7 @@ strong {
 
 u {
   text-decoration-color: var(--title-color);
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 em {
@@ -205,8 +205,8 @@ del {
   font-size: 16px;
   color: var(--text-grey);
   text-decoration: line-through;
-  text-decoration-color: var(--color-2);
-  -moz-text-decoration-color: var(--color-2);
+  text-decoration-color: var(--color-5);
+  -moz-text-decoration-color: var(--color-5);
 }
 
 mark {
@@ -260,7 +260,7 @@ a {
   text-decoration: none;
   color: var(--color-1);
   font-size: 16px;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 a:hover,
 .md-link a:hover,
@@ -812,7 +812,9 @@ span.md-comment {
 .md-rawblock-on-edit:hover .md-rawblock-tooltip {
   background: var(--bg-color2);
 }
-
+.md-inline-math script{
+  color: #f9007c;
+}
 /* #write */
 #write {
   width: 100%;
