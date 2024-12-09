@@ -97,17 +97,11 @@
 
 # 引用文本框
 
-> This is a Normal text box ...... `this is code style`
-
 > [!NOTE]
 >
-> This is a Note text box ......
+> This is a Note text box ......`this is code style`
 >
 > > This is a Note text box ......
-
-> [!NOTE]
->
-> This is a Note text box ......
 
 > [!TIP]
 >
@@ -127,7 +121,7 @@
 
 # 图片
 
-![mdmdt-4.png 加载失败...](./img/mdmdt-42.png)
+![mdmdt-4.png 加载失败...](./img/mdmdt-2.png)
 
 # 图表Mermaid
 
