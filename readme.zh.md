@@ -50,28 +50,7 @@
 #### 其他样式
 
 ![mdmdt-list](./img/mdmdt-list.png)
-> [!NOTE]
->
-> This is a Note text box ...... `this is code style`
->
-> > This is a Note text box ......
-
-> [!TIP]
->
-> This is a Tip text box ......
-
-> [!IMPORTANT]
->
-> This is a Important text box ......
-
-> [!WARNING]
->
-> This is a Warning text box ......
-
-> [!CAUTION]
->
-> This is a Caution text box ......
-
+![mdmdt-list](./img/mdmdt-1.png)
 ![mdmdt-mermaid](./img/mdmdt-mermaid.png)
 ![mdmdt-ui-1](./img/mdmdt-ui-1.png)
 ![mdmdt-ui-2](./img/mdmdt-ui-2.png)
