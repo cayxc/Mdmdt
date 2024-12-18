@@ -72,6 +72,16 @@ If you only want to use a separate bright or dark theme, the method is as follow
 2. Copy `mdmdt-light.css` or `mdmdt-dark.css ` to the theme folder.
 3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt Light** or **Mdmdt Dark** theme and complete the theme switch.
 
+# Modify font
+
+If you are not satisfied with the font, you can modify the corresponding font as follows:
+
+1. Modify the font of the main text, find `body {font-family:"PingFang SC",..., !important;}` 、`body.os-windows {font-family: Helvetica,..., !important;}` and `textarea {...}`, and add the font you want to use at the beginning of `font family:`, such as `font-family: "name of the font you want to use", Helvetica, ..., !important;`
+
+2. Modify the font of the code, find `code, tt {...}` and `pre {...}`, and add `font-family: "name of the font you want to use" !important;`  Then modify `.os-windows pre,.os-windows code {font-family: initial !important;}` , such as `font-family: "name of the font you want to use" !important;`
+
+**Attention: The prerequisite for changing the font is that the corresponding font is installed on your computer, otherwise the modification is invalid.**
+
 # Export HTML
 
 To export an HTML file, you can directly select the current theme to export HTML

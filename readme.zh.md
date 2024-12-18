@@ -75,6 +75,15 @@
 2. 复制 `mdmdt-light.css` 或者 `mdmdt-dark.css` 到 `主题文件夹下`
 3. 重新打开Typora，在 `菜单栏` -> `主题` 选择 **Mdmdt Ligh** 或者 **mdmdt Dark** 主题，完成主题切换。
 
+# 修改字体
+
+如果您对字体不满意，可以修改相应的字体，方法如下：
+
+1. 修改正文的字体，找到：`body {font-family: "PingFang SC", ..., !important;}`、`body.os-windows {font-family: Helvetica, ..., !important;}` 和 `textarea {...}`，在 `font-family:` 中开头位置添加你想使用的字体，如：`font-family: 想使用的字体名称, Helvetica, ..., !important;`
+2. 修改代码的字体，找到：`code,tt{...}` 和 `pre{...}`，添加 `font-family: 想使用的字体名称, !important;`，然后修改 `.os-windows pre,.os-windows code {font-family: initial !important;}` 中的font-family，如：`font-family: 想使用的字体名称,  !important;`
+
+**注意：更换字体的前提是你电脑上要安装有相应的字体，否则修改无效**。
+
 # 导出html
 
 想要导出 html 文件可以直接选择当前主题导出 html
