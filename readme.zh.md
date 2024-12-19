@@ -30,33 +30,20 @@
 
 # 效果图
 
-#### 亮色主题
-
-![mdmdt-light](./img/mdmdt-light.png)
-
-#### 黑色主题
-
-![mdmdt-dark](./img/mdmdt-dark.png)
-
----
-
-#### 源码模式
-
-![mdmdt-source-light](./img/mdmdt-source-light.png)
-
-![mdmdt-source-dark](./img/mdmdt-source-dark.png)
+![mdmdt-text](./img/mdmdt-text.jpg)
+![mdmdt-source](./img/mdmdt-source.jpg)
+![mdmdt-code](./img/mdmdt-code.jpg)
+![mdmdt-list](./img/mdmdt-list.jpg)
+![mdmdt-blockquote](./img/mdmdt-blockquote.jpg)
+![mdmdt-mermaid](./img/mdmdt-mermaid.jpg)
+![mdmdt-title](./img/mdmdt-title.jpg)
 
 ---
-#### 其他样式
 
-![mdmdt-list](./img/mdmdt-list.png)
-![mdmdt-list](./img/mdmdt-1.png)
-![mdmdt-mermaid](./img/mdmdt-mermaid.png)
 ![mdmdt-ui-1](./img/mdmdt-ui-1.png)
 ![mdmdt-ui-2](./img/mdmdt-ui-2.png)
 ![mdmdt-ui-3](./img/mdmdt-ui-3.jpg)
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
-![mdmdt-ui-5](./img/mdmdt-ui-5.png)
 
 # 如何使用
 
@@ -116,11 +103,11 @@
 
 ---
 
-<img src="./img/mdmdt-2.png" alt="mdmdt-2" style="zoom:50%;" /> **mdtht.js导出为 html 效果图（暗色）**
+<img src="./img/mdtht-light.png" alt="mdtht-light" style="zoom:50%;" /> **mdtht.js导出为 html 效果图（暗色）**
 
 ---
 
-<img src="./img/mdmdt-5.png" alt="mdmdt-5" style="zoom:50%;" />
+<img src="./img/mdtht-dark.png" alt="mdtht-dark" style="zoom:50%;" />
 
 ---
 

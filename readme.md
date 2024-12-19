@@ -29,30 +29,20 @@ Compared to the default theme style, the following aspects have been mainly modi
 
 # Effect
 
-#### Light theme
-
-![mdmdt-light](./img/mdmdt-light.png)
-#### Dark theme
-
-![mdmdt-dark](./img/mdmdt-dark.png)
+![mdmdt-text](./img/mdmdt-text.jpg)
+![mdmdt-source](./img/mdmdt-source.jpg)
+![mdmdt-code](./img/mdmdt-code.jpg)
+![mdmdt-list](./img/mdmdt-list.jpg)
+![mdmdt-blockquote](./img/mdmdt-blockquote.jpg)
+![mdmdt-mermaid](./img/mdmdt-mermaid.jpg)
+![mdmdt-title](./img/mdmdt-title.jpg)
 
 ---
 
-#### Source code mode
-
-![mdmdt-source-light](./img/mdmdt-source-light.png)
-
-![mdmdt-source-dark](./img/mdmdt-source-dark.png)
-
-#### Other styles
-![mdmdt-list](./img/mdmdt-list.png)
-![mdmdt-list](./img/mdmdt-1.png)
-![mdmdt-mermaid](./img/mdmdt-mermaid.png)
 ![mdmdt-ui-1](./img/mdmdt-ui-1.png)
 ![mdmdt-ui-2](./img/mdmdt-ui-2.png)
 ![mdmdt-ui-3](./img/mdmdt-ui-3.jpg)
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
-![mdmdt-ui-5](./img/mdmdt-ui-5.png)
 
 # How to use it
 
@@ -112,11 +102,11 @@ Please refer to the plugin homepage for specific details of **mdtht.js** plugin.
 
 ---
 
-<img src="./img/mdmdt-2.png" alt="mdmdt-2" style="zoom:50%;" />**Export mdtht.js as an HTML rendering (Dark theme)**
+<img src="./img/mdtht-light.png" alt="mdtht-light" style="zoom:50%;" />**Export mdtht.js as an HTML rendering (Dark theme)**
 
 ---
 
-<img src="./img/mdmdt-5.png" alt="mdmdt-5" style="zoom:50%;" />
+<img src="./img/mdtht-dark.png" alt="mdtht-dark" style="zoom:50%;" />
 
 ---
 

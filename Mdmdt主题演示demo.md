@@ -1,19 +1,20 @@
 # 关于Mdmdt主题
 
-[English Document](./readme.md)
-
 **Mdmdt** 是markdown minimalism document theme 的缩写，意为：**Markdown极简文档主题**。
 **Mdmdt**[^1]是深度定制的个性化Typora主题，其目的是打造一个**清爽极简**的文档样式。
 
 > [!NOte]
 >
-> **注意：**mdmdd.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题 `this is code style`
+> **注意：**mdmdt.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题。 `This is a single line code style`；
+>
+> **Attention:** mdmdt.css file contains both light and dark themes, which will automatically switch between light and dark themes according to the system mode.
+# 文本
 
-## 文本
-这些是文本样式效果： [这是超链接](typora.io),  **这是加粗文本**,  *这是斜体字*,  `this is code style` ， <u>这是下划线样式</u>,   ~~这是删除线效果~~,   ==这是文字高亮效果==， 上下标: $\LaTeX$, X^2^, H~2~O,   <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>, <kbd>Command+Q</kbd>  🐳 😀 🇨🇳
-[链接引用]: https://github.com/cayxc/mdmdt	"链接标题"
-[^1]: *Forked* from https://github.com/cayxc/mdmdt
-<!-- 这是注释内容...... -->
+这是一段正文内容样式，以下是不同文本样式效果： [这是超链接样式: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  **这是加粗文本样式**,  *这是斜体字样式*,  `This is a single line code style`,  <u>这是下划线样式</u>,  ~~这是删除线效果样式~~,  ==这是文字高亮效果==，这是上下标样式: $\LaTeX$, X^2^, H~2~O,  <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>, 这是键盘键样式：<kbd>Command+Q</kbd>, 这是数学公式： $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$,  这些是图标：🐳 😀 🇨🇳
+
+This is a text content style and the following are the effects of different text styles: **This is a bold text style**, [This is a hyperlink style: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  <u>This is the underline style</u>, ==This is the text highlighting effect==,  ~~This is the strikethrough effect style~~,  *This is the italic font style*,This is the subscript style: $\LaTeX$, X^2^, H~2~O,  This is the keyboard key style: <kbd>Command+Q</kbd>,  <span style='background:var(--color-2-0-c)'>This is the mouse selection effect</span>,This is a mathematical formula: $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$​,  These are icons: 🐳 😀 🇨🇳
+
+<!-- 这是注释内容......, This is the annotation content -->
 
 # 列表
 
@@ -58,9 +59,9 @@
 
 # 代码
 
-单行代码：`composer require --dev barryvdh/laravel-ide-helper`
+单行代码样式：`composer require --dev barryvdh/laravel-ide-helper`
 
-大段代码块：
+大段代码块样式：
 
 ```javascript
 /**
@@ -79,8 +80,6 @@
      if (str.lastIndexOf ('.') == - 1) { //如果是一级目录形式 level-1000
         let newValue = parseInt (str.slice (6))+1;
         return 'level-'+newValue;
-     } else {
-        // ...
      }
    } catch (err) {
       return err;
@@ -94,31 +93,31 @@
 | :---------------------- | :------------------------------------------: | ------------: |
 | This is the first line  | `this is code` some wordy text and some code |          $160 |
 | This is the second line |      some code: `this is code` centered      |      $1200.99 |
-| This is the third line  |                   are neat                   |            $1 |
+| This is the third line  |             These are some texts             |        $125.5 |
 
 # 引用文本框
 
 > [!NOTE]
 >
-> This is a Note text box ......`this is code style`
+> This is a Note text box ...... `this is code style`
 >
 > > This is a Note text box ......
 
 > [!TIP]
 >
-> This is a Tip text box ......`this is code style`
+> This is a Tip text box ......
 
 > [!IMPORTANT]
 >
-> This is a Important text box ......`this is code style`
+> This is a Important text box ......
 
 > [!WARNING]
 >
-> This is a Warning text box ......`this is code style`
+> This is a Warning text box ......
 
 > [!CAUTION]
 >
-> This is a Caution text box ......`this is code style`
+> This is a Caution text box ......
 
 # 图片
 
@@ -185,6 +184,14 @@ gantt
     Add gantt diagram to demo page      :20h
     Add another diagram to demo page    :48h
 ```
+
+## Flowchart
+
+## Sequence Diagram
+
+## State Diagram
+
+
 
 # 一级标题1
 
