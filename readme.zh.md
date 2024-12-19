@@ -12,8 +12,7 @@
 #### [English Document](./readme.md)
 
 **Mdmdt** 是 markdown minimalism document theme 的缩写，意为：**Markdown极简文档主题**。
-
-**Mdmdt**是深度定制的个性化Typora主题，其目的是打造一个 **清爽极简** 的文档样式。
+**Mdmdt**是深度定制的个性化Typora主题，其目的是打造一个 **清爽极简** 的文档样式。**Mdmdt **主题现已收录至 [Typora官方主题库https://theme.typoraio.cn](https://theme.typoraio.cn/).
 
 相比于默认主题风格主要修改了以下几个方面：
 1. 简洁舒适的配色风格
