@@ -26,6 +26,10 @@ Compared to the default theme style, the following aspects have been mainly modi
 10. Outline style: Added a directory tree structure, making the directory hierarchy more concise and clear
 11. Automatically follow the bright/dark theme mode of the system (the bright/dark theme can be set separately)
 
+> [!IMPORTANT]
+>
+> **Attention**: This theme has only been tested in Windows and MacOS environments, and has not been tested in Linux environments. Please be aware when using it!
+
 # Effect
 
 ![mdmdt-text](./img/mdmdt-text.jpg)
