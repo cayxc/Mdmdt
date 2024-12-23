@@ -73,10 +73,10 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "PingFang SC","Microsoft YaHei", Arial, Helvetica, "Helvetica Neue", sans-serif !important;
+  font-family: "PingFang SC", "Microsoft YaHei", Arial, Helvetica, "Helvetica Neue", sans-serif !important;
   background: var(--bg-color);
 }
-body.os-windows{
+body.os-windows {
   font-family: "Microsoft YaHei", Helvetica, "Helvetica Neue", Arial, sans-serif !important;
 }
 
@@ -810,7 +810,7 @@ span.md-comment {
 .md-rawblock-on-edit:hover .md-rawblock-tooltip {
   background: var(--bg-color2);
 }
-.md-inline-math script{
+.md-inline-math script {
   color: #f9007c;
 }
 /* #write */
@@ -1305,15 +1305,11 @@ span.md-comment {
 .cm-s-inner .cm-qualifier { color: #dc7b45; }
 .cm-s-inner .cm-tag { color: #e32e73; }
 .cm-s-inner .cm-tag.cm-bracket {color: #01a2da;}
-.cm-s-inner .cm-error {
-  color: var(--bg-color);
-  background-color: #ee3658;
-}
 .cm-s-inner .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: var(--text-code) !important;
 }
-.CodeMirror div.CodeMirror-cursor{
+.CodeMirror div.CodeMirror-cursor {
   border-color: var(--text-color);
 }
 /* apply to code fences with plan text*/
@@ -1344,7 +1340,7 @@ body.typora-export {
   padding-right: 0;
 }
 .typora-export-content,
-.typora-export-show-outline .typora-export-content{
+.typora-export-show-outline .typora-export-content {
   width: 100vw;
   max-width: 2560px;
   height: 100vh;
@@ -1993,7 +1989,7 @@ body.typora-export {
  * ------------------------
 */
 @media screen and (max-width: 768px) {
-  #write{
+  #write {
     padding: 0 32px 32px;
   }
 }
