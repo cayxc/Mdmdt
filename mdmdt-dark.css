@@ -73,11 +73,11 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "PingFang SC", Helvetica, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif !important;
+  font-family: "PingFang SC","Microsoft YaHei", Arial, Helvetica, "Helvetica Neue", sans-serif !important;
   background: var(--bg-color);
 }
 body.os-windows{
-  font-family: Helvetica, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif !important;
+  font-family: "Microsoft YaHei", Helvetica, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /*
