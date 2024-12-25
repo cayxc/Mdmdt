@@ -1,4 +1,4 @@
-![mdmdt-theme](./img/mdmdt-cover.png)
+![Mdmdt-theme](./img/mdmdt-cover.png)
 # About Mdmdt theme
 
 ![Languages](https://img.shields.io/badge/languages-CSS-F34B7D.svg)
