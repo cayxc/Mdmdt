@@ -1,5 +1,5 @@
 
-![mdmdt-theme](./img/mdmdt-cover.png)
+![Mdmdt-theme](./img/mdmdt-cover.png)
 # 关于Mdmdt主题
 
 ![Languages](https://img.shields.io/badge/languages-CSS-F34B7D.svg)
