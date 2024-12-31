@@ -2021,6 +2021,18 @@ body.typora-export {
   #write {
     padding: 0 32px 32px;
   }
+  h2.md-focus:before,
+  h3.md-focus:before,
+  h4.md-focus:before,
+  h5.md-focus:before,
+  h6.md-focus:before,
+  h2:before,
+  h3:before,
+  h4:before,
+  h5:before,
+  h6:before {
+    left: -30px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
