@@ -77,7 +77,8 @@ If you are not satisfied with the font, you can modify the corresponding font as
 
 # Export HTML
 
-To export an HTML file, you can directly select the current theme to export HTML
+To export an HTML file, you can directly select the current theme to export HTML.
+
 **If you want to export HTML files with customizable styles, you can use the Mdtht plugin:**
 
 Plugin homepage address:  [Mdtht-Github-address](https://github.com/cayxc/Mdtht)  [Mdtht-Gitee-address]( https://gitee.com/cayxc/mdtht )
@@ -113,4 +114,4 @@ Please refer to the plugin homepage for specific details of **mdtht.js** plugin.
 
 ---
 
-🐳 If you like the style of this document, please provide a star 😄， If there are any issues during use, please submit them in a timely manner and I will handle them as soon as I see them.
+If you like the style of this document, please provide a star， If there are any issues during use, please submit them in a timely manner and I will handle them as soon as I see them.

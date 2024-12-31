@@ -203,7 +203,6 @@ em {
 }
 
 del {
-  font-size: 16px;
   color: var(--text-grey);
   text-decoration: line-through;
   text-decoration-color: var(--color-5);
