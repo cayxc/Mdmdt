@@ -155,25 +155,61 @@ h6 {
   font-size: 16px;
 }
 
+h2.md-focus:before,
 h3.md-focus:before,
 h4.md-focus:before,
 h5.md-focus:before,
-h6.md-focus:before {
+h6.md-focus:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+  height: 20px;
+  position: absolute;
+  left: -36px;
+  float: left;
+  padding-left: 6px;
+  padding-right: 3px;
+  border: 1px solid;
+  border-radius: 3px;
   font-size: 12px;
-  left: -30px;
+  font-weight: 400;
   color: var(--color-1);
+  display: none;
 }
+h2:before,
+h2.md-focus:before {
+  content: 'h2';
+  top: 11px;
+}
+h3:before,
 h3.md-focus:before {
-  top: 9px;
+  content: 'h3';
+  top: 8px;
 }
+h4:before,
 h4.md-focus:before {
-  top: 7px;
+  content: 'h4';
+  top: 5px;
 }
+h5:before,
 h5.md-focus:before {
+  content: 'h5';
+  top: 4px;
+}
+h6:before,
+h6.md-focus:before {
+  content: 'h6';
   top: 3px;
 }
-h6.md-focus:before {
-  top: 3px;
+
+h2:hover::before,
+h3:hover::before,
+h4:hover::before,
+h5:hover::before,
+h6:hover::before {
+  display: block;
 }
 
 hr {
@@ -1193,6 +1229,10 @@ span.md-comment {
 .fa-caret-right,
 .fa-caret-down {
   color: var(--text-grey);
+}
+
+.ty-on-outline-filter .ty-outline-hit {
+  color: var(--color-1);
 }
 
 /*
