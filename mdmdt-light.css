@@ -105,6 +105,7 @@ body content,
 body #write {
   scrollbar-color: var(--border-color) var(--bg-color2) !important;
   scrollbar-width: thin !important;
+  overflow-x: auto;
 }
 
 body,
@@ -1634,6 +1635,14 @@ body.typora-export {
 }
 #top-titlebar .btn {
   margin: 0 !important;
+}
+
+#top-titlebar {
+  height: auto;
+}
+
+.info-panel-tab-wrapper {
+  height: auto;
 }
 
 /* .megamenu-men */
