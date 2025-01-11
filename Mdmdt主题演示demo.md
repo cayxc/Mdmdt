@@ -5,14 +5,14 @@
 
 > [!NOte]
 >
-> **注意：**mdmdt.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题。 `This is a single line code style`；
+> **注意：**mdmdt.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题。 `This is a single line code style`
 >
 > **Attention:** mdmdt.css file contains both light and dark themes, which will automatically switch between light and dark themes according to the system mode.
 # 文本
 
 这是一段正文内容样式，以下是不同文本样式效果： [这是超链接样式: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  **这是加粗文本样式**,  *这是斜体字样式*,  `This is a single line code style`,  <u>这是下划线样式</u>,  ~~这是删除线效果样式~~,  ==这是文字高亮效果==，这是上下标样式: $\LaTeX$, X^2^, H~2~O,  <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>, 这是键盘键样式：<kbd>Command+Q</kbd>, 这是数学公式： $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$,  这些是图标：🐳 😀 🇨🇳
 
-This is a text content style and the following are the effects of different text styles: **This is a bold text style**, [This is a hyperlink style: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  <u>This is the underline style</u>, ==This is the text highlighting effect==,  ~~This is the strikethrough effect style~~,  *This is the italic font style*, This is the subscript style: $\LaTeX$, X^2^, H~2~O,  This is the keyboard key style: <kbd>Command+Q</kbd>,  <span style='background:var(--color-2-0-c)'>This is the mouse selection effect</span>, This is a mathematical formula: $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$​,  These are icons: 🐳 😀 🇨🇳
+This is a text content style and the following are the effects of different text styles: **This is a bold text style**, [This is a hyperlink style: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  <u>This is the underline style</u>, ==This is the text highlighting effect==,  ~~This is the strikethrough effect style~~,  *This is the italic font style*, This is the subscript style: $\LaTeX$, X^2^, H~2~O,  This is the keyboard key style: <kbd>Command+Q</kbd>,  <span style='background:var(--color-2-0-c)'>This is the mouse selection effect</span>, This is a mathematical formula: $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$​
 
 <!-- 这是注释内容......, This is the annotation content -->
 
@@ -71,20 +71,20 @@ This is a text content style and the following are the effects of different text
   * @param tag obj 标签对象
   *
   */
- setLevelNumber (tag) {
+setLevelNumber(tag){
    try {
      if ((typeof tag) != 'object') {
-        throw 'setLevelNumber() 调用时参数类型错误，必须是一个h标签的对象集合！';
+       throw 'setLevelNumber() 调用时参数类型错误，必须是一个h标签的对象集合！';
      }
      let str = tag.id;
-     if (str.lastIndexOf ('.') == - 1) { //如果是一级目录形式 level-1000
-        let newValue = parseInt (str.slice (6))+1;
-        return 'level-'+newValue;
+     if (str.lastIndexOf('.') == -1) { //如果是一级目录形式 level-1000
+       let newValue = parseInt(str.slice(6)) + 1;
+       return 'level-' + newValue;
      }
    } catch (err) {
-      return err;
+     return err;
    }
- }
+}
 ```
 
 # 表格样式
@@ -106,10 +106,12 @@ This is a text content style and the following are the effects of different text
 > [!TIP]
 >
 > This is a Tip text box ......
+>
 
 > [!IMPORTANT]
 >
 > This is a Important text box ......
+>
 
 > [!WARNING]
 >
