@@ -857,7 +857,7 @@ span.md-comment {
   padding: 0 96px 32px;
   scroll-behavior: smooth;
   scroll-padding: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 #typora-sidebar {
