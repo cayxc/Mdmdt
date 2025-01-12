@@ -873,6 +873,7 @@ span.md-comment {
 /* #write */
 #write {
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 32px 96px;
   scroll-behavior: smooth;
