@@ -1,7 +1,7 @@
 /*
  * ------------------------------------------------------------------------
  * mdmdt.css
- * (c) 2024
+ * (c) 2024-2025
  * Author: cayxc
  * Homepage:  https://gitee.com/cayxc/mdmdt  https://github.com/cayxc/Mdmdt
  * License: Apache-2.0
@@ -435,22 +435,27 @@ pre {
   border-radius: 8px;
   color: var(--text-code);
   overflow: auto;
+  white-space: nowrap !important;
 }
-
 pre pre {
   background: transparent !important;
   padding: 5px 10px;
   border: none;
 }
-
 pre .CodeMirror-sizer {
-  padding-left: 10px;
+  padding-left: 4px;
 }
+pre .CodeMirror-gutters {
+  background: var(--bg-color2);
+  border-color: var(--border-color);
+}
+
 /*windows下code字体*/
 .os-windows pre,
 .os-windows code {
   font-family: initial !important;
 }
+
 /*
  * ------------------------
  * blockquote
@@ -462,59 +467,73 @@ blockquote,
   padding: 16px;
   background: var(--color-1-0-b);
   box-sizing: border-box;
-  border-right: 10px solid transparent;
-  border-left: 4px solid var(--color-1);
   border-radius: 8px;
+  border-left: 4px solid var(--color-1);
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
-
 blockquote blockquote {
   background: var(--color-1-0-b);
 }
-
+.md-alert > p:first-of-type {
+  line-height: 1;
+}
+blockquote > *:first-of-type,
+.md-alert > *:first-of-type {
+  margin-top: 0;
+}
+blockquote > *:last-of-type,
+.md-alert > *:last-of-type {
+  margin-bottom: 0;
+}
+blockquote > blockquote:last-of-type,
+blockquote > .md-alert:last-of-type,
+.md-alert > blockquote:last-of-type,
+.md-alert > .md-alert:last-of-type {
+  margin-top: 16px !important;
+}
 .md-alert.md-alert-note {
   border-left-color: var(--color-1);
   background: var(--color-1-0-b);
-  color: var(--color-1) !important;
+  color: var(--color-1);
 }
 .md-alert.md-alert-note .md-alert-text-note {
   color: var(--color-1);
 }
-
 .md-alert.md-alert-caution {
   border-left-color: var(--color-2);
   background: var(--color-2-0-b);
-  color: var(--color-2) !important;;
+  color: var(--color-2);
 }
 .md-alert.md-alert-caution .md-alert-text-caution {
   color: var(--color-2);
 }
-
 .md-alert.md-alert-tip {
   border-left-color: var(--color-3);
   background: var(--color-3-0-b);
-  color: var(--color-3) !important;
+  color: var(--color-3);
 }
 .md-alert.md-alert-tip .md-alert-text-tip {
   color: var(--color-3);
 }
-
 .md-alert.md-alert-important {
   border-left-color: var(--color-4);
   background: var(--color-4-0-b);
-  color: var(--color-4) !important;
+  color: var(--color-4);
 }
 .md-alert.md-alert-important .md-alert-text-important {
   color: var(--color-4);
 }
-
 .md-alert.md-alert-warning {
   border-left-color: var(--color-5);
   background: var(--color-5-0-b);
-  color: var(--color-5) !important;
+  color: var(--color-5);
 }
 .md-alert.md-alert-warning .md-alert-text-warning {
   color: var(--color-5);
 }
+
 /*
  * ------------------------
  * sup, sub, kbd
@@ -850,16 +869,19 @@ span.md-comment {
 .md-inline-math script {
   color: #f9007c;
 }
+
 /* #write */
 #write {
   width: 100%;
   margin: 0 auto;
-  padding: 0 96px 32px;
+  padding: 32px 96px;
   scroll-behavior: smooth;
   scroll-padding: 10px;
   overflow-x: auto;
 }
-
+#write > *:first-of-type {
+  margin-top: 0;
+}
 #typora-sidebar {
   border-right-color: var(--border-color);
 }
@@ -1305,9 +1327,7 @@ span.md-comment {
   color: var(--text-code);
 }
 .cm-s-inner .CodeMirror-gutters {
-  background: transparent !important;
   color: var(--text-code);
-  border: none;
 }
 .cm-s-inner .CodeMirror-guttermarker,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
@@ -1367,6 +1387,7 @@ span.md-comment {
 .md-fences .code-tooltip span {
   padding: 3px;
   border-radius: 5px;
+  margin: 0;
 }
 /*
  * ------------------------
@@ -1871,7 +1892,7 @@ body.typora-export {
 .typora-quick-open-item,
 .md-hover-tip .code-tooltip-content {
   border-radius: 5px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .code-tooltip.md-hover-tip,
 .md-hover-tip .code-tooltip-content,
@@ -2074,37 +2095,6 @@ body.typora-export {
   .export-items-list-control {
     background: var(--bg-color2) !important;
   }
-
-}
-
-/*
- * ------------------------
- * @media print
- * ------------------------
-*/
-@media print {
-  table,
-  pre {
-    page-break-inside: avoid;
-  }
-  pre {
-    word-wrap: break-word;
-  }
-}
-
-/*
- * ------------------------
- * @media print
- * ------------------------
-*/
-@media print {
-  table,
-  pre {
-    page-break-inside: avoid;
-  }
-  pre {
-    word-wrap: break-word;
-  }
 }
 
 /*
@@ -2114,7 +2104,7 @@ body.typora-export {
 */
 @media screen and (max-width: 768px) {
   #write {
-    padding: 0 32px 32px;
+    padding: 32px;
   }
   h2.md-focus:before,
   h3.md-focus:before,
@@ -2132,7 +2122,93 @@ body.typora-export {
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
   #write {
-    padding: 0 64px 32px;
+    padding: 32px 64px;
   }
 }
 
+/*
+ * ------------------------
+ * @media print
+ * ------------------------
+*/
+@media print {
+  html,
+  body,
+  body #write,
+  body content,
+  body .typora-export-content {
+    height: auto !important; /*解决浏览器打印只有一页问题*/
+    padding: 0 !important;
+    margin: 0 !important;
+    background: var(--bg-color);
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+  }
+  body .typora-export-sidebar {
+    width: 0 !important;
+    display: none !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  body,
+  body div,
+  body pre,
+  body ul,
+  body section,
+  body #write {
+    scrollbar-width: none !important;
+  }
+  table,
+  pre,
+  blockquote,
+  .md-alert {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+    white-space: pre-wrap !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 24pt 0 12pt;
+  }
+  h1 {
+    font-size: 24pt;
+  }
+  h2 {
+    font-size: 21pt;
+  }
+  h3 {
+    font-size: 18pt;
+  }
+  h4 {
+    font-size: 15pt;
+  }
+  h5 {
+    font-size: 13.5pt;
+  }
+  h6 {
+    font-size: 12pt;
+  }
+  p {
+    font-size: 12pt;
+    margin: 12pt 0;
+  }
+  @page {
+    size: auto;
+    margin: 15mm !important;
+    background: var(--bg-color);
+    /*谷歌浏览器打印设置*/
+    @top-center {
+      content: '';
+      font-size: 9pt;
+    }
+    @bottom-center {
+      content: counter(page) '/' counter(pages);
+      font-size: 9pt;
+    }
+  }
+
+}
