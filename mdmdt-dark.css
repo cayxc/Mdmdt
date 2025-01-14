@@ -60,6 +60,13 @@
   --mermaid--gantt-left-padding: 75;
 }
 
+* {
+  tab-size: 4;
+  -webkit-tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+}
+
 html {
   font-size: 16px;
   background-color: var(--bg-color);
@@ -434,7 +441,6 @@ pre {
   border-radius: 8px;
   color: var(--text-code);
   overflow: auto;
-  white-space: nowrap !important;
 }
 pre pre {
   background: transparent !important;
@@ -2105,7 +2111,6 @@ body.typora-export {
   }
   pre {
     word-wrap: break-word;
-    white-space: pre-wrap !important;
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 24pt 0 12pt;
