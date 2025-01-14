@@ -892,6 +892,9 @@ span.md-comment {
  * typora-source
  * ------------------------
 */
+#typora-source pre{
+  white-space: pre-wrap !important;
+}
 #typora-source .CodeMirror-sizer {
   padding-right: 0 !important;
 }
