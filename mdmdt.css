@@ -2142,6 +2142,7 @@ body.typora-export {
  * ------------------------
 */
 @media print {
+  :root,
   html,
   body,
   body #write,
@@ -2150,7 +2151,6 @@ body.typora-export {
     height: auto !important; /*解决浏览器打印只有一页问题*/
     padding: 0 !important;
     margin: 0 !important;
-    background: var(--bg-color);
     width: 100% !important;
     max-width: 100% !important;
     border: none !important;
@@ -2208,7 +2208,7 @@ body.typora-export {
   @page {
     size: auto;
     margin: 15mm !important;
-    background: var(--bg-color);
+    background: white !important;
     /*谷歌浏览器打印设置*/
     @top-center {
       content: '';
@@ -2219,5 +2219,4 @@ body.typora-export {
       font-size: 9pt;
     }
   }
-
 }
