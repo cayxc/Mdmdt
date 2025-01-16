@@ -2074,7 +2074,6 @@ body.typora-export {
  * ------------------------
 */
 @media print {
-  :root,
   html,
   body,
   body #write,
