@@ -24,37 +24,37 @@ This is a text content style and the following are the effects of different text
 2. 这是有序列表 B
 
 - This is Item 1.
-- This is Item 2. 
+- This is Item 2.
 - [x] Something is Not TODO.
 - [ ] Something is DONE.
 ---
 
 1. 这是有序列表 A
 2. 这是有序列表 B
-   1. 这是有序列表 A
-   2. 这是有序列表 B
+    1. 这是有序列表 A
+    2. 这是有序列表 B
 
 - This is Item 1.
 - This is Item 2.
-   - This is Item 1.
-   - This is Item 2. 
+    - This is Item 1.
+    - This is Item 2.
 
 ---
 这是嵌套列表样式：
 
 1. 这是有序列表 A
 2. 这是有序列表 B
-   - This is Item 1.
-   - This is Item 2. 
-      - [x] Something is Not TODO.
-      - [ ] Something is DONE.
+    - This is Item 1.
+    - This is Item 2.
+        - [x] Something is Not TODO.
+        - [ ] Something is DONE.
 
 - 这是有序列表 A
 - 这是有序列表 B
-   1. This is Item 1.
-   2. This is Item 2. 
-      - [ ] Something is Not TODO.
-      - [x] Something is DONE.
+    1. This is Item 1.
+    2. This is Item 2.
+        - [ ] Something is Not TODO.
+        - [x] Something is DONE.
 
 # 代码
 
