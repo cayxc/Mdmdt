@@ -1263,10 +1263,6 @@ span.md-comment {
   color: var(--text-grey);
 }
 
-.ty-on-outline-filter .ty-outline-hit {
-  color: var(--color-2);
-}
-
 /*
  * ------------------------
  * md-notification-container
@@ -2004,7 +2000,31 @@ body.typora-export {
   border-radius: 3px;
   box-shadow: 0 0 5px var(--color-1) !important;
 }
-/*search stylle*/
+/*search style*/
+#searchpanel-search-group .ty-search-panel-row{
+  padding-top: 0;
+}
+#searchpanel-search-group .ty-search-panel-row input{
+  margin-top: 2px;
+}
+.ty-search-panel-row .ion-close-round,
+.ty-search-panel-row .ty-upload{
+  padding-right: 8px !important;
+  padding-left: 4px !important;
+}
+#search-panel-next,
+#search-panel-replace-btn{
+  left: 2px;
+}
+#search-panel-replaceall-btn,
+#search-panel-replace-btn{
+  text-align: center !important;
+  padding-right: 4px !important;
+  padding-left: 4px !important;
+}
+.ty-on-outline-filter .ty-outline-hit {
+  color: var(--color-2);
+}
 .md-search-hit {
   background: var(--color-2-0-c) !important;
   color: #070909 !important;
