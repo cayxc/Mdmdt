@@ -2005,6 +2005,15 @@ body.typora-export {
   border-radius: 3px;
   box-shadow: 0 0 5px var(--color-1) !important;
 }
+/*search stylle*/
+.md-search-hit {
+  background: var(--color-2-0-c) !important;
+  color: #070909 !important;
+}
+.md-search-select{
+  background: var(--color-2) !important;
+  color: #070909 !important;
+}
 
 /*
  * ------------------------
