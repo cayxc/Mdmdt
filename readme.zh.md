@@ -1,4 +1,4 @@
-![typora-Mdmdt-theme](./img/mdmdt-cover.png)
+![typora-mdmdt-theme](./img/mdmdt-cover.png)
 # 关于Mdmdt主题
 
 ![Languages](https://img.shields.io/badge/languages-CSS-F34B7D.svg) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt?include_prereleases&color=blue&logo=hack-the-box) ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg) ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt?style=flat&logo=github&color=red) ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=github&color=turquoise) ![GitHub Repo stars](https://img.shields.io/github/stars/cayxc/Mdmdt?style=flat&logo=github&color=green)
