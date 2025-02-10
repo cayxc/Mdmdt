@@ -315,14 +315,9 @@ a:hover,
 .cm-link::before {
   display: inline-block;
   content: "\0460";
-  font-size: 11px;
+  font-size: 12px;
   transform: rotate(45deg);
-  padding-right: 2px;
-  font-weight: normal;
 }
-/*.md-toc-content a::before{
-  display: none !important;
-}*/
 .unibody-window a:hover,
 content a:hover {
   color: var(--color-2) !important;
@@ -1257,16 +1252,13 @@ span.md-comment {
 }
 
 .file-node-expanded > .file-node-children {
-  margin-left: 26px;
-}
-.os-windows .file-node-expanded > .file-node-children {
-  margin-left: 27px;
+  margin-left: 29px;
 }
 
 .file-tree-node.active > .file-node-background {
   border-radius: 5px;
   border: none;
-  margin-left: -8px;
+  margin-left: -12px;
 }
 .fa-folder:before,
 .fa-folder:after,
@@ -1283,8 +1275,15 @@ span.md-comment {
 #file-library-tree .file-tree-node {
   position: relative;
 }
-#file-library-tree .file-node-content {
-  margin-left: -12px;
+#file-library-tree .file-tree-node > .file-node-content {
+  margin-left: -16px;
+}
+#file-library-tree .file-node-root > .file-node-content {
+  margin-left: -3px;
+}
+#file-library-tree .file-node-collapsed > .file-node-content,
+#file-library-tree .file-node-expanded > .file-node-content {
+  margin-left: -9px;
 }
 #file-library-tree .file-tree-node .file-node-icon{
   padding-left: 3px;
@@ -1303,10 +1302,9 @@ span.md-comment {
   left: -21px;
   top: -8px;
   display: block;
-  width: 16px;
+  width: 1px;
   height: 100%;
-  background: transparent;
-  border-left: 1px solid var(--border-color);
+  background: var(--border-color);
 }
 .os-windows #file-library-tree .file-node-content::before {
   top: -5px;
@@ -1321,24 +1319,24 @@ span.md-comment {
   z-index: 20;
   left: -21px;
   top: 14px;
-  width: 16px;
+  width: 12px;
   height: 16px;
   border-left: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
   background: transparent;
 }
 #file-library-tree .active > .file-node-content > .file-node-icon::after{
-  width: 13px;
+  width: 9px;
 }
 #file-library-tree .file-node-expanded > .file-node-content > .file-node-icon::after{
   left: -21px;
   top: 15px;
-  width: 7px;
+  width: 8px;
 }
 #file-library-tree .file-node-collapsed > .file-node-content > .file-node-icon::after{
   left: -21px;
   top: 14px;
-  width: 10px;
+  width: 12px;
 }
 .os-windows #file-library-tree .file-node-collapsed > .file-node-content > .file-node-icon::after{
   top: 15px;
@@ -1396,22 +1394,36 @@ span.md-comment {
 */
 .md-toc {
   font-size: 14px;
-  margin: 20px 0 0 0;
+  margin: 16px 0 0 0;
+  padding: 26px 32px 26px 32px;
   background: var(--bg-color2);
 }
 .md-toc-content {
-  padding: 20px 30px;
-  margin: 16px 0;
+  padding: 0;
+  margin: 0;
+}
+.md-toc:focus .md-toc-content{
+  border: none !important;
+  margin: 0 !important;
 }
 .md-toc-content .md-toc-item {
-  margin-bottom: 6px;
+  padding-bottom: 8px;
+  position: relative;
+}
+.md-toc-content .md-toc-item a::before {
+  display: none !important;
 }
 #write div.md-toc-tooltip {
   position: relative;
-  margin: 12px 0 6px;
+  margin: 14px 0 0 0;
+  padding-bottom: 12px;
+  border-top: none;
+  border-bottom: 1px solid var(--border-color);
+  background: transparent;
 }
 #write div.md-toc-tooltip .md-delete-toc {
-  padding: 0 12px;
+  padding: 0 10px;
+  margin: 0 !important;
   background: var(--bg-color);
 }
 #write div.md-toc-tooltip .md-delete-toc:hover {
@@ -2003,9 +2015,6 @@ body.typora-export {
   border-bottom-color: var(--color-1) !important;
   background: var(--color-1) !important;
   box-shadow: 0 1px 4px var(--color-1) !important;
-}
-.md-hover-tip .md-arrow::after {
-  box-shadow: none !important;
 }
 .md-hover-tip .code-tooltip-content:hover a {
   color: var(--color-2) !important;
