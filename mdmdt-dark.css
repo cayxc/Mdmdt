@@ -1451,6 +1451,7 @@ span.md-comment {
 }
 .cm-s-inner .CodeMirror-gutters {
   color: var(--text-code);
+  border-right-color: var(--border-color);
 }
 .cm-s-inner .CodeMirror-guttermarker,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
