@@ -80,12 +80,10 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "PingFang SC", "Microsoft YaHei", Arial, Helvetica, "Helvetica Neue", sans-serif !important;
+  font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: var(--bg-color);
 }
-body.os-windows {
-  font-family: "Microsoft YaHei", Helvetica, "Helvetica Neue", Arial, sans-serif !important;
-}
+
 /*
  * ------------------------
  * scroll style
@@ -1005,7 +1003,7 @@ span.md-comment {
   font-size: 14px !important;
 }
 .outline-content li ul {
-  margin-left: 19px;
+  margin-left: 20px;
   position: relative;
   z-index: 48;
 }
@@ -1013,17 +1011,17 @@ span.md-comment {
 .outline-content ul li::before {
   content: '';
   width: 1px;
-  height: calc(100% + 11px);
-  top: -11px;
+  height: calc(100% + 10px);
+  top: -10px;
 }
 .outline-content ul > li:last-of-type::before {
   content: '';
   width: 1px;
-  height: 11px;
-  top: -11px;
+  height: 10px;
+  top: -10px;
 }
 .outline-content li .outline-item {
-  margin: 0 0 3px 6px;
+  margin: 0 0 3px 7px;
   padding: 4px 8px;
   position: relative;
   z-index: 50;
@@ -1046,11 +1044,11 @@ span.md-comment {
 .outline-content li .outline-item::before {
   content: '';
   width: 12px;
-  height: calc(50% + 12px);
+  height: calc(50% + 10px);
   position: absolute;
   z-index: 38;
-  left: -7px;
-  top: -12px;
+  left: -8px;
+  top: -10px;
   background: transparent;
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -1071,7 +1069,7 @@ span.md-comment {
   height: 100%;
   position: absolute;
   z-index: 35;
-  left: -7px;
+  left: -8px;
   top: -2px;
   background: var(--bg-color);
 }
@@ -1105,7 +1103,7 @@ span.md-comment {
 
 .outline-expander:before {
   font-size: 10px;
-  padding: 0 3px 0 2px;
+  padding: 0 4px 0 2px;
   margin-top: -2px;
   margin-left: -2px;
   background: transparent;
@@ -1126,7 +1124,7 @@ span.md-comment {
 }
 .outline-item:hover::before,
 .outline-item-active::before {
-  width: 6px !important;
+  width: 7px !important;
 }
 .outline-item-active .outline-expander {
   font-weight: bold !important;
@@ -1257,7 +1255,7 @@ span.md-comment {
   border: none !important;
 }
 #file-library-tree .file-node-root > .file-node-content {
-  margin-left: -3px;
+  margin-left: -3px !important;
 }
 #file-library-tree .file-tree-node > .file-node-content {
   margin-left: -16px;
@@ -1649,8 +1647,8 @@ body.typora-export {
  * --------------------------------------
 */
 .unibody-window .outline-content li .outline-item::before {
-  height: calc(50% + 13px);
-  top: -13px;
+  height: calc(50% + 11px);
+  top: -11px;
 }
 .unibody-window #write ul,
 .typora-export #write ul {
