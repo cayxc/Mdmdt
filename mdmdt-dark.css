@@ -51,7 +51,7 @@
   --item-hover-bg-color: var(--bg-color2);
   --item-hover-text-color: var(--color-1);
   --select-text-bg-color: var(--color-1-0-a);
-  --monospace: monospace;
+  --monospace:  "JetBrains Mono", "Source Code Pro", "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;
 
   --mermaid-theme: dark; /*or base, dark, forest, neutral, night */
   --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
@@ -231,8 +231,8 @@ p {
 }
 
 strong {
-  font-weight: bold;
-  color: #d6e4ff;
+  font-weight: 900;
+  color: #cfdfff;
 }
 
 u {
@@ -460,12 +460,6 @@ pre .CodeMirror-sizer {
 pre .CodeMirror-gutters {
   background: var(--bg-color2);
   border-color: var(--border-color);
-}
-
-/*windows下code字体*/
-.os-windows pre,
-.os-windows code {
-  font-family: initial !important;
 }
 
 /*
@@ -1254,11 +1248,32 @@ span.md-comment {
 .file-node-expanded > .file-node-children {
   margin-left: 29px;
 }
-
-.file-tree-node.active > .file-node-background {
+.file-tree-node > .file-node-background {
   border-radius: 5px;
-  border: none;
   margin-left: -12px;
+  border: none !important;
+}
+#file-library-tree .file-node-root > .file-node-content {
+  margin-left: -3px;
+}
+#file-library-tree .file-tree-node > .file-node-content {
+  margin-left: -16px;
+}
+#file-library-tree .file-node-collapsed > .file-node-content,
+#file-library-tree .file-node-expanded > .file-node-content {
+  margin-left: -9px;
+}
+.file-library-node:not(.file-node-root):focus>.file-node-content{
+  outline: none;
+}
+.os-windows #file-library-tree .file-node-content{
+  padding-right: 37px;
+}
+.file-library-node:not(.file-node-root):focus>.file-node-background{
+  border:  1px dashed var(--text-color) !important;
+}
+.file-library-node.active:not(.file-node-root):focus>.file-node-background{
+  border:  1px dashed var(--color-1) !important;
 }
 .fa-folder:before,
 .fa-folder:after,
@@ -1266,24 +1281,14 @@ span.md-comment {
 .fa-caret-down {
   color: var(--text-grey);
 }
-#file-library-tree .file-node-root > .file-node-content {
-  margin-left: -3px;
+.file-node-content .file-node-title{
+  padding-right: 9px;
 }
 #file-library-tree .file-node-root >.file-node-children{
   margin-left: 27px;
 }
 #file-library-tree .file-tree-node {
   position: relative;
-}
-#file-library-tree .file-tree-node > .file-node-content {
-  margin-left: -16px;
-}
-#file-library-tree .file-node-root > .file-node-content {
-  margin-left: -3px;
-}
-#file-library-tree .file-node-collapsed > .file-node-content,
-#file-library-tree .file-node-expanded > .file-node-content {
-  margin-left: -9px;
 }
 #file-library-tree .file-tree-node .file-node-icon{
   padding-left: 3px;
@@ -1294,7 +1299,6 @@ span.md-comment {
   z-index: 30;
   padding-left: 4px;
 }
-
 #file-library-tree .file-node-content::before {
   content: "";
   position: absolute;
