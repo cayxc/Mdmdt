@@ -128,7 +128,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
   position: relative;
   line-height: 1.5;
-  margin: 32px 0 16px;
+  margin: 32px 0 18px;
   color: var(--title-color);
   letter-spacing: 2px;
 }
@@ -218,13 +218,13 @@ h6:hover::before {
 hr {
   border: none;
   height: 1px;
-  margin: 16px 0;
+  margin: 18px 0;
   background: var(--border-color);
   box-sizing: border-box;
 }
 
 p {
-  margin: 16px 0;
+  margin: 18px 0;
 }
 
 strong {
@@ -637,7 +637,9 @@ button#md-resize-grid:hover {
   color: var(--color-1);
   border-color: var(--color-1);
 }
-
+.md-tooltip-remove{
+  margin-top: -26px !important;
+}
 /*
  * ------------------------
  * btn
@@ -840,6 +842,12 @@ span.md-comment {
   margin: 16px 6px 0;
   border-top: 1px solid var(--border-color);
   border-radius: 0;
+}
+.code-tooltip {
+  box-shadow: none;
+}
+.code-tooltip .ty-input{
+  border-color: var(--border-color);
 }
 .md-rawblock-on-edit .md-rawblock-input {
   padding: 0;
@@ -1395,7 +1403,7 @@ span.md-comment {
 */
 .md-toc {
   font-size: 14px;
-  margin: 16px 0 0 0;
+  margin: 18px 0 0 0;
   padding: 26px 32px 26px 32px;
   background: var(--bg-color2);
 }
