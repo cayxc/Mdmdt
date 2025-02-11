@@ -51,7 +51,7 @@
   --item-hover-bg-color: var(--bg-color2);
   --item-hover-text-color: var(--color-1);
   --select-text-bg-color: var(--color-1-0-a);
-  --monospace:  "JetBrains Mono", "Source Code Pro", "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;
+  --monospace: "JetBrains Mono", "Source Code Pro", "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;
 
   /*--mermaid-theme: neutral;*/ /*or base, dark, forest, neutral, night*/
   --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
@@ -713,7 +713,6 @@ textarea {
   border-color: var(--border-color);
   background: var(--bg-color) !important;
   color: var(--text-color) !important;
-  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif !important;
 }
 /*
  * ------------------------
