@@ -437,8 +437,8 @@ h2 code {
  * ------------------------
 */
 pre {
-  margin: 16px 0;
-  padding: 16px;
+  margin: 18px 0;
+  padding: 18px;
   background: var(--bg-color2) !important;
   font-size: 14px !important;
   box-sizing: border-box;
@@ -466,8 +466,8 @@ pre .CodeMirror-gutters {
 */
 blockquote,
 .md-alert {
-  margin: 16px 0;
-  padding: 16px;
+  margin: 18px 0;
+  padding: 18px;
   background: var(--color-1-0-b);
   box-sizing: border-box;
   border-radius: 8px;
@@ -479,22 +479,13 @@ blockquote,
 blockquote blockquote {
   background: var(--color-1-0-b);
 }
-.md-alert > p:first-of-type {
-  line-height: 1;
-}
-blockquote > *:first-of-type,
-.md-alert > *:first-of-type {
-  margin-top: 0;
-}
-blockquote > *:last-of-type,
-.md-alert > *:last-of-type {
-  margin-bottom: 0;
-}
-blockquote > blockquote:last-of-type,
-blockquote > .md-alert:last-of-type,
-.md-alert > blockquote:last-of-type,
-.md-alert > .md-alert:last-of-type {
-  margin-top: 16px !important;
+.md-alert.md-alert-note,
+.md-alert.md-alert-caution,
+.md-alert.md-alert-tip,
+.md-alert.md-alert-important,
+.md-alert.md-alert-warning{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .md-alert.md-alert-note {
   border-left-color: var(--color-1);
@@ -824,14 +815,14 @@ span.md-comment {
 }
 .md-math-container {
   width: 100%;
-  padding: 5px 10px;
+  padding: 18px;
 }
 
 .md-rawblock-on-edit .md-htmlblock-panel,
 .md-rawblock-on-edit .md-mathblock-panel {
   border-radius: 8px;
   background: var(--bg-color2);
-  padding: 5px 10px;
+  padding: 18px;
 }
 .md-mathblock-panel .md-rawblock-control {
   background: transparent;
@@ -1472,23 +1463,23 @@ span.md-comment {
 }
 .cm-s-inner .CodeMirror-activeline-background { background: transparent; }
 .cm-s-inner .cm-keyword { color: #bb59fd; }
-.cm-s-inner .cm-operator { color: #6ac0df; }
+.cm-s-inner .cm-operator { color: #40d7ec; }
 .cm-s-inner .cm-variable { color: #f4395dff; }
 .cm-s-inner .cm-variable-2 { color: #e2785f; }
-.cm-s-inner .cm-variable-3 { color: #0d50cc; }
+.cm-s-inner .cm-variable-3 { color: #6083ff; }
 .cm-s-inner .cm-builtin { color: #f61d78; }
 .cm-s-inner .cm-atom { color: #fa5336; }
 .cm-s-inner .cm-number { color: #f59102; }
-.cm-s-inner .cm-def { color: #4087fd; }
-.cm-s-inner .cm-string { color: #00a866; }
-.cm-s-inner .cm-string-2 { color: #01b001; }
+.cm-s-inner .cm-def { color: #7caafd; }
+.cm-s-inner .cm-string { color: #02be74; }
+.cm-s-inner .cm-string-2 { color: #0a790a; }
 .cm-s-inner .cm-comment,
 .cm-s-inner .cm-meta { color: var(--md-char-color); }
 .cm-s-inner .cm-attribute { color: #c08b01; }
 .cm-s-inner .cm-property { color: #1b9f72; }
 .cm-s-inner .cm-qualifier { color: #dc7b45; }
 .cm-s-inner .cm-tag { color: #e32e73; }
-.cm-s-inner .cm-tag.cm-bracket {color: #01a2da;}
+.cm-s-inner .cm-tag.cm-bracket {color: #0c9bd3;}
 .cm-s-inner .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: var(--text-code) !important;
@@ -1507,7 +1498,6 @@ span.md-comment {
   border-radius: 5px;
   z-index: 50;
   padding: 0;
-  bottom: -2.9em;
 }
 .md-fences .code-tooltip input,
 .md-fences .code-tooltip span {
