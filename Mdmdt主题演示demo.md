@@ -1,19 +1,31 @@
 # 关于Mdmdt主题
-
-**Mdmdt **是 markdown minimalism document theme 的缩写，意为: **Markdown极简文档主题**。**Mdmdt**[^1]是深度定制的个性化Typora主题，其目的是打造一个**清爽极简**的文档样式。
+**Mdmdt **是 markdown minimalism document theme 的缩写，意为: **Markdown极简文档主题**。
+**Mdmdt**[^1]是深度定制的个性化Typora主题，其目的是打造一个**清爽极简**的文档样式。
 
 > [!NOte]
 >
 > **注意：**mdmdt.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题。 `This is a single line code style`
 >
-> **Attention:** mdmdt.css file contains both light and dark themes, which will automatically switch between light and dark themes according to the system mode.
+> **Attention**: The MDMDT.CSS file contains both light and dark themes, which will automatically switch between light and dark themes according to the system mode.
+
 # 文本
+这是一段正文内容样式，以下是不同文本样式效果：**这是加粗文本样式**, <u>这是下划线样式</u>, *这是斜体字样式*,  [这是超链接样式: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  ~~这是删除线效果样式~~,  ==这是文字高亮效果==，上下标样式: $\LaTeX$, X^2^, H~2~O, <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>,  键盘键样式：<kbd>Command+Q</kbd> 🐳 😀 🇨🇳
 
-这是一段正文内容样式，以下是不同文本样式效果：**这是加粗文本样式**,  *这是斜体字样式*,  [这是超链接样式: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  <u>这是下划线样式</u>,  ~~这是删除线效果样式~~,  ==这是文字高亮效果==，这是上下标样式: $\LaTeX$, X^2^, H~2~O,  <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>, 键盘键样式：<kbd>Command+Q</kbd>, 这是数学公式： $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$,  图标：🐳 😀 🇨🇳
-
-This is a text content style and the following are the effects of different text styles: *This is the italic font style*, **This is a bold text style**,  <u>This is the underline style</u>, [This is a hyperlink style: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  ==This is the text highlighting effect==,  ~~This is the strikethrough effect style~~,  This is the subscript style: $\LaTeX$, X^2^, H~2~O,  keyboard key style: <kbd>Command+Q</kbd>,  <span style='background:var(--color-2-0-c)'>This is the mouse selection effect</span>, This is a mathematical formula: $$ u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn $$
+This is a text content style and the following are the effects of different text styles: **This is a bold text style**,  [This is a hyperlink style: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt), *This is the italic font style*, ~~This is the strikethrough effect style~~, <u>This is the underline style</u>, `This is a single line code style`,  keyboard key style: <kbd>Command+Q</kbd>,  $\LaTeX$ X^2^H~2~O, ==This is the text highlighting effect==, <span style='background:var(--color-2-0-c)'>This is the mouse selection effect</span>  🐳 😀 🇨🇳
 
 <!-- 这是注释内容......, This is the annotation content -->
+
+# 数学公式
+
+直接使用公式：
+$$
+\begin{aligned} I &=\int_0^{ct}\frac{r}{\sqrt{c^2t^2 -r^2}}\int_0^{2\pi} m^2(m+n) d\theta dr\&=\int_0^{ct}\frac{r}{\sqrt{c^2t^2 -r^2}}\end{aligned}
+$$
+$$ 代入公式得到： $$ $$u(t,x,y) = (3x+y) c^2 t^2 + x^2(x+y)$$
+
+$$
+u(t,x,y) = \frac{1}{2\pi c} \frac{\part}{\part t} \iint\limits_{r<ct} \frac{m^2(m+n)}{\sqrt{c^2t^2 -r^2 }}dmdn
+$$
 
 # 列表
 
@@ -121,7 +133,8 @@ setLevelNumber(tag){
 
 # 图片
 
-![mdmdt-4.png 加载失败...](./img/mdmdt-2.png)
+![](./img/mdmdt.png)
+
 
 # 图表Mermaid
 
@@ -152,6 +165,7 @@ stateDiagram-v2
         ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
     }
 ```
+
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
@@ -192,7 +206,6 @@ gantt
 ## State Diagram
 
 
-
 # 一级标题1
 
 ## 二级标题2
@@ -209,3 +222,4 @@ gantt
 以下是 [TOC] 目录样式
 
 [TOC]	
+
