@@ -107,8 +107,8 @@ body ul,
 body section,
 body content,
 body #write {
-  scrollbar-width: thin !important;
   scrollbar-color: var(--text-grey) var(--bg-color2) !important;
+  scrollbar-width: thin !important;
 }
 
 body,
@@ -119,6 +119,7 @@ header {
 header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
+
 /*
  * -----------------------------------
  * h1 ~ h6
@@ -184,12 +185,12 @@ h6:before {
 h2:before,
 h2.md-focus:before {
   content: 'h2';
-  top: 11px;
+  top: 10px;
 }
 h3:before,
 h3.md-focus:before {
   content: 'h3';
-  top: 8px;
+  top: 7px;
 }
 h4:before,
 h4.md-focus:before {
@@ -204,7 +205,7 @@ h5.md-focus:before {
 h6:before,
 h6.md-focus:before {
   content: 'h6';
-  top: 3px;
+  top: 2px;
 }
 
 h2:hover::before,
@@ -218,23 +219,28 @@ h6:hover::before {
 hr {
   border: none;
   height: 1px;
-  margin: 18px 0;
+  margin: 16px 0;
   background: var(--border-color);
   box-sizing: border-box;
 }
 
 p {
-  margin: 18px 0;
+  margin: 16px 0;
+}
+
+p+p{
+  margin-top: 18px;
 }
 
 strong {
   font-weight: 900;
-  color: #cfdfff;
+  color: var(--title-color);
 }
 
 u {
   text-decoration-color: var(--title-color);
   text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
 }
 
 em {
@@ -256,6 +262,7 @@ mark {
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
+
 /*
  * ------------------------
  * image
@@ -265,7 +272,7 @@ img {
   display: inline-block;
   max-width: 100%;
   border-radius: 8px;
-  margin: 0 auto 16px;
+  margin: 16px auto;
   color: var(--md-char-color);
 }
 span.md-image,
@@ -289,6 +296,7 @@ span.md-image-btn:hover::before {
 span.md-image span.md-image-pick-file-btn {
   border-left-color: var(--border-color);
 }
+
 /*
  * ------------------------
  * a, link
@@ -334,6 +342,7 @@ content a:hover {
   text-decoration: none;
   color: var(--color-1);
 }
+
 /*
  * ------------------------
  * ul, ol
@@ -341,17 +350,20 @@ content a:hover {
 */
 ul {
   margin-left: 0;
-  margin-top: 5px;
+  margin-top: 5px !important;
   margin-bottom: 5px;
   padding-left: 36px;
 }
 ol {
   margin-left: 0;
-  margin-top: 5px;
+  margin-top: 5px !important;
   margin-bottom: 5px;
   padding-left: 40px;
 }
-
+p:has( + ul ),
+p:has( + ol ) {
+  margin-bottom: 0;
+}
 ul li,
 ol li {
   margin-bottom: 5px;
@@ -364,6 +376,7 @@ ul > li > p {
 ol > li > p {
   margin: 0 0 0 -6px;
 }
+
 ul > .task-list-item > input {
   margin-left: -22px;
 }
@@ -431,20 +444,24 @@ h2 code {
   font-size: 11px;
   padding: 2px 6px !important;
 }
+
 /*
  * ------------------------
  * pre
  * ------------------------
 */
 pre {
-  margin: 18px 0;
-  padding: 18px;
+  margin: 16px 0;
+  padding: 16px;
   background: var(--bg-color2) !important;
   font-size: 14px !important;
   box-sizing: border-box;
   border-radius: 8px;
   color: var(--text-code);
   overflow: auto;
+}
+p + pre {
+  margin-top: -8px;
 }
 pre pre {
   background: transparent !important;
@@ -466,8 +483,8 @@ pre .CodeMirror-gutters {
 */
 blockquote,
 .md-alert {
-  margin: 18px 0;
-  padding: 18px;
+  margin: 16px 0;
+  padding: 16px;
   background: var(--color-1-0-b);
   box-sizing: border-box;
   border-radius: 8px;
@@ -479,13 +496,33 @@ blockquote,
 blockquote blockquote {
   background: var(--color-1-0-b);
 }
-.md-alert.md-alert-note,
-.md-alert.md-alert-caution,
-.md-alert.md-alert-tip,
-.md-alert.md-alert-important,
-.md-alert.md-alert-warning{
-  padding-top: 0;
-  padding-bottom: 0;
+blockquote > blockquote,
+blockquote > .md-alert,
+.md-alert > .md-alert,
+.md-alert > blockquote {
+  margin-bottom: 0;
+}
+p + blockquote,
+p + .md-alert,
+blockquote + p,
+.md-alert + p {
+  margin-top: -8px;
+}
+.md-alert.md-alert-note > *:first-child,
+.md-alert.md-alert-caution > *:first-child,
+.md-alert.md-alert-tip > *:first-child,
+.md-alert.md-alert-important > *:first-child,
+.md-alert.md-alert-warning > *:first-child {
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: -4px;
+}
+.md-alert.md-alert-note > *:last-child,
+.md-alert.md-alert-caution > *:last-child,
+.md-alert.md-alert-tip > *:last-child,
+.md-alert.md-alert-important > *:last-child,
+.md-alert.md-alert-warning > *:last-child {
+  margin-bottom: 0;
 }
 .md-alert.md-alert-note {
   border-left-color: var(--color-1);
@@ -616,7 +653,6 @@ table thead tr th:first-of-type {
 #md-grid-height {
   text-align: center !important;
   padding: 1px 0;
-
 }
 button#md-resize-grid {
   display: block !important;
@@ -858,6 +894,9 @@ span.md-comment {
 .md-rawblock .md-rawblock-tooltip-edit-btn:hover {
   background: transparent;
 }
+p:has( + .md-math-block) {
+  margin-bottom: -5px;
+}
 
 .md-htmlblock:hover .md-htmlblock-container,
 .md-htmlblock:hover .md-rawblock-tooltip,
@@ -880,7 +919,7 @@ span.md-comment {
   scroll-padding: 10px;
   overflow-x: auto;
 }
-#write > *:first-of-type {
+#write>*:first-child {
   margin-top: 0;
 }
 #typora-sidebar {
@@ -1393,9 +1432,12 @@ span.md-comment {
 */
 .md-toc {
   font-size: 14px;
-  margin: 18px 0 0 0;
+  margin: 16px 0 0 0;
   padding: 26px 32px 26px 32px;
   background: var(--bg-color2);
+}
+p + .md-toc {
+  margin-top: -8px;
 }
 .md-toc-content {
   padding: 0;
@@ -1781,7 +1823,6 @@ body.typora-export {
 }
 #open-theme-folder-btn {
   margin-top: 48px;
-
 }
 .megamenu-menu {
   background: var(--bg-color);
@@ -2113,23 +2154,23 @@ body.typora-export {
   box-shadow: 0 0 5px var(--color-1) !important;
 }
 /*search style*/
-#searchpanel-search-group .ty-search-panel-row{
+#searchpanel-search-group .ty-search-panel-row {
   padding-top: 0;
 }
-#searchpanel-search-group .ty-search-panel-row input{
+#searchpanel-search-group .ty-search-panel-row input {
   margin-top: 2px;
 }
 .ty-search-panel-row .ion-close-round,
-.ty-search-panel-row .ty-upload{
+.ty-search-panel-row .ty-upload {
   padding-right: 8px !important;
   padding-left: 4px !important;
 }
 #search-panel-next,
-#search-panel-replace-btn{
+#search-panel-replace-btn {
   left: 2px;
 }
 #search-panel-replaceall-btn,
-#search-panel-replace-btn{
+#search-panel-replace-btn {
   text-align: center !important;
   padding-right: 4px !important;
   padding-left: 4px !important;
@@ -2141,7 +2182,7 @@ body.typora-export {
   background: var(--color-2-0-c) !important;
   color: #070909 !important;
 }
-.md-search-select{
+.md-search-select {
   background: var(--color-2) !important;
   color: #070909 !important;
 }
