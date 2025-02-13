@@ -1,44 +1,43 @@
-![typora-mdmdt-theme](./img/mdmdt-cover.png)
+![typora-mdmdt-theme](./img/mdmdt.png)
 # About Mdmdt theme
-![Languages](https://img.shields.io/badge/languages-CSS-F34B7D.svg) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt?include_prereleases&color=blue&logo=hack-the-box) ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg) ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt?style=flat&logo=github&color=red) ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=github&color=turquoise) ![GitHub Repo stars](https://img.shields.io/github/stars/cayxc/Mdmdt?style=flat&logo=github&color=green)
+
+![Languages](https://img.shields.io/badge/languages-CSS-F34B7D.svg) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt?include_prereleases&color=blue&logo=hack-the-box) ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt.svg) ![gitee stars](https://gitee.com/cayxc/mdmdt/badge/star.svg) ![gitee forks](https://gitee.com/cayxc/mdmdt/badge/fork.svg)
 
 #### [中文文档](./readme.zh.md)
 
-**Mdmdt** is an abbreviation for Markdown Minimalism Document Theme, meaning: Markdown Minimalism Document Theme.
-**Mdmdt** is a deeply customized personalized Typora theme, aimed at creating a **refreshing and minimalist** document style. The **Mdmdt** theme has now been included in the [official Typora theme library](https://theme.typoraio.cn).
+**Mdmdt** is an abbreviation for Markdown Minimalism Document Theme, meaning: Markdown Minimalism Document Theme.**Mdmdt** is a deeply customized personalized Typora theme, aimed at creating a **refreshing and minimalist** document style. The **Mdmdt** theme has now been included in the [official Typora theme library](https://theme.typoraio.cn).
 
 Compared to the default theme style, the following aspects have been mainly modified:
-1. A simple and comfortable color scheme style
-2. Add rounded corner style
-3. Title Style
-4. Table Style
-5. Reference box style
-6. Image Style
-7. Code Highlight Style
-8. File Tree Style
-9. Document list style: changed to card structure
-10. Outline style: Added a directory tree structure, making the directory hierarchy more concise and clear
-11. Automatically follow the bright/dark theme mode of the system (the bright/dark theme can be set separately)
+1. Simple and comfortable color matching style
+2. Modify the title style
+3. Modify the table style
+4. Modify the reference box style
+5. Add rounded corner style to the image
+6. Add highlight style to code
+7. Modify file tree, outline, and document list styles
+8. Automatic follow system's light/dark theme mode (can be set separately for light/dark themes)
+9. Modify other UI styles
 
 > [!IMPORTANT]
 >
 > **Attention**: This theme has only been tested in Windows and MacOS environments, and has not been tested in Linux environments. Please be aware when using it!
 
-# Effect
+# Preview
 
-![mdmdt-text](./img/mdmdt-text.jpg)
-![mdmdt-source](./img/mdmdt-source.jpg)
-![mdmdt-code](./img/mdmdt-code.jpg)
-![mdmdt-list](./img/mdmdt-list.jpg)
-![mdmdt-blockquote](./img/mdmdt-blockquote.jpg)
-![mdmdt-mermaid](./img/mdmdt-mermaid.jpg)
-![mdmdt-title](./img/mdmdt-title.jpg)
+![mdmdt-text](./img/mdmdt-text.png)
+![mdmdt-source](./img/mdmdt-source.png)
+![mdmdt-code](./img/mdmdt-code.png)
+![mdmdt-list](./img/mdmdt-list.png)
+![mdmdt-math](./img/mdmdt-math.png)
+![mdmdt-blockquote](./img/mdmdt-blockquote.png)
+![mdmdt-mermaid](./img/mdmdt-mermaid.png)
+![mdmdt-title](./img/mdmdt-title.png)
 
 ---
 
 ![mdmdt-ui-1](./img/mdmdt-ui-1.png)
 ![mdmdt-ui-2](./img/mdmdt-ui-2.png)
-![mdmdt-ui-3](./img/mdmdt-ui-3.jpg)
+![mdmdt-ui-3](./img/mdmdt-ui-3.png)
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
 
 # How to use it
@@ -60,19 +59,17 @@ If you only want to use a separate bright or dark theme, the method is as follow
 3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt Light** or **Mdmdt Dark** theme and complete the theme switch.
 
 # Modify font
+If you are not satisfied with the font, you can refer to the following methods to modify the corresponding font:
 
-If you are not satisfied with the font, you can modify the corresponding font as follows:
+1. Modify the text font and find: `font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;` ,  Then add the font you want to use in the first position after "font-family:",  such as: `font-family:  "The font name you want to use", "PingFang SC", ..., sans-serif;`
 
-1. Modify the font of the main text, find `body {font-family:"PingFang SC",..., !important;}` 、`body.os-windows {font-family: "Microsoft YaHei",..., !important;}` and `textarea {...}`, and add the font you want to use at the beginning of `font-family:`, such as `font-family: "name of the font you want to use", "Microsoft YaHei", ..., !important;`
+2. Modify the code font and find: `--monospace: "JetBrains Mono", "Source Code Pro", "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;`，Then add the font you want to use in its first position,  such as: `--monospace:  "The font name you want to use", "JetBrains Mono", ..., monospace;`
 
-2. Modify the font of the code, find `code, tt {...}` and `pre {...}`, and add `font-family: "name of the font you want to use" !important;`  Then modify `.os-windows pre,.os-windows code {font-family: initial !important;}` , such as `font-family: "name of the font you want to use" !important;`
-
-**Attention: The prerequisite for changing the font is that the corresponding font is installed on your computer, otherwise the modification is invalid.**
+**Attention: The prerequisite for changing the font is that the corresponding font is installed on your computer, otherwise the modification is invalid;** If you are not familiar with the "font-family" property of CSS, you can refer to it here: https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-family
 
 # Export HTML
 
-To export an HTML file, you can directly select the current theme to export HTML.
-
+To export an HTML file, you can directly select the current theme to export HTML
 **If you want to export HTML files with customizable styles, you can use the Mdtht plugin:**
 
 Plugin homepage address:  [Mdtht-Github-address](https://github.com/cayxc/Mdtht)  [Mdtht-Gitee-address]( https://gitee.com/cayxc/mdtht )
@@ -95,7 +92,6 @@ This plugin provides the following rich features:
 Please refer to the plugin homepage for specific details of **mdtht.js** plugin.
 
 
-
 **Export mdtht.js as an HTML rendering (Light theme)**
 
 ---
@@ -107,5 +103,5 @@ Please refer to the plugin homepage for specific details of **mdtht.js** plugin.
 <img src="./img/mdtht-dark.png" alt="mdtht-dark" style="zoom:50%;" />
 
 ---
+🐳 If you like the style of this document, please provide a star 😄， If there are any issues during use, please submit them in a timely manner and I will handle them as soon as I see them.
 
-If you like the style of this document, please provide a star， If there are any issues during use, please submit them in a timely manner and I will handle them as soon as I see them.
