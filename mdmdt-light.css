@@ -1514,7 +1514,7 @@ p + .md-toc {
 .cm-s-inner .cm-builtin { color: #f61d78; }
 .cm-s-inner .cm-atom { color: #fa5336; }
 .cm-s-inner .cm-number { color: #f59102; }
-.cm-s-inner .cm-def { color: #7caafd; }
+.cm-s-inner .cm-def { color: #3876eb; }
 .cm-s-inner .cm-string { color: #02be74; }
 .cm-s-inner .cm-string-2 { color: #0a790a; }
 .cm-s-inner .cm-comment,
@@ -1524,6 +1524,7 @@ p + .md-toc {
 .cm-s-inner .cm-qualifier { color: #dc7b45; }
 .cm-s-inner .cm-tag { color: #e32e73; }
 .cm-s-inner .cm-tag.cm-bracket {color: #0c9bd3;}
+.cm-s-inner .cm-header, .cm-s-inner.cm-header{color: #401df1;}
 .cm-s-inner .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: var(--text-code) !important;
