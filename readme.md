@@ -20,7 +20,7 @@ Compared to the default theme style, the following aspects have been mainly modi
 
 > [!IMPORTANT]
 >
-> **Attention**: This theme has only been tested in Windows and MacOS environments, and has not been tested in Linux environments. Please be aware when using it!
+> **Attention:** This theme has only been tested in Windows and MacOS environments, and has not been tested in Linux environments. Please be aware when using it!
 
 # Preview
 
@@ -49,6 +49,7 @@ Using custom themes is very simple, as follows:
 3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt** theme and complete the theme switch.
 
 > [!NOTE]
+> 
 > **Note:** The mdmdt.css file contains both bright and dark themes, which will automatically switch between bright and dark themes according to the system mode.
 
 ##### Use separate Light/Dark theme

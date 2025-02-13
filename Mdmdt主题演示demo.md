@@ -6,7 +6,7 @@
 >
 > **注意：**mdmdt.css 文件中包含了亮色和暗色两者主题，会跟随系统模式自动切换亮暗主题。 `This is a single line code style`
 >
-> **Attention**: The MDMDT.CSS file contains both light and dark themes, which will automatically switch between light and dark themes according to the system mode.
+> **Attention:** The MDMDT.CSS file contains both light and dark themes, which will automatically switch between light and dark themes according to the system mode.
 
 # 文本
 这是一段正文内容样式，以下是不同文本样式效果：**这是加粗文本样式**, <u>这是下划线样式</u>, *这是斜体字样式*,  [这是超链接样式: https://github.com/cayxc/mdmdt](https://github.com/cayxc/mdmdt),  `This is a single line code style`,  ~~这是删除线效果样式~~,  ==这是文字高亮效果==，上下标样式: $\LaTeX$, X^2^, H~2~O, <span style='background:var(--color-2-0-c)'> 这是鼠标选中效果 </span>,  键盘键样式：<kbd>Command+Q</kbd> 🐳 😀 🇨🇳
