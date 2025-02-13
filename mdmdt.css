@@ -272,7 +272,7 @@ img {
   display: inline-block;
   max-width: 100%;
   border-radius: 8px;
-  margin: 16px auto;
+  margin: 10px auto;
   color: var(--md-char-color);
 }
 span.md-image,
