@@ -1282,7 +1282,7 @@ p:has( + .md-math-block) {
 }
 
 .file-node-expanded > .file-node-children {
-  margin-left: 29px;
+  margin-left: 30px;
 }
 .file-tree-node > .file-node-background {
   border-radius: 5px;
@@ -1325,6 +1325,9 @@ p:has( + .md-math-block) {
 }
 #file-library-tree .file-tree-node {
   position: relative;
+}
+.file-node-expanded>.file-node-content .fa-caret-down{
+  margin-right: 1px;
 }
 #file-library-tree .file-tree-node .file-node-icon {
   padding-left: 3px;
@@ -1379,7 +1382,7 @@ p:has( + .md-math-block) {
   width: 12px;
 }
 .os-windows #file-library-tree .file-node-collapsed > .file-node-content > .file-node-icon::after {
-  top: 15px;
+  top: 14px;
 }
 #file-library-tree .file-node-children > div:last-of-type > .file-node-content > .file-node-icon::after {
   border-top: none;
@@ -1388,7 +1391,7 @@ p:has( + .md-math-block) {
   top: -1px;
 }
 .os-windows #file-library-tree .file-node-children > div:last-of-type > .file-node-content > .file-node-icon::after {
-  top: 0;
+  top: -1px;
 }
 #file-library-tree .file-node-children > div:last-of-type > .file-node-content::before {
   height: 16px;
