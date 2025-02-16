@@ -485,9 +485,9 @@ blockquote,
   box-sizing: border-box;
   border-radius: 8px;
   border-left: 4px solid var(--color-1);
-  border-top: 1px solid transparent;
   border-right: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.1px solid transparent;
+  border-top: 0.1px solid transparent;
 }
 blockquote blockquote {
   background: var(--color-1-0-b);
@@ -1159,12 +1159,15 @@ li > .outline-item-active{
   background: var(--bg-color2);
   color: var(--color-1);
 }
-.outline-item:hover {
-  z-index: 70;
-}
+
 .outline-item:hover::before,
 .outline-item-active::before {
   width: 7px !important;
+}
+
+.os-windows .outline-item:hover::before,
+.os-windows .outline-item-active::before {
+  width: 8px !important;
 }
 
 .outline-item-active .outline-expander {
@@ -1947,7 +1950,7 @@ body.typora-export {
   }
 }
 .theme-preview-div {
-  border: 3px solid var(--border-color);
+  border: 2px solid var(--border-color);
   padding: 4px;
   box-sizing: border-box;
   margin: 0;
@@ -2289,6 +2292,236 @@ body.typora-export {
 
 /*
  * ------------------------
+ * 高分辨率下border设置
+ * ------------------------
+*/
+/*@media (min-resolution: 1.5dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.6667px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.6667px !important;
+  }
+  hr{
+    height: 0.6667px !important;;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.0667px !important;
+    border-bottom-width: 0.0667px !important;
+    border-left-width: 2.6667px !important;
+  }
+  .theme-preview-div{
+    border-width: 1.3333px !important;
+  }
+}
+@media (min-resolution: 2dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.5px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.5px !important;
+  }
+  hr{
+    height: 0.5px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.02px !important;
+    border-bottom-width: 0.02px !important;
+    border-left-width: 2px !important;
+  }
+  .theme-preview-div{
+    border-width: 1px !important;
+  }
+}
+
+@media (min-resolution: 2.5dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.4px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.4px !important;
+  }
+  hr{
+    height: 0.4px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.04px !important;
+    border-bottom-width: 0.04px !important;
+    border-left-width: 1.6px !important;
+  }
+  .theme-preview-div{
+    border-width: 0.8px !important;
+  }
+}
+
+@media (min-resolution: 3dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.3333px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.3333px !important;
+  }
+  hr{
+    height: 0.3333px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.0333px !important;
+    border-bottom-width: 0.0333px !important;
+    border-left-width: 1.3333px !important;
+  }
+  .theme-preview-div{
+    border-width: 0.6667px !important;
+  }
+}*/
+
+/*@media (min-resolution: 3.5dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.2857px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.2857px !important;
+  }
+  hr{
+    height: 0.2857px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.0286px !important;
+    border-bottom-width: 0.0286px !important;
+    border-left-width: 1.1429px !important;
+  }
+  .theme-preview-div{
+    border-width: 0.5714px !important;
+  }
+}*/
+
+/*@media (min-resolution: 4dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.25px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.25px !important;
+  }
+  hr{
+    height: 0.25px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.025px !important;
+    border-bottom-width: 0.025px !important;
+    border-left-width: 1px !important;
+  }
+  .theme-preview-div{
+    border-width: 0.5px !important;
+  }
+}*/
+
+/*@media (min-resolution: 4.5dppx){
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.2222px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.2222px !important;
+  }
+  hr{
+    height: 0.2222px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.0222px !important;
+    border-bottom-width: 0.0222px !important;
+    border-left-width: 0.8889px !important;
+  }
+  .theme-preview-div{
+    border-width: 0.4444px !important;
+  }
+}*/
+
+/*
+@media (min-resolution: 5dppx) {
+  *,
+  #file-library-tree .file-node-content > .file-node-icon::after{
+    border-width: 0.2px !important;
+  }
+  .sidebar:after,
+  .outline-content li::before,
+  .outline-content li .outline-item::before,
+  .outline-content ul > li:last-of-type::before,
+  .outline-content > li:first-of-type > .outline-item::after,
+  #file-library-tree .file-node-content::before,
+  .typora-export-sidebar .outline-item-active::before{
+    width: 0.2px !important;
+  }
+  hr{
+    height: 0.2px !important;
+  }
+  blockquote,
+  .md-alert {
+    border-top-width: 0.02px !important;
+    border-bottom-width: 0.02px !important;
+    border-left-width: 0.8px !important;
+  }
+  .theme-preview-div{
+    border-width: 0.4px !important;
+  }
+}
+*/
+
+/*
+ * ------------------------
  * @media screen
  * ------------------------
 */
@@ -2384,6 +2617,7 @@ body.typora-export {
     font-size: 12pt;
     margin: 12pt 0;
   }
+
   @page {
     size: auto;
     margin: 15mm !important;
@@ -2397,21 +2631,5 @@ body.typora-export {
       content: counter(page) '/' counter(pages);
       font-size: 9pt;
     }
-  }
-}
-
-/*
- * ------------------------
- * 高分辨率下border设置
- * ------------------------
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-  #write{
-    background: red;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #write{
-    background: green;
   }
 }
