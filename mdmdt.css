@@ -485,7 +485,7 @@ blockquote,
   box-sizing: border-box;
   border-radius: 8px;
   border-left: 4px solid var(--color-1);
-  border-right: 1px solid transparent;
+  border-right: 0.1px solid transparent;
   border-bottom: 0.1px solid transparent;
   border-top: 0.1px solid transparent;
 }
@@ -1026,7 +1026,7 @@ p:has( + .md-math-block) {
   z-index: 30;
   left: 0;
   top: 0;
-  background: var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .outline-content > li:first-of-type::before {
@@ -1047,6 +1047,7 @@ p:has( + .md-math-block) {
   width: 1px;
   height: calc(100% + 10px);
   top: -10px;
+  border-left: 1px solid var(--border-color);
 }
 .outline-content ul > li:last-of-type::before {
   content: '';
@@ -1054,10 +1055,7 @@ p:has( + .md-math-block) {
   height: 10px;
   top: -10px;
   left: 0;
-}
-.os-windows .outline-content ul li::before,
-.os-windows .outline-content ul > li:last-of-type::before {
-  top: -11px;
+  border-left: 1px solid var(--border-color);
 }
 
 .outline-content li .outline-item {
@@ -1109,7 +1107,7 @@ p:has( + .md-math-block) {
   z-index: 35;
   left: -8px;
   top: -2px;
-  background: var(--bg-color);
+  border-left: 1px solid var(--bg-color);
 }
 
 .outline-content > li:last-of-type > .outline-item::before,
@@ -1163,11 +1161,6 @@ li > .outline-item-active{
 .outline-item:hover::before,
 .outline-item-active::before {
   width: 7px !important;
-}
-
-.os-windows .outline-item:hover::before,
-.os-windows .outline-item-active::before {
-  width: 8px !important;
 }
 
 .outline-item-active .outline-expander {
@@ -1369,7 +1362,7 @@ li > .outline-item-active{
   display: block;
   width: 1px;
   height: calc(100% + 5px);
-  background: var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 #file-library-tree .file-node-content > .file-node-icon::before {
   position: relative;
@@ -1497,7 +1490,7 @@ p + .md-toc {
 /*
  * ------------------------
  * code colors
- * ------------------------ 
+ * ------------------------
 */
 .cm-s-inner {
   background-color: transparent !important;
@@ -1571,7 +1564,7 @@ p + .md-toc {
 /*
  * ------------------------
  * export html
- * ------------------------ 
+ * ------------------------
 */
 body.typora-export {
   padding-left: 0;
@@ -2082,7 +2075,7 @@ body.typora-export {
   height: 100%;
   right: -24px;
   top: 0;
-  background: var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .ty-preferences a {
@@ -2289,236 +2282,6 @@ body.typora-export {
   /*code colors*/
   .cm-s-inner .cm-header, .cm-s-inner.cm-header{color: #41cce9;}
 }
-
-/*
- * ------------------------
- * 高分辨率下border设置
- * ------------------------
-*/
-/*@media (min-resolution: 1.5dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.6667px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.6667px !important;
-  }
-  hr{
-    height: 0.6667px !important;;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.0667px !important;
-    border-bottom-width: 0.0667px !important;
-    border-left-width: 2.6667px !important;
-  }
-  .theme-preview-div{
-    border-width: 1.3333px !important;
-  }
-}
-@media (min-resolution: 2dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.5px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.5px !important;
-  }
-  hr{
-    height: 0.5px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.02px !important;
-    border-bottom-width: 0.02px !important;
-    border-left-width: 2px !important;
-  }
-  .theme-preview-div{
-    border-width: 1px !important;
-  }
-}
-
-@media (min-resolution: 2.5dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.4px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.4px !important;
-  }
-  hr{
-    height: 0.4px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.04px !important;
-    border-bottom-width: 0.04px !important;
-    border-left-width: 1.6px !important;
-  }
-  .theme-preview-div{
-    border-width: 0.8px !important;
-  }
-}
-
-@media (min-resolution: 3dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.3333px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.3333px !important;
-  }
-  hr{
-    height: 0.3333px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.0333px !important;
-    border-bottom-width: 0.0333px !important;
-    border-left-width: 1.3333px !important;
-  }
-  .theme-preview-div{
-    border-width: 0.6667px !important;
-  }
-}*/
-
-/*@media (min-resolution: 3.5dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.2857px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.2857px !important;
-  }
-  hr{
-    height: 0.2857px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.0286px !important;
-    border-bottom-width: 0.0286px !important;
-    border-left-width: 1.1429px !important;
-  }
-  .theme-preview-div{
-    border-width: 0.5714px !important;
-  }
-}*/
-
-/*@media (min-resolution: 4dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.25px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.25px !important;
-  }
-  hr{
-    height: 0.25px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.025px !important;
-    border-bottom-width: 0.025px !important;
-    border-left-width: 1px !important;
-  }
-  .theme-preview-div{
-    border-width: 0.5px !important;
-  }
-}*/
-
-/*@media (min-resolution: 4.5dppx){
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.2222px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.2222px !important;
-  }
-  hr{
-    height: 0.2222px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.0222px !important;
-    border-bottom-width: 0.0222px !important;
-    border-left-width: 0.8889px !important;
-  }
-  .theme-preview-div{
-    border-width: 0.4444px !important;
-  }
-}*/
-
-/*
-@media (min-resolution: 5dppx) {
-  *,
-  #file-library-tree .file-node-content > .file-node-icon::after{
-    border-width: 0.2px !important;
-  }
-  .sidebar:after,
-  .outline-content li::before,
-  .outline-content li .outline-item::before,
-  .outline-content ul > li:last-of-type::before,
-  .outline-content > li:first-of-type > .outline-item::after,
-  #file-library-tree .file-node-content::before,
-  .typora-export-sidebar .outline-item-active::before{
-    width: 0.2px !important;
-  }
-  hr{
-    height: 0.2px !important;
-  }
-  blockquote,
-  .md-alert {
-    border-top-width: 0.02px !important;
-    border-bottom-width: 0.02px !important;
-    border-left-width: 0.8px !important;
-  }
-  .theme-preview-div{
-    border-width: 0.4px !important;
-  }
-}
-*/
 
 /*
  * ------------------------
