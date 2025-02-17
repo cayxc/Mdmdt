@@ -2,7 +2,7 @@
 # About Mdmdt theme
 
 ![Languages](https://img.shields.io/badge/languages-CSS-F34B7D.svg)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt?include_prereleases&color=blue&logo=hack-the-box)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cayxc/Mdmdt??style=flat&logo=github&color=orange)
 ![GitHub license](https://img.shields.io/github/license/cayxc/Mdmdt?style=flat&logo=github&color=pink)
 ![GitHub issues](https://img.shields.io/github/issues/cayxc/Mdmdt?style=flat&logo=github&color=red)
 ![GitHub forks](https://img.shields.io/github/forks/cayxc/Mdmdt?style=flat&logo=github&color=turquoise)
