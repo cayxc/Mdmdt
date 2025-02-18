@@ -663,6 +663,9 @@ button#md-resize-grid:hover {
 .md-tooltip-remove {
   margin-top: -26px !important;
 }
+.md-table-resize-popover .md-reset > a::before{
+  display: none !important;
+}
 
 /*
  * ------------------------
@@ -1548,6 +1551,8 @@ p + .md-toc {
   color: var(--text-grey);
 }
 .md-fences .code-tooltip {
+  right: 0 !important;
+  bottom: -28px !important;
   background-color: var(--bg-color2);
   color: var(--text-color);
   border-radius: 5px;
@@ -2202,6 +2207,9 @@ body.typora-export {
 .md-diagram-panel > svg {
   width: 100% !important;
   max-width: 100% !important;
+}
+p:has( + .md-diagram ) {
+  margin-bottom: -12px;
 }
 
 /*
