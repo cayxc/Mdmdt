@@ -116,11 +116,11 @@ body #write {
 
 body,
 #megamenu-content,
-header {
+.os-windows > header{
   background: var(--bg-color) !important;
 }
-header {
-  box-shadow: 0 1px 3px 0 rgba(27, 27, 31, 0.16), 0 2px 5px 0 rgba(27, 27, 31, 0.1);
+.os-windows > header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 /*
@@ -705,7 +705,6 @@ button#md-resize-grid:hover {
   outline: none !important;
 }
 .btn {
-  margin: 2px;
   margin-right: 5px !important;
 }
 .btn:last-of-type {
@@ -1426,25 +1425,19 @@ li > .outline-item-active{
  * md-notification-container
  * ------------------------
 */
-.unibody-window .md-notification-container{
-  border-bottom: 1px solid var(--border-color);
+.os-windows .md-notification-container{
   background: var(--bg-color);
-  padding-bottom: 8px;
-  padding-top: 33px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  padding-top: 28px;
 }
 #md-notification::before {
   font-size: 18px;
-  top: 13px;
+  top: 16px;
 }
-
 #md-notification p {
-  margin: auto;
+  margin: 8px 0;
   font-size: 14px;
 }
-#md-notification > p {
-  margin-top: 4px;
-}
-
 #md-notification-content span {
   margin-bottom: 4px;
   margin-left: 8px;
@@ -1824,8 +1817,8 @@ body.typora-export {
   background: var(--color-5) !important;
   color: #fff !important;
 }
-.unibody-window > header,
-.unibody-window > header .toolbar-icon.btn{
+.os-windows > header,
+.os-windows > header .toolbar-icon.btn{
   height: 26px;
 }
 #top-titlebar .btn {
