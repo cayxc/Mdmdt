@@ -68,7 +68,7 @@
 
 如果您对字体不满意，可以参照如下方法修改相应的字体：
 
-1. 修改正文字体，找到：`font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;` 在 “font-family:” 后第一个位置添加你想使用的字体，如：`font-family: "想使用的字体名称", "PingFang SC", ..., sans-serif;`
+1. 修改正文字体，找到：`font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;` 在 “font-family:” 后第一个位置添加你想使用的字体，如：`font-family: "想使用的字体名称", "PingFang SC", ..., sans-serif;`；Windows环境下修改正文字体，找到：`body.os-windows{...}`，按照前面方式修改。
 2. 修改代码字体，找到：`--monospace: "JetBrains Mono", "Source Code Pro", "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;`， 然后在其第一个位置添加你想使用的字体，如：`--monospace: "想使用的字体名称", "JetBrains Mono", ..., monospace;`
 
 **注意：更换字体的前提是你电脑上要安装有相应的字体，否则修改无效**。如果您不了解 CSS 的 "font-family" 属性，可以参考这里：https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-family

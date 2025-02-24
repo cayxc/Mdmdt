@@ -67,7 +67,7 @@ If you only want to use a separate bright or dark theme, the method is as follow
 # Modify font
 If you are not satisfied with the font, you can refer to the following methods to modify the corresponding font:
 
-1. Modify the text font and find: `font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;` ,  Then add the font you want to use in the first position after "font-family:",  such as: `font-family:  "The font name you want to use", "PingFang SC", ..., sans-serif;`
+1. Modify the text font and find: `font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;` ,  Then add the font you want to use in the first position after "font-family:",  such as: `font-family:  "The font name you want to use", "PingFang SC", ..., sans-serif;`; Modify the font of the text in the Windows environment and find: ` body.os-windows{...}`, Modify according to the previous method.
 
 2. Modify the code font and find: `--monospace: "JetBrains Mono", "Source Code Pro", "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;`，Then add the font you want to use in its first position,  such as: `--monospace:  "The font name you want to use", "JetBrains Mono", ..., monospace;`
 
