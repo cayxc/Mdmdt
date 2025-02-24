@@ -80,8 +80,11 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "PingFang SC", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: var(--bg-color);
+}
+body.os-windows {
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /*
@@ -268,7 +271,7 @@ img {
   display: inline-block;
   max-width: 100%;
   border-radius: 8px;
-  margin: 10px auto;
+  margin: 0 auto 14px auto;
   color: var(--md-char-color);
 }
 span.md-image,
@@ -346,14 +349,14 @@ content a:hover {
 */
 ul {
   margin-left: 0;
-  margin-top: 5px !important;
-  margin-bottom: 5px;
+  margin-top: 4px !important;
+  margin-bottom: 4px;
   padding-left: 36px;
 }
 ol {
   margin-left: 0;
-  margin-top: 5px !important;
-  margin-bottom: 5px;
+  margin-top: 4px !important;
+  margin-bottom: 4px;
   padding-left: 40px;
 }
 p:has( + ul ),
@@ -362,7 +365,7 @@ p:has( + ol ) {
 }
 ul li,
 ol li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 ul > li > p {
@@ -447,7 +450,7 @@ h2 code {
  * ------------------------
 */
 pre {
-  margin: 16px 0;
+  margin: 14px 0;
   padding: 16px;
   background: var(--bg-color2) !important;
   font-size: 14px !important;
@@ -479,7 +482,7 @@ pre .CodeMirror-gutters {
 */
 blockquote,
 .md-alert {
-  margin: 16px 0;
+  margin: 14px 0;
   padding: 16px;
   background: var(--color-1-0-b);
   box-sizing: border-box;
@@ -499,9 +502,7 @@ blockquote > .md-alert,
   margin-bottom: 0;
 }
 p + blockquote,
-p + .md-alert,
-blockquote + p,
-.md-alert + p {
+p + .md-alert{
   margin-top: -8px;
 }
 .md-alert.md-alert-note > *:first-child,
@@ -603,7 +604,10 @@ kbd {
  * ------------------------
 */
 figure.table-figure {
-  margin-top: 25px !important;
+  margin-top: -5px;
+}
+p + .table-figure{
+  margin-top: -8px;
 }
 table {
   width: 100%;
@@ -661,7 +665,10 @@ button#md-resize-grid:hover {
   border-color: var(--color-1);
 }
 .md-tooltip-remove {
-  margin-top: -26px !important;
+  margin-top: -27px !important;
+  background: var(--bg-color);
+  position: absolute;
+  z-index: 200;
 }
 .md-table-resize-popover .md-reset > a::before{
   display: none !important;
@@ -1419,8 +1426,11 @@ li > .outline-item-active{
  * md-notification-container
  * ------------------------
 */
-#md-notification {
-  position: relative;
+.unibody-window .md-notification-container{
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-color);
+  padding-bottom: 8px;
+  padding-top: 33px;
 }
 #md-notification::before {
   font-size: 18px;
@@ -1432,7 +1442,7 @@ li > .outline-item-active{
   font-size: 14px;
 }
 #md-notification > p {
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 #md-notification-content span {
@@ -1450,7 +1460,7 @@ li > .outline-item-active{
 */
 .md-toc {
   font-size: 14px;
-  margin: 16px 0 0 0;
+  margin: 14px 0 0 0;
   padding: 26px 32px 26px 32px;
   background: var(--bg-color2);
 }
@@ -1814,8 +1824,12 @@ body.typora-export {
   background: var(--color-5) !important;
   color: #fff !important;
 }
+.unibody-window > header,
+.unibody-window > header .toolbar-icon.btn{
+  height: 26px;
+}
 #top-titlebar .btn {
-  margin: 0 !important;
+  margin: 0 0 -1px 0 !important;
 }
 
 /* .megamenu-men */
@@ -1824,6 +1838,7 @@ body.typora-export {
 }
 .megamenu-content {
   padding-right: 30px;
+  padding-top: 26px;
 }
 #open-theme-folder-btn {
   margin-top: 48px;
@@ -2142,10 +2157,6 @@ body.typora-export {
 .export-item.active {
   color: var(--color-1) !important;
 }
-
-#md-notification {
-  top: -6px;
-}
 .md-show-hint::after {
   background: var(--color-1-0-b) !important;
   border-radius: 3px;
@@ -2203,6 +2214,9 @@ body.typora-export {
   max-width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+.md-diagram + .md-diagram{
+  margin-top: -7px;
 }
 .md-diagram-panel > svg {
   width: 100% !important;
