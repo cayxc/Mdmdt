@@ -999,7 +999,7 @@ p:has( + .md-math-block) {
 #toc-dropmenu {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  top: calc(var(--title-bar-height) - 2px) !important;
+  top: calc(var(--title-bar-height) + 8px) !important;
   right: 18px;
 }
 #toc-dropmenu #pin-outline-btn {
@@ -1428,15 +1428,28 @@ li > .outline-item-active{
 .os-windows .md-notification-container{
   background: var(--bg-color);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-  padding-top: 28px;
+  padding-top: 10px;
+}
+#md-notification{
+  padding-top: calc(var(--title-bar-height) + 5px) !important;
+  padding-bottom: 8px;
+}
+.typora-export-spinner{
+  margin-top: calc(var(--title-bar-height) + 5px) !important;
 }
 #md-notification::before {
   font-size: 18px;
-  top: 16px;
+  top: 13px;
+}
+.os-windows #md-notification::before {
+  top: 33px;
 }
 #md-notification p {
-  margin: 8px 0;
+  margin: 5px 0 0 0;
   font-size: 14px;
+}
+#md-notification .btn{
+  margin: 0;
 }
 #md-notification-content span {
   margin-bottom: 4px;
