@@ -102,7 +102,7 @@ body.os-windows {
   height: 8px !important;
 }
 ::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   border-radius: 4px !important;
   background: var(--border-color) !important;
 }
@@ -949,12 +949,12 @@ p:has( + .md-math-block) {
   overflow: auto;
   margin: 0 auto;
   padding: 32px 112px;
-/*  scroll-behavior: smooth;
-  scroll-padding: 14px;*/
-/*  scrollbar-width: none !important;
-  ::-webkit-scrollbar {
-    width: 0 !important;
-  }*/
+  /*  scroll-behavior: smooth;
+    scroll-padding: 14px;*/
+  /*  scrollbar-width: none !important;
+    ::-webkit-scrollbar {
+      width: 0 !important;
+    }*/
 }
 #write > *:first-child {
   margin-top: 0;
@@ -1519,13 +1519,13 @@ li > .outline-item:hover::before,
 .md-toc-content .md-toc-h1::before {
   background: var(--color-1);
 }
-.md-toc-item a.md-toc-inner:hover{
+.md-toc-item a.md-toc-inner:hover {
   text-decoration: none;
 }
-.md-toc-item:has(a.md-toc-inner:hover)::before{
+.md-toc-item:has(a.md-toc-inner:hover)::before {
   background: var(--color-2);
 }
-.md-toc-item a.md-toc-inner:hover code{
+.md-toc-item a.md-toc-inner:hover code {
   background: var(--color-2-0-a);
   color: var(--color-2);
 }
@@ -1721,13 +1721,14 @@ li > .outline-item:hover::before,
   color: var(--color-1);
 }
 
+/* .toolbar-icon */
 .unibody-window .long-btn:hover span,
 .unibody-window .long-btn:hover i,
 .megamenu-menu-panel .btn:hover,
 #megamenu-menu-header-title:hover,
 .toolbar-icon:hover,
 #megamenu-back-btn:hover i {
-  color: var(--color-1) !important;
+  color: var(--color-1);
   text-decoration: none;
 }
 .unibody-window .long-btn:hover,
@@ -1736,25 +1737,33 @@ li > .outline-item:hover::before,
   border-color: var(--color-1);
   background: var(--bg-color2);
 }
+#w-titlebar-left {
+  margin-top: 3px;
+}
 #w-traffic-lights span {
   background: transparent !important;
   border-radius: 0 !important;
   border: none !important;
 }
-#w-traffic-lights span:hover {
-  background: var(--color-1-0-b) !important;
+#w-traffic-lights #w-min,
+#w-traffic-lights #w-close,
+#w-traffic-lights #w-max {
+  padding-top: 8px;
+  padding-left: 18px;
 }
-
+#w-traffic-lights .btn {
+  margin: 0 !important;
+}
+.os-windows #w-max-group.w-show-more > #w-full,
+.os-windows #w-max-group.w-show-more > #w-pin{
+  display: block !important;
+}
+#w-traffic-lights > span:not(#w-close):hover {
+  background: var(--bg-color2) !important;
+}
 #w-traffic-lights #w-close:hover {
+  color: white !important;
   background: var(--color-5) !important;
-  color: #fff !important;
-}
-.os-windows > header,
-.os-windows > header .toolbar-icon.btn {
-  height: 26px;
-}
-#top-titlebar .btn {
-  margin: 0 0 -2px 0 !important;
 }
 
 /* .megamenu-men */
@@ -2244,10 +2253,10 @@ p:has( + .md-diagram ) {
  * export html
  * ------------------------
 */
-body.typora-export{
+body.typora-export {
   padding: 0;
 }
-.typora-export code{
+.typora-export code {
   padding: 2px 4px;
 }
 .typora-export .typora-export-content {
@@ -2327,7 +2336,7 @@ body.typora-export{
   padding: 0;
 }
 .typora-export .outline-item-wrapper > .outline-item > .outline-expander::before,
-.typora-export .outline-item-wrapper:not(.outline-item-open)  > .outline-item > .outline-expander::before{
+.typora-export .outline-item-wrapper:not(.outline-item-open) > .outline-item > .outline-expander::before {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -2359,7 +2368,7 @@ body.typora-export{
   padding-left: 9px;
 }
 .typora-export li.outline-item-open > .outline-item > .outline-label,
-.typora-export .outline-item-wrapper:not(.outline-item-open) > .outline-item > .outline-expander:hover + .outline-label{
+.typora-export .outline-item-wrapper:not(.outline-item-open) > .outline-item > .outline-expander:hover + .outline-label {
   padding-left: 13px;
 }
 .typora-export-no-collapse-outline .outline-content li .outline-label {
@@ -2398,7 +2407,7 @@ body.typora-export{
  * ------------------------
 */
 @media screen and (min-width: 1725px) {
-  .typora-export .outline-content{
+  .typora-export .outline-content {
     padding-left: 3px;
   }
 }
@@ -2511,7 +2520,7 @@ body.typora-export{
   img,
   blockquote,
   .md-alert,
-  .md-diagram-panel{
+  .md-diagram-panel {
     page-break-inside: avoid;
   }
   pre {
