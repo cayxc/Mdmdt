@@ -63,13 +63,13 @@
 
 html {
   height: 100vh;
-  scroll-behavior: smooth;
-  scroll-padding: 14px;
   background-color: var(--bg-color);
   font-size: 16px !important;
   color: var(--text-color);
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  scroll-padding: 14px;
 }
 
 body {
@@ -139,18 +139,18 @@ h4 { font-size: 20px; }
 h5 { font-size: 18px; }
 h6 { font-size: 16px; }
 
-h1.md-focus:before,
-h2.md-focus:before,
-h3.md-focus:before,
-h4.md-focus:before,
-h5.md-focus:before,
-h6.md-focus:before,
-h1:before,
-h2:before,
-h3:before,
-h4:before,
-h5:before,
-h6:before {
+#write > h1.md-focus:before,
+#write > h2.md-focus:before,
+#write > h3.md-focus:before,
+#write > h4.md-focus:before,
+#write > h5.md-focus:before,
+#write > h6.md-focus:before,
+#write > h1:before,
+#write > h2:before,
+#write > h3:before,
+#write > h4:before,
+#write > h5:before,
+#write > h6:before {
   display: none;
   height: 20px;
   position: absolute;
@@ -164,43 +164,43 @@ h6:before {
   font-weight: 700;
   color: var(--color-1);
 }
-h1:before,
-h1.md-focus:before {
+#write > h1:before,
+#write > h1.md-focus:before {
   content: 'h1';
   top: 15px;
 }
-h2:before,
-h2.md-focus:before {
+#write > h2:before,
+#write > h2.md-focus:before {
   content: 'h2';
   top: 10.5px;
 }
-h3:before,
-h3.md-focus:before {
+#write > h3:before,
+#write > h3.md-focus:before {
   content: 'h3';
   top: 8px;
 }
-h4:before,
-h4.md-focus:before {
+#write > h4:before,
+#write > h4.md-focus:before {
   content: 'h4';
   top: 5.5px;
 }
-h5:before,
-h5.md-focus:before {
+#write > h5:before,
+#write > h5.md-focus:before {
   content: 'h5';
   top: 4px;
 }
-h6:before,
-h6.md-focus:before {
+#write > h6:before,
+#write > h6.md-focus:before {
   content: 'h6';
   top: 2.5px;
 }
 
-h1:hover::before,
-h2:hover::before,
-h3:hover::before,
-h4:hover::before,
-h5:hover::before,
-h6:hover::before {
+#write > h1:hover::before,
+#write > h2:hover::before,
+#write > h3:hover::before,
+#write > h4:hover::before,
+#write > h5:hover::before,
+#write > h6:hover::before {
   display: block;
 }
 
@@ -251,7 +251,7 @@ mark {
   -webkit-box-decoration-break: clone;
 }
 
-.os-windows > header {
+body > header {
   background: var(--bg-color) !important;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 }
@@ -872,6 +872,9 @@ span.md-comment {
 }
 
 /*md-htmlblock*/
+.md-htmlblock {
+  overflow: auto;
+}
 .md-htmlblock-panel,
 .md-htmlblock-container,
 .md-htmlblock-container .md-htmlblock-panel-placeholder {
@@ -1051,13 +1054,22 @@ p:has( + .md-math-block) {
   margin-top: -1px;
   border-top: 1px solid var(--border-color);
 }
+.os-windows .ty-show-outline-filter #sidebar-content .sidebar-content-content {
+  margin-top: -4px;
+}
+.os-windows .ty-show-search #sidebar-content .sidebar-content-content {
+  margin-top: -7px;
+}
 .sidebar-tabs {
   padding: 0 2px;
 }
 .outline-content {
   padding: 14px 14px 14px 18px;
   font-size: 14px !important;
-  overflow: auto;
+  overflow: auto !important;
+}
+.os-windows .outline-content {
+  padding-top: 15px;
 }
 .outline-content li {
   position: relative;
@@ -1078,7 +1090,7 @@ p:has( + .md-math-block) {
 .outline-content li .outline-item {
   position: relative;
   z-index: 50;
-  width: 100%;
+  width: calc(100% - 4px);
   border-radius: 5px;
   line-height: 1;
   margin: 0 0 3px 7px;
@@ -1139,7 +1151,7 @@ p:has( + .md-math-block) {
   position: absolute;
   z-index: 38;
   left: -10px;
-  top: -27.5px;
+  top: -28.5px;
   background: transparent;
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -1241,8 +1253,9 @@ li > .outline-item:hover::before,
   display: none;
 }
 .outline-content li:has(.ty-outline-hit) .outline-item {
+  width: calc(100% - 1px);
   padding-left: 0 !important;
-  margin-left: 0 !important;
+  margin-left: 1px !important;
 }
 .outline-content li:has(.ty-outline-hit) .outline-item > .outline-label {
   padding: 8px 10px !important;
@@ -1260,7 +1273,7 @@ li > .outline-item:hover::before,
 */
 #file-library-list,
 #file-library-search-result {
-  padding: 12px;
+  padding: 14px;
 }
 /*ty-search-item*/
 #file-library-list .file-list-item,
@@ -1665,14 +1678,17 @@ li > .outline-item:hover::before,
 
 /* .dropdown-menu */
 .dropdown-menu {
+  margin-top: 4px;
   padding: 8px !important;
   border-radius: 8px !important;
   border: 1px solid var(--border-color);
 }
 #recent-file-panel-search-input,
 .megamenu-menu-panel .btn,
-.dropdown-menu li,
 .dropdown-menu li a {
+  border-radius: 6px !important;
+}
+.dropdown-menu li:hover {
   border-radius: 6px !important;
 }
 .ty-spell-check-panel-item {
@@ -1957,6 +1973,9 @@ li > .outline-item:hover::before,
   padding: 6px !important;
   border: 1px solid var(--border-color);
 }
+.ext-context-menu {
+  margin: -4px 1px 0 1px;
+}
 .context-menu li a {
   display: inline-block;
   width: 100%;
@@ -1981,17 +2000,16 @@ li > .outline-item:hover::before,
 /* alert-msg */
 #searchpanel-msg {
   background: var(--color-1-0-b);
+  margin-top: 2px;
+  margin-bottom: 8px;
 }
 .alert.alert-warning,
 .alert.alert-warning * {
   color: var(--color-1) !important;
 }
-
 #md-searchpanel {
-  max-height: 42px;
-}
-#md-searchpanel {
-  padding-top: 9px;
+  padding-top: 7px;
+  /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15) !important;*/
 }
 #md-searchpanel input,
 #md-replace-type-label,
@@ -2055,21 +2073,6 @@ li > .outline-item:hover::before,
 .window label {
   font-size: 13px !important;
 }
-.window h1::before,
-.window h1::after,
-.window h2::before,
-.window h2::after,
-.window h3::before,
-.window h3::after,
-.window h4::before,
-.window h4::after,
-.window h5::before,
-.window h5::after,
-.window h6::before,
-.window h6::after {
-  content: '';
-  display: none;
-}
 .window .window-header h2 {
   font-size: 15px !important;
 }
@@ -2102,7 +2105,7 @@ footer.ty-footer,
   line-height: 24px;
 }
 .ty-footer #footer-word-count {
-  margin-right: -3px;
+  margin-right: -2px;
 }
 .typora-sourceview-on #toggle-sourceview-btn {
   margin-left: 0;
@@ -2248,9 +2251,6 @@ footer.ty-footer,
 #searchpanel-search-group .searchpanel-search-option-btn:hover {
   color: var(--color-1);
 }
-#md-searchpanel .btn {
-  line-height: 24px !important;
-}
 .ty-search-panel-row .btn {
   line-height: 14px;
 }
@@ -2280,45 +2280,61 @@ footer.ty-footer,
   background: var(--color-2) !important;
   color: #070909 !important;
 }
+
 /* md-notification-container */
 .md-notification-container {
   background: var(--bg-color);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
   padding-top: calc(var(--title-bar-height) + 10px) !important;
-  padding-bottom: 8px;
   font-size: 14px;
+}
+.native-window.os-windows .md-notification-container,
+.mac-os .md-notification-container {
+  padding-top: 3px !important;
 }
 .md-notification-container #md-notification::before {
   font-size: 18px;
-  top: 14px;
+  top: 8px;
+}
+#md-notification .md-notification-content {
+  padding-bottom: 4px;
 }
 #md-notification p {
-  margin-top: 11px;
-  margin-bottom: 0;
+  margin: 4px 0;
   white-space: nowrap;
+}
+#md-notification > p:last-of-type {
+  margin-bottom: 8px;
+}
+#md-notification > p:only-of-type {
+  margin-bottom: 0;
 }
 .md-notification-container .btn {
   margin: 0;
 }
-.md-notification-container span {
-  margin-bottom: 4px;
-  margin-left: 8px;
-}
 #md-notification .typora-search-spinner,
 #md-notification .typora-export-spinner {
-  top: 15px !important;
+  top: 7px !important;
+}
+.unibody-window #md-searchpanel .btn{
+  line-height: 24px !important;
 }
 #md-notification .typora-search-spinner > div,
 #md-notification .typora-export-spinner > div {
   background: var(--color-1);
 }
 
-/*.typora-export-spinner {
-  margin-top: calc(var(--title-bar-height) + 5px) !important;
+/* 打字机模式提示 */
+#md-notification .ty-enter-mode-warning-body + div {
+  display: flex;
+  display: -webkit-flex;
 }
-.typora-search-spinner > div {
-  background: var(--color-1);
-}*/
+#md-notification label {
+  align-self: center;
+}
+#md-notification label > input {
+  margin-top: 0;
+}
 
 /*
  * ------------------------
@@ -2646,7 +2662,7 @@ body.typora-export {
     background: var(--color-2);
     color: rgb(250, 250, 250);
   }
-  header,
+  body > header,
   .md-notification-container {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
   }
