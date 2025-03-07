@@ -1360,16 +1360,6 @@ li > .outline-item:hover::before,
   padding-right: 14px;
   box-sizing: border-box;
 }
-.sidebar-tab-btn {
-  font-size: 16px !important;
-  line-height: 20px !important;
-  vertical-align: text-top;
-  margin-top: 12px !important;
-  color: var(--title-color);
-}
-.sidebar-tab-btn:hover {
-  color: var(--color-1);
-}
 .file-node-root {
   position: relative;
   padding-left: 0 !important;
@@ -2001,42 +1991,6 @@ li > .outline-item:hover::before,
  * dialogs
  * ------------------------
 */
-.mac-os .ty-show-search .ty-tab-wrapper{
-  border-bottom: 1px solid var(--border-color);
-}
-.mac-os #sidebar-search-btn span::before,
-.mac-os #ty-sidebar-search-tabs #ty-sidebar-search-back-btn span::before{
-  font-weight: 800;
-}
-.mac-os #ty-sidebar-search-tabs #file-library-search-input {
-  top: 0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-radius: 0 !important;
-  border-bottom-width: 1.5px;
-  padding: 0;
-  margin-right: 0;
-}
-.mac-os #ty-sidebar-search-tabs .searchpanel-search-option-btn{
-  top: 14px;
-}
-.mac-os #ty-sidebar-search-tabs #ty-sidebar-search-back-btn{
-  margin-top: 14px !important;
-}
-.mac-os #ty-sidebar-search-tabs .sidebar-tab-btn{
-  width: 26px !important;
-  padding-right: 8px;
-}
-.mac-os #ty-sidebar-search-tabs #filesearch-regexp-option-btn{
-  right: 12px;
-}
-.mac-os #ty-sidebar-search-tabs #filesearch-word-option-btn{
-  right: 35px;
-}
-.mac-os #ty-sidebar-search-tabs #filesearch-case-option-btn{
-  right: 58px;
-}
 .form-control {
   padding: 6px;
 }
@@ -2175,6 +2129,59 @@ footer.ty-footer,
  * Control UI on Mac (optional)
  * ---------------------------------
 */
+.sidebar-tab-btn {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  vertical-align: text-top;
+  margin-top: 11px !important;
+  color: var(--title-color);
+}
+.sidebar-tab-btn:hover {
+  color: var(--color-1);
+}
+.mac-os .ty-show-search .ty-tab-wrapper{
+  border-bottom: 1px solid var(--border-color);
+}
+.mac-os #sidebar-search-btn span::before{
+  font-size: 18px;
+}
+.mac-os #ty-sidebar-search-tabs input {
+  top: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0 !important;
+  border-bottom-width: 1px;
+  padding: 0;
+  margin-right: 0;
+}
+.mac-os #ty-sidebar-search-tabs .searchpanel-search-option-btn{
+  top: 14px;
+}
+.mac-os #ty-sidebar-search-tabs #ty-sidebar-search-back-btn{
+  margin-top: 14px !important;
+}
+.mac-os #ty-sidebar-search-tabs .sidebar-tab-btn{
+  width: 25px !important;
+  padding-right: 8px;
+}
+.mac-os #ty-sidebar-search-tabs #filesearch-regexp-option-btn{
+  right: 12px;
+}
+.mac-os #ty-sidebar-search-tabs #filesearch-word-option-btn{
+  right: 35px;
+}
+.mac-os #ty-sidebar-search-tabs #filesearch-case-option-btn{
+  right: 58px;
+}
+#ty-sidebar-footer .sidebar-footer-item{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/*#ty-sidebar-footer .not-empty-menu-group,
+#ty-sidebar-footer .sidebar-footer-main-item{
+  margin-bottom: -2px;
+}*/
 #typora-quick-open {
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
@@ -2439,9 +2446,6 @@ body.typora-export {
 /* sideba */
 #typora-sidebar {
   border-right-color: var(--border-color);
-}
-.sidebar-footer .sidebar-footer-item {
-  margin-top: -2px !important;
 }
 .typora-export-sidebar {
   margin-right: 0;
