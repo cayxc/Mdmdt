@@ -66,7 +66,6 @@ html {
   background-color: var(--bg-color);
   font-size: 16px !important;
   color: var(--text-color);
-  letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   scroll-padding: 14px;
@@ -77,12 +76,14 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 1.6;
-  overflow-x: hidden;
+  letter-spacing: 0.6px;
   font-family: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: var(--bg-color);
+  overflow-x: hidden;
 }
 body.os-windows {
   font-family: "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 * {
   tab-size: 4;
@@ -290,7 +291,7 @@ a:hover,
 #write blockquote a,
 #write .md-alert a,
 #write li a {
-  padding-left: 18px;
+  padding-left: 2px;
 }
 #write p a::before,
 #write table a::before,
@@ -300,7 +301,7 @@ a:hover,
   content: "";
   display: inline-block;
   position: relative;
-  top: 3px;
+  top: 2px;
   right: 2px;
   z-index: 30;
   width: 14px;
@@ -308,8 +309,6 @@ a:hover,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  margin-top: 5.5px;
-  margin-left: -16px;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzQwODE2MTE0MTYyIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEyMjciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PHBhdGggZD0iTTQwMC41NjU3NzE1NiAzODAuNDQwODE2MjVjNTguOTcxNDI4NDQgMi42NDQ4OTc1IDgzLjUxMDIwNDA2IDMyLjc2NzM0NzE5IDczLjY2NTMwNTYzIDkwLjQxNjMyNjg3LTAuMDk3OTU5MzggMC41Mzg3NzU2Mi0wLjI5Mzg3NzE5IDEuMDc3NTUxMjUtMC41ODc3NTQzOCAxLjU2NzM0NjI1LTExLjU1OTE4Mzc1IDE4LjIyMDQwODEyLTIzLjE2NzM0NzE5IDM2LjM0Mjg1Njg4LTM0LjcyNjUzMDkzIDU0LjU2MzI2NTk0LTAuMTk1OTE4NzUgMC4yOTM4NzcxOS0wLjM0Mjg1Njg4IDAuNjM2NzM1LTAuNDg5Nzk1OTQgMS4wMjg1NzE1Ni0xMi42MzY3MzUgMzkuMTgzNjczMTItNy41OTE4MzY1NiA3Ni4wNjUzMDY1NiAxNS4xMzQ2OTM0NCAxMTAuNTk1OTE3ODIgMC4xNDY5MzkwNiAwLjI0NDg5NzUgMC4zNDI4NTY4OCAwLjQ4OTc5NTk0IDAuNTg3NzU1MzEgMC42ODU3MTQ2OGwyMTQuNzI2NTMwOTMgMjE0LjcyNjUzMDAxYzAuMjkzODc3MTkgMC4yOTM4NzcxOSAwLjU4Nzc1NTMxIDAuNDg5Nzk1OTQgMC45MzA2MTIxOSAwLjY4NTcxNDY4IDcxLjk1MTAyMDMxIDQwLjg5Nzk1OTM3IDEzMy4zNzE0Mjg0NCAyOC4yNjEyMjQzOCAxODQuMjEyMjQ0NjktMzcuOTEwMjA0MDZhNC44NDg5Nzk2OSA0Ljg0ODk3OTY5IDAgMCAwIDAuNTM4Nzc1NjItMC44MzI2NTI4MWMyNy4yMzI2NTI4MS01Ni45NjMyNjUgMjIuMTg3NzU1MzEtMTEwLjc5MTgzNjU2LTE1LjIzMjY1MjgxLTE2MS40ODU3MTQ2OS0wLjE0NjkzOTA2LTAuMTk1OTE4NzUtMC4yOTM4NzcxOS0wLjM0Mjg1Njg4LTAuNDQwODE2MjUtMC41Mzg3NzU2MmwtNjQuOTk1OTE4NzUtNjQuOTk1OTE3ODJhNC4yNTE0Mjg0NCA0LjI1MTQyODQ0IDAgMCAxLTAuOTc5NTkxODctMS41MTgzNjc1Yy0zLjAzNjczNS04LjE3OTU5MTg3LTIuOTM4Nzc1NjItMTYuMzEwMjA0MDYgMC4zNDI4NTY4Ny0yNC40ODk3OTU5NCAxOC41MTQyODUzMS0zOC44NDA4MTYyNSAyNi4zNTEwMjAzMS03OS44MzY3MzUgMjMuNTU5MTgzNzUtMTIyLjk4Nzc1NTMxLTAuMjQ0ODk3NS0zLjQ3NzU1MTI1IDMuNjczNDY5MDYtNS43MzA2MTIxOSA2LjUxNDI4NjI1LTMuNjczNDY5MDYgNjIuNTQ2OTM5MDYgNDUuNDUzMDYwOTQgMTE1LjAwNDA4MTI1IDEwMS4wNDQ4OTc1IDE1Ny4zNzE0Mjg0NCAxNjYuOTIyNDQ4NzUgMC4xNDY5MzkwNiAwLjE5NTkxODc1IDAuMjQ0ODk3NSAwLjM5MTgzNjU2IDAuMzQyODU2ODggMC42MzY3MzUgMjYuMDU3MTQzMTIgNTcuOTQyODU2ODggMzQuNDgxNjMyNSAxMTguNjI4NTcxNTYgMjUuMjI0NDkwMzEgMTgyLjAwODE2MjUgMCAwLjA5Nzk1OTM4IDAgMC4yNDQ4OTc1LTAuMDQ4OTc5NjkgMC4zNDI4NTc4MS0yMi43NzU1MTA2MiAxMTAuNDk3OTU5MzgtODkuNTM0NjkzNDQgMTc3LjIwODE2MzQ0LTIwMC4yMjg1NzE1NiAyMDAuMDgxNjMyNS05NS4zNjMyNjUgMTcuNzc5NTkxODgtMTc4LjEzODc3NTYyLTUuODI4NTcxNTYtMjQ4LjQyNDQ5MDMyLTcwLjk3MTQyODQzbC0xNzQuNjYxMjI0MzctMTc0LjY2MTIyNDM4cy0wLjI5Mzg3NzE5LTAuMzQyODU2ODgtMC40NDA4MTYyNS0wLjQ4OTc5NTk0Yy04MS44OTM4NzcxOS0xMTAuNC04My42MDgxNjM0NC0yMjEuNzMwNjEyMTktNS4xNDI4NTY4Ny0zMzMuOTQyODU3ODEgMC4xOTU5MTg3NS0wLjI5Mzg3NzE5IDAuMzkxODM2NTYtMC41Mzg3NzU2MiAwLjYzNjczNS0wLjczNDY5MzQ0IDEyLjczNDY5MzQ0LTEyIDI2LjkzODc3NTYzLTIwLjMyNjUzMDk0IDQyLjcxMDIwNDA2LTI1LjAyODU3MTU2eiIgZmlsbD0iIzNlNjlkNyIgcC1pZD0iMTIyOCI+PC9wYXRoPjxwYXRoIGQ9Ik02MjIuNDkyMzAyNSA2NDMuNTEwMjA0MDZjLTU4LjM4MzY3MzEyLTIuODQwODE2MjUtODIuNjc3NTUxMjUtMzIuOTYzMjY1LTcyLjg4MTYzMzQ0LTkwLjM2NzM0NzE5IDAuMDk3OTU5MzgtMC41Mzg3NzU2MiAwLjI5Mzg3NzE5LTEuMDc3NTUxMjUgMC41ODc3NTUzMi0xLjU2NzM0NjI1IDExLjU1OTE4Mzc1LTE4LjIyMDQwODEyIDIzLjE2NzM0NzE5LTM2LjM0Mjg1Njg4IDM0LjcyNjUzMDkzLTU0LjU2MzI2NTkzIDAuMTk1OTE4NzUtMC4yOTM4NzcxOSAwLjM0Mjg1Njg4LTAuNjM2NzM1IDAuNDg5Nzk1OTQtMS4wMjg1NzE1NyAxMi42MzY3MzUtMzkuMTgzNjczMTIgNy41OTE4MzY1Ni03Ni4wNjUzMDY1Ni0xNS4xMzQ2OTQzNy0xMTAuNTk1OTE3ODFhMi41NzYzMjY4OCAyLjU3NjMyNjg4IDAgMCAwLTAuNTg3NzU0MzgtMC42ODU3MTQ2OUwzNTQuOTY1NzcxNTYgMTY5Ljk3NTUxMDYzYTQuMTQ4NTcxNTYgNC4xNDg1NzE1NiAwIDAgMC0wLjkzMDYxMjE4LTAuNjg1NzE0NjljLTcxLjk1MTAyMDMxLTQwLjg5Nzk1OTM3LTEzMy4zNzE0Mjg0NC0yOC4yNjEyMjQzOC0xODQuMjEyMjQ0NjkgMzcuOTEwMjA0MDZhNC44NDg5Nzk2OSA0Ljg0ODk3OTY5IDAgMCAwLTAuNTM4Nzc1NjMgMC44MzI2NTI4MWMtMjcuMjMyNjUyODEgNTYuOTYzMjY1LTIyLjE4Nzc1NTMxIDExMC43OTE4MzY1NiAxNS4yMzI2NTI4MSAxNjEuNDg1NzE0NjkgMC4xNDY5MzkwNiAwLjE5NTkxODc1IDAuMjkzODc3MTkgMC4zNDI4NTY4OCAwLjQ0MDgxNjI2IDAuNTM4Nzc1NjNsNjQuOTk1OTE4NzQgNjQuOTk1OTE3ODFjMC40NDA4MTYyNSAwLjQ0MDgxNjI1IDAuNzgzNjczMTMgMC45Nzk1OTE4OCAwLjk3OTU5MTg4IDEuNTE4MzY3NSAzLjAzNjczNSA4LjE3OTU5MTg3IDIuOTM4Nzc1NjIgMTYuMzEwMjA0MDYtMC4zNDI4NTc4MSAyNC40ODk3OTU5NC0xOC41MTQyODUzMSAzOC44NDA4MTYyNS0yNi4zNTEwMjAzMSA3OS44MzY3MzUtMjMuNTU5MTgzNzUgMTIyLjk4Nzc1NTMxIDAuMjQ0ODk3NSAzLjQ3NzU1MTI1LTMuNjczNDY5MDYgNS43MzA2MTIxOS02LjUxNDI4NTMxIDMuNjczNDY5MDYtNjIuNTQ2OTM5MDYtNDUuNDUzMDYwOTQtMTE1LjAwNDA4MTI1LTEwMS4wNDQ4OTc1LTE1Ny4zNzE0Mjg0NC0xNjYuOTIyNDQ4NzVhMi42NCAyLjY0IDAgMCAxLTAuMzQyODU2ODgtMC42MzY3MzVDMzYuODkyMzAyNSAzNjIuMjIwNDA4MTMgMjguNTE2NzkxODggMzAxLjUzNDY5MzQ0IDM3LjcyNDk1NTMxIDIzOC4xNTUxMDI1YzAtMC4wOTc5NTkzOCAwLTAuMjQ0ODk3NSAwLjA0ODk3OTY5LTAuMzQyODU3ODFDNjAuNTk4NDI0MzcgMTI3LjMxNDI4NTMxIDEyNy4zNTc2MDgxMyA2MC42MDQwODEyNSAyMzguMDAyNTA2NTYgMzcuNzMwNjEyMTkgMzMzLjM2NTc3MTU2IDE5Ljk1MTAyMDMxIDQxNi4xNDEyODEyNSA0My41NTkxODM3NSA0ODYuNDI2OTk1OTQgMTA4LjcwMjA0MDYybDE3NC42NjEyMjQzNyAxNzQuNjYxMjI0MzhzMC4yOTM4NzcxOSAwLjM0Mjg1Njg4IDAuNDQwODE2MjUgMC40ODk3OTU5NGM4MS44OTM4NzcxOSAxMTAuNCA4My42MDgxNjM0NCAyMjEuNzMwNjEyMTkgNS4xNDI4NTY4OCAzMzMuOTQyODU3ODEtMC4xOTU5MTg3NSAwLjI5Mzg3NzE5LTAuMzkxODM2NTYgMC41Mzg3NzU2Mi0wLjYzNjczNDA3IDAuNzM0NjkzNDQtMTIuNTM4Nzc1NjIgMTEuODA0MDgxMjUtMjYuNDk3OTU5MzcgMjAuMDgxNjMyNS00MS45NzU1MTA2MiAyNC43ODM2NzMxMi0wLjQ4OTc5NTk0IDAuMTQ2OTM5MDYtMS4wMjg1NzE1NiAwLjE5NTkxODc1LTEuNTY3MzQ2MjUgMC4xOTU5MTg3NXoiIGZpbGw9IiMzZTY5ZDciIHAtaWQ9IjEyMjkiPjwvcGF0aD48L3N2Zz4=");
 }
 #write a:hover::before {
@@ -322,10 +321,9 @@ a.reversefootnote {
 sup a::before,
 a.reversefootnote::before,
 .md-toc-content .md-toc-item > a::before {
+  display: none;
   width: 0 !important;
   height: 0 !important;
-  margin-left: 0 !important;
-  margin-top: 0 !important;
   background-image: none !important;
 }
 a:hover {
@@ -399,6 +397,7 @@ li > p {
   margin-top: 11px !important;
   margin-bottom: 11px !important;
 }
+#write li pre pre,
 #write li .md-image {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -454,7 +453,7 @@ span.md-image span.md-image-pick-file-btn {
 code {
   border-radius: 4px;
   background: var(--color-1-0-a);
-  padding: 3px 6px;
+  padding: 3px 5px;
   color: var(--text-code);
   font-size: 14px;
   box-decoration-break: clone;
@@ -536,11 +535,11 @@ blockquote,
 }
 blockquote > *:first-child,
 .md-alert > *:first-child {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 blockquote > *:last-child,
 .md-alert > *:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .md-alert.md-alert-note > *:first-child,
 .md-alert.md-alert-caution > *:first-child,
@@ -636,7 +635,7 @@ kbd {
 table,
 figure {
   width: 100%;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   border-radius: 8px;
   padding: 0 !important;
   border-collapse: separate;
@@ -646,7 +645,7 @@ figure {
   margin-top: 16px !important;
 }
 table {
-  margin-top: 0 !important;
+  margin-top: 0;
   border: 1px solid var(--border-color) !important;
   overflow: hidden;
 }
@@ -1551,6 +1550,10 @@ li > .outline-item:hover::before,
   background: var(--color-2-0-a);
   color: var(--color-2);
 }
+.md-toc-item a{
+ padding-left: 18px !important;
+}
+
 
 #write div.md-toc-tooltip {
   top: -52px;
@@ -2140,18 +2143,70 @@ footer.ty-footer,
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
+.export-item.active,
+.export-items-list-control {
+  border-radius: 3px !important;
+}
+.nav-group-item {
+  border-radius: 6px !important;
+}
+.input-group table,
+.export-detail {
+  border-radius: 6px !important;
+}
+.export-detail .file-input input {
+  height: 30px !important;
+  padding-left: 8px !important;
+  border-color: var(--border-color) !important;
+}
+.search-input {
+  padding: 6px 12px !important;
+  border-color: var(--border-color) !important;
+}
+.label-input-group div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.label-input-group div pre {
+  border-radius: 6px !important;
+  font-size: 14px !important;
+}
+.input-group-content {
+  border-radius: 6px !important;
+}
+.input-group-content table {
+  margin-top: 4px;
+}
+.label-hint svg {
+  margin-right: 3px;
+}
+.export-detail .input-group-content > .row {
+  margin-right: 16px;
+}
+.export-detail,
+.export-item.active {
+  color: var(--text-color) !important;
+}
+.export-item.active {
+  color: var(--color-1) !important;
+}
+.md-show-hint::after {
+  background: var(--bg-color2) !important;
+  border-radius: 3px;
+  box-shadow: 0 0 3px var(--color-1) !important;
+}
 /**
  * ---------------------------------
  * Control UI on Mac (optional)
  * ---------------------------------
 */
 .sidebar-tab-btn {
-  margin-top: 11px !important;
+  margin-top: 12px !important;
   color: var(--title-color);
   font-size: 16px !important;
   line-height: 20px !important;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 .sidebar-tab-btn:hover {
   color: var(--color-1);
@@ -2224,7 +2279,6 @@ footer.ty-footer,
 
 /*
  * ------------------------
- * #root
  * .ty-preferences
  * ------------------------
 */
@@ -2252,60 +2306,6 @@ footer.ty-footer,
   color: var(--color-2);
 }
 
-.export-item.active,
-.export-items-list-control {
-  border-radius: 3px !important;
-}
-.nav-group-item {
-  border-radius: 5px !important;
-}
-.input-group table,
-.export-detail {
-  border-radius: 5px !important;
-}
-.export-detail .file-input input {
-  height: 30px !important;
-  padding-left: 8px !important;
-  border-color: var(--border-color) !important;
-}
-.search-input {
-  padding: 6px 12px !important;
-  border-color: var(--border-color) !important;
-}
-
-.label-input-group div {
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-.label-input-group div pre {
-  border-radius: 5px !important;
-  font-size: 14px !important;
-}
-.input-group-content {
-  border-radius: 5px !important;
-}
-.input-group-content table {
-  margin-top: 4px;
-}
-.label-hint svg {
-  margin-right: 3px;
-}
-.export-detail .input-group-content > .row {
-  margin-right: 16px;
-}
-.export-detail,
-.export-item.active {
-  color: var(--text-color) !important;
-}
-.export-item.active {
-  color: var(--color-1) !important;
-}
-.md-show-hint::after {
-  background: var(--bg-color2) !important;
-  border-radius: 3px;
-  box-shadow: 0 0 3px var(--color-1) !important;
-}
 /*search style*/
 #searchpanel-search-group .ty-search-panel-row {
   padding-top: 0;
@@ -2359,8 +2359,8 @@ footer.ty-footer,
   padding-top: 1px !important;
 }
 .md-notification-container #md-notification::before {
-  top: 7px;
-  font-size: 18px;
+  top: 8px;
+  font-size: 16px;
 }
 #md-notification .md-notification-content {
   padding-bottom: 4px;
@@ -2380,7 +2380,7 @@ footer.ty-footer,
 }
 #md-notification .typora-search-spinner,
 #md-notification .typora-export-spinner {
-  top: 7px !important;
+  top: 5px !important;
 }
 .unibody-window #md-searchpanel .btn {
   line-height: 24px !important;
@@ -2414,6 +2414,9 @@ footer.ty-footer,
   border-radius: 8px;
   border-color: var(--border-color) !important;
   background: var(--bg-color2) !important;
+}
+pre.md-focus .md-diagram-panel{
+  margin-top: 4px;
 }
 .md-diagram {
   margin-left: 0 !important;
@@ -2514,7 +2517,7 @@ body.typora-export {
   background: transparent;
   border-top: 1.5px solid var(--text-color);
   border-right: 1.5px solid var(--text-color);
-  border-top-right-radius: 1px;
+  z-index: 50;
 }
 .typora-export .outline-item-wrapper > .outline-item > .outline-expander::before,
 .typora-export .outline-item-wrapper:not(.outline-item-open) > .outline-item > .outline-expander::before {
@@ -2736,10 +2739,10 @@ body.typora-export {
   .CodeMirror div.CodeMirror-cursor {
     border-color: var(--text-color);
   }
-  .os-windows .ty-footer .footer-item:hover,
+/*  .os-windows .ty-footer .footer-item:hover,
   .os-windows .ty-footer .footer-item:hover i::before {
     color: var(--color-2);
-  }
+  }*/
 
   .export-detail,
   .export-item.active,
