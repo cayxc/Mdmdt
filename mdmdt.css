@@ -9,7 +9,7 @@
 */
 :root {
   /*--bg-color: rgb(250, 250, 250);*/
-  --bg-color: rgb(250, 250, 250);
+  --bg-color: rgb(250, 250, 252);
   --bg-color2: rgb(236, 236, 238);
 
   --text-color: #000;
@@ -161,10 +161,9 @@ h6 { font-size: 16px; }
 #write > h5.md-focus::before,
 #write > h6.md-focus::before {
   display: none;
-  height: 20px;
   position: absolute;
   left: -36px;
-  float: left;
+  height: 20px;
   padding-left: 6px;
   padding-right: 3px;
   border: 1px solid var(--color-1);
@@ -213,14 +212,14 @@ h6 { font-size: 16px; }
 }
 
 hr {
-  border: none;
   height: 1px;
-  background: var(--border-color);
   box-sizing: border-box;
+  background: var(--border-color);
+  border: none;
 }
 
 p {
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: -5px;
   white-space: pre-wrap;
 }
@@ -228,7 +227,7 @@ p + p {
   margin-top: 24px;
 }
 p:has(span.md-image) + p {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 p:has(span.md-image) {
   margin-bottom: 0;
@@ -257,10 +256,10 @@ del {
 }
 
 mark {
-  background-color: var(--color-1);
-  color: var(--bg-color);
-  padding: 0 4px;
   border-radius: 5px;
+  background-color: var(--color-1);
+  padding: 0 4px;
+  color: var(--bg-color);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
@@ -359,7 +358,7 @@ ul, ol {
 }
 #write > p + ul,
 #write > p + ol {
-  margin-top: 10px;
+  margin-top: 11px;
 }
 ul {
   padding-left: 36px;
@@ -386,7 +385,7 @@ ul > .task-list-item > input {
   margin-left: -22px;
 }
 #write li {
-  margin-top: 5px;
+  margin-top: 6px;
 }
 li > p {
   margin: -5px 0;
@@ -397,8 +396,8 @@ li > p {
 #write li figure,
 #write li blockquote,
 #write li .md-alert {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  margin-top: 11px !important;
+  margin-bottom: 11px !important;
 }
 #write li .md-image {
   margin-top: 0 !important;
@@ -413,8 +412,8 @@ li > p {
 img,
 span.md-image {
   display: block !important;
-  border-radius: 8px !important;;
-  margin: 14px auto 0 auto !important;
+  margin: 16px auto 0 auto !important;
+  border-radius: 8px !important;
   border: none !important;
   color: var(--md-char-color);
 }
@@ -454,8 +453,8 @@ span.md-image span.md-image-pick-file-btn {
 */
 code {
   border-radius: 4px;
-  padding: 4px 6px;
   background: var(--color-1-0-a);
+  padding: 3px 6px;
   color: var(--text-code);
   font-size: 14px;
   box-decoration-break: clone;
@@ -488,12 +487,12 @@ h4 code {
  * ------------------------
 */
 pre {
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 0;
-  background: var(--bg-color2) !important;
-  font-size: 14px !important;
   box-sizing: border-box;
+  background: var(--bg-color2) !important;
   border-radius: 8px;
+  font-size: 14px !important;
   color: var(--text-code);
   white-space: nowrap !important;
 }
@@ -506,7 +505,7 @@ pre .CodeMirror-wrap {
   padding: 16px 0;
 }
 pre .CodeMirror-wrap .CodeMirror-scroll {
-  padding-right: 14px;
+  padding-right: 16px;
   overflow-x: auto;
 }
 pre .CodeMirror-sizer {
@@ -524,7 +523,7 @@ pre .CodeMirror-gutters {
 */
 blockquote,
 .md-alert {
-  margin-top: 14px !important;
+  margin-top: 16px !important;
   margin-bottom: 0;
   padding: 16px;
   background: var(--color-1-0-b);
@@ -549,7 +548,7 @@ blockquote > *:last-child,
 .md-alert.md-alert-important > *:first-child,
 .md-alert.md-alert-warning > *:first-child {
   line-height: 1;
-  margin-bottom: -14px;
+  margin-bottom: -12px;
 }
 .md-alert.md-alert-note {
   border-left-color: var(--color-1);
@@ -612,9 +611,9 @@ sup.md-footnote:hover {
 kbd {
   display: inline-block;
   border: none;
-  background: var(--title-color);
   border-image: none;
   border-radius: 5px;
+  background: var(--title-color);
   padding: 0 6px;
   box-shadow: none;
   box-decoration-break: clone;
@@ -638,13 +637,13 @@ table,
 figure {
   width: 100%;
   margin-bottom: 0 !important;
-  border-collapse: separate;
-  border-spacing: 0;
   border-radius: 8px;
   padding: 0 !important;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 figure {
-  margin-top: 14px !important;
+  margin-top: 16px !important;
 }
 table {
   margin-top: 0 !important;
@@ -699,10 +698,10 @@ button#md-resize-grid:hover {
   margin-left: 0;
 }
 .md-tooltip-remove {
-  margin-top: -14px !important;
-  background: var(--bg-color);
   position: absolute;
   z-index: 200;
+  margin-top: -28px !important;
+  background: var(--bg-color);
 }
 .md-tooltip-remove .md-delete-table {
   margin-right: 10px !important;
@@ -733,8 +732,8 @@ button#md-resize-grid:hover {
 .btn:hover,
 .long-btn:hover {
   background: var(--color-1-0-b) !important;
-  color: var(--color-1);
   border-color: var(--color-1) !important;
+  color: var(--color-1);
 }
 
 .btn:focus,
@@ -792,13 +791,12 @@ textarea {
 */
 html input,
 input {
-  border-radius: 5px !important;
-  line-height: 1.2;
   position: relative;
-  padding: 0 6px;
-  outline: none !important;
+  border-radius: 5px !important;
   border: 1px solid var(--border-color);
-
+  outline: none !important;
+  padding: 0 6px;
+  line-height: 1.2;
 }
 html input:focus,
 html textarea:focus,
@@ -817,21 +815,21 @@ input::placeholder {
 /*input checkbox*/
 input[type="checkbox"],
 input[type="radio"] {
+  margin-right: 10px !important;
+  margin-bottom: -2px !important;
+  width: 14px !important;
+  height: 14px !important;
+  box-sizing: border-box;
+  background: transparent !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 3px !important;
+  padding: 0 !important;
   outline: none;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
-  width: 14px !important;
-  height: 14px !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-  border: 1px solid var(--border-color) !important;
-  border-radius: 3px !important;
   list-style: none;
-  background: transparent !important;
-  margin-right: 10px !important;
-  margin-bottom: -2px !important;
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
@@ -841,16 +839,16 @@ input[type="radio"]:checked {
 input[type="checkbox"]:checked::after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: 2.5px;
+  left: 3.5px;
   width: 5px;
   height: 9px;
+  box-sizing: border-box;
   background: transparent;
   border: 2px solid #fff;
   border-top: none;
   border-left: none;
-  position: absolute;
-  box-sizing: border-box;
-  bottom: 2.5px;
-  left: 3.5px;
   transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
@@ -864,10 +862,10 @@ input[type="radio"] {
 input[type="radio"]:checked::after {
   content: "";
   display: block;
+  margin: 3.5px auto;
   width: 5px;
   height: 5px;
   box-sizing: border-box;
-  margin: 3.5px auto;
   background: #fff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -934,9 +932,9 @@ body > header {
   background: transparent;
 }
 .md-rawblock .md-rawblock-tooltip {
-  height: auto;
-  margin-top: -10px;
   float: right;
+  margin-top: -11px;
+  height: auto;
   border-radius: 5px;
   background: var(--bg-color2);
   animation: none !important;
@@ -966,14 +964,14 @@ body > header {
  * ------------------------
 */
 #write {
+  margin: 0 auto;
   width: 100%;
   max-width: 1424px;
   min-width: 300px;
-  overflow: auto;
-  margin: 0 auto;
   padding: 32px 112px;
-  scroll-behavior: smooth;
-  scroll-padding: 14px;
+  overflow: auto;
+/*  scroll-behavior: smooth;
+  scroll-padding: 16px;*/
 }
 #write > *:first-child {
   margin-top: 0;
@@ -1002,16 +1000,16 @@ span.md-comment {
   padding-right: 0 !important;
 }
 #typora-source .CodeMirror-lines {
+  margin: 0 auto;
   max-width: 1424px;
   min-width: 300px;
-  margin: 0 auto;
   padding: 32px 112px;
 }
 #typora-source .CodeMirror-lines pre {
-  font-size: 16px !important;
   border: none !important;
-  padding: 8px 16px !important;
   background: var(--bg-color) !important;
+  padding: 8px 16px !important;
+  font-size: 16px !important;
 }
 #typora-source .CodeMirror-activeline pre {
   background: var(--bg-color2) !important;
@@ -1053,10 +1051,10 @@ span.md-comment {
  * ------------------------
 */
 #toc-dropmenu {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
   top: calc(var(--title-bar-height) + 8px) !important;
   right: 18px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 #toc-dropmenu #pin-outline-btn {
   display: inline-block;
@@ -1086,9 +1084,9 @@ span.md-comment {
   padding: 0 2px;
 }
 .outline-content {
+  overflow: auto !important;
   padding: 14px 14px 14px 17px;
   font-size: 14px !important;
-  overflow: auto !important;
 }
 .os-windows .outline-content {
   padding-top: 15px;
@@ -1101,10 +1099,10 @@ span.md-comment {
   top: 0;
 }
 .outline-content li ul {
-  margin-left: 18px;
-  margin-top: 0 !important;
   position: relative;
   z-index: 48;
+  margin-left: 18px;
+  margin-top: 0 !important;
 }
 .no-collapse-outline .outline-content li ul {
   margin-left: 21px;
@@ -1112,38 +1110,38 @@ span.md-comment {
 .outline-content li .outline-item {
   position: relative;
   z-index: 50;
+  margin: 0 0 3px 7px;
   width: calc(100% - 4px);
   border-radius: 5px;
-  line-height: 1;
-  margin: 0 0 3px 7px;
-  padding: 0 0 0 4px;
   border: none;
+  line-height: 1;
+  padding: 0 0 0 4px;
 }
 .outline-item > .outline-expander {
   display: block;
   float: left;
   width: auto;
   height: 0;
-  padding-left: 0;
   background: transparent;
+  padding-left: 0;
 }
 .outline-item > .outline-expander:before {
-  font-size: 10px;
-  padding: 0 4px 0 2px;
   margin-top: 10px;
   margin-left: -2px;
   background: transparent;
+  padding: 0 4px 0 2px;
+  font-size: 10px;
 }
 .outline-content li .outline-label {
   display: inline-block;
-  padding: 7px 7px 7px 8px;
   border-radius: 4px;
+  padding: 7px 7px 7px 8px;
   font-size: 14px !important;
+  line-height: 1.2;
   overflow-wrap: normal;
   word-wrap: normal;
   word-break: keep-all;
   white-space: nowrap;
-  line-height: 1.2;
   text-decoration: none;
 }
 .outline-item-single .outline-label,
@@ -1168,12 +1166,12 @@ span.md-comment {
 }
 .outline-content li .outline-item::before {
   content: '';
-  width: 10px;
-  height: calc(50% + 28px);
   position: absolute;
   z-index: 38;
   left: -10px;
   top: -27.5px;
+  width: 10px;
+  height: calc(50% + 28px);
   background: transparent;
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -1182,28 +1180,28 @@ span.md-comment {
   top: -28.5px;
 }
 .outline-content > li:first-of-type > .outline-item::before {
+  top: calc(50% - 1px);
   height: calc(50% + 15px);
   border-left: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
   border-bottom: none;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 0;
-  top: calc(50% - 1px);
 }
 .outline-children > li:first-child > .outline-item::before,
 .outline-content > li:nth-child(2) > .outline-item::before {
-  height: calc(50% + 12px);
   top: -11px;
+  height: calc(50% + 12px);
 }
 .os-windows .outline-children > li:first-child > .outline-item::before,
 .os-windows .outline-content > li:nth-child(2) > .outline-item::before {
-  height: calc(50% + 13px);
   top: -13px;
+  height: calc(50% + 13px);
 }
 .no-collapse-outline .outline-children > li:first-child > .outline-item::before,
 .no-collapse-outline .outline-content > li:nth-child(2) > .outline-item::before {
-  height: calc(50% + 8px);
   top: -8px;
+  height: calc(50% + 8px);
 }
 .outline-content > li:last-child > .outline-item::before,
 .outline-children > li:last-child > .outline-item::before {
@@ -1212,11 +1210,11 @@ span.md-comment {
 .no-collapse-outline .outline-item-wrapper > .outline-children::before,
 .outline-item-open > .outline-children::before {
   content: '';
-  width: 1px;
-  height: calc(100% + 12px);
   position: absolute;
   left: -21px;
   top: -26px;
+  width: 1px;
+  height: calc(100% + 12px);
   background: transparent;
   border-left: 1px solid var(--border-color);
 }
@@ -1245,8 +1243,8 @@ li > .outline-item-active:before,
 li > .outline-item-active,
 li > .outline-item:hover,
 .outline-item-active > .outline-item {
-  padding-left: 7px !important;
   margin-left: 4px !important;
+  padding-left: 7px !important;
 }
 
 li > .outline-item-active::before,
@@ -1283,9 +1281,9 @@ li > .outline-item:hover::before,
   display: none;
 }
 .outline-content li:has(.ty-outline-hit) .outline-item {
+  margin-left: 1px !important;
   width: calc(100% - 1px);
   padding-left: 0 !important;
-  margin-left: 1px !important;
 }
 .outline-content li:has(.ty-outline-hit) .outline-item > .outline-label {
   padding: 8px 10px !important;
@@ -1361,17 +1359,17 @@ li > .outline-item:hover::before,
 }
 .file-list-item-count {
   margin-right: 0;
-  padding: 0 6px;
   border-radius: 3px;
+  padding: 0 6px;
 }
 #file-library-search-result .ty-search-item.active .file-list-item-count {
   padding-right: 0;
 }
 #sidebar-loading-template {
-  padding: 8px;
-  border-radius: 5px;
-  margin-bottom: 5px;
   display: none;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 8px;
 }
 .ty-file-search-match-text {
   background-color: var(--color-2-0-c);
@@ -1383,15 +1381,15 @@ li > .outline-item:hover::before,
  * ------------------------
 */
 #file-library-tree {
+  box-sizing: border-box;
   padding-top: 8px;
   padding-left: 14px;
   padding-right: 14px;
-  box-sizing: border-box;
 }
 .file-node-root {
   position: relative;
-  padding-left: 0 !important;
   margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 .file-tree-node {
   margin-bottom: 1px;
@@ -1456,8 +1454,8 @@ li > .outline-item:hover::before,
   margin-left: 9px;
 }
 .file-node-expanded {
-  border-left: 1px solid var(--border-color);
   margin-left: 8px;
+  border-left: 1px solid var(--border-color);
 }
 .file-tree-node:last-child {
   border-left-color: transparent;
@@ -1469,11 +1467,12 @@ li > .outline-item:hover::before,
   margin-left: 0;
 }
 .file-node-content {
-  padding-top: 3px;
   position: relative;
+  padding-top: 3px;
 }
 .file-node-content::after {
   content: '';
+  display: none;
   position: absolute;
   z-index: -1;
   left: 6px;
@@ -1482,7 +1481,6 @@ li > .outline-item:hover::before,
   height: 29px;
   background: var(--bg-color2);
   border-radius: 5px;
-  display: none;
 }
 .file-library-file-node:hover > .file-node-content::after,
 .file-tree-node.active > .file-node-content::after {
@@ -1505,15 +1503,13 @@ li > .outline-item:hover::before,
  * ------------------------
 */
 .md-toc {
+  margin: 16px 0 0 0;
   font-size: 14px;
-  margin: 14px 0 0 0;
-  padding: 26px 30px 26px 30px;
-  background: var(--bg-color2);
 }
 .md-toc-content {
   position: relative;
-  padding: 0;
   margin: 0 0 0 3px;
+  padding: 0;
 }
 .md-toc-content:before {
   content: '';
@@ -1525,17 +1521,17 @@ li > .outline-item:hover::before,
   border-left: 1px solid var(--border-color);
 }
 .md-toc:focus .md-toc-content {
-  border: none !important;
   margin: 0 !important;
+  border: none !important;
 }
 .md-toc-content .md-toc-item {
-  padding-bottom: 8px;
   position: relative;
+  padding-bottom: 8px;
 }
 .md-toc-content .md-toc-item:before {
   content: '';
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: -2px;
   width: 5px;
   height: 5px;
@@ -1557,24 +1553,22 @@ li > .outline-item:hover::before,
 }
 
 #write div.md-toc-tooltip {
-  position: relative;
-  margin: 14px 0 0 0;
-  padding-bottom: 12px;
-  border-top: none;
+  top: -52px;
+  border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  background: transparent;
+  padding: 3px 0;
 }
 .md-toc-content .md-toc-h1 a {
   padding-left: 20px;
 }
 #write div.md-toc-tooltip .md-delete-toc {
-  padding: 0 10px;
   margin: 0 !important;
+  padding: 0 10px;
   background: var(--bg-color);
 }
 #write div.md-toc-tooltip .md-delete-toc:hover {
-  color: var(--color-1);
   background: var(--bg-color2);
+  color: var(--color-1);
 }
 
 /*
@@ -1587,8 +1581,8 @@ li > .outline-item:hover::before,
   color: var(--text-code);
 }
 .cm-s-inner .CodeMirror-gutters {
-  color: var(--text-code);
   border-right-color: var(--border-color);
+  color: var(--text-code);
 }
 .cm-s-inner .CodeMirror-guttermarker,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
@@ -1638,19 +1632,19 @@ li > .outline-item:hover::before,
   color: var(--text-grey);
 }
 .md-fences .code-tooltip {
+  z-index: 50;
   right: 0 !important;
   bottom: -28px !important;
+  padding: 0;
+  border-radius: 5px;
   background-color: var(--bg-color2);
   color: var(--text-color);
-  border-radius: 5px;
-  z-index: 50;
-  padding: 0;
 }
 .md-fences .code-tooltip input,
 .md-fences .code-tooltip span {
+  margin: 0;
   padding: 3px;
   border-radius: 5px;
-  margin: 0;
 }
 
 /**
@@ -1706,8 +1700,8 @@ li > .outline-item:hover::before,
   border-radius: 5px !important;
 }
 .ty-spell-check-panel-item {
-  border-radius: 5px;
   margin-bottom: 4px;
+  border-radius: 5px;
 }
 .btn-split-group .dropdown-menu {
   margin-top: 0;
@@ -1724,8 +1718,8 @@ li > .outline-item:hover::before,
 .dropdown-menu li > span > a:hover,
 #sidebar-files-menu li:hover > a,
 #close-sidebar-menu-btn:hover {
-  color: var(--color-1) !important;
   background: var(--bg-color2) !important;
+  color: var(--color-1) !important;
 }
 .dropdown-menu li > span > a:hover {
   background: var(--color-1-0-b) !important;
@@ -1734,8 +1728,8 @@ li > .outline-item:hover::before,
 .dropdown-menu li.file-action-item,
 .dropdown-menu li.file-sort-item,
 .dropdown-menu li.file-sort-item + li {
-  border-radius: 0 !important;
   margin-top: 0;
+  border-radius: 0 !important;
 }
 
 /* .toolbar-icon */
@@ -1776,8 +1770,8 @@ li > .outline-item:hover::before,
 }
 #w-max-group.w-show-more > #w-full,
 #w-max-group.w-show-more > #w-pin {
-  background: var(--bg-color2) !important;
   display: block !important;
+  background: var(--bg-color2) !important;
 }
 #w-max-group *,
 #w-max-group.w-show-more > #w-full *,
@@ -1793,8 +1787,8 @@ li > .outline-item:hover::before,
   color: var(--text-color);
 }
 #w-traffic-lights #w-close:hover {
-  color: white !important;
   background: var(--color-5) !important;
+  color: white !important;
 }
 #w-max-group.w-show-more > #w-full:hover *,
 #w-max-group.w-show-more > #w-pin:hover * {
@@ -1817,10 +1811,10 @@ li > .outline-item:hover::before,
   margin-top: 12px;
 }
 .megamenu-menu-panel h1 {
-  font-size: 30px;
-  line-height: 30px;
   margin-top: 32px;
   margin-bottom: 32px;
+  font-size: 30px;
+  line-height: 30px;
 }
 #megamenu-section-about h1 {
   text-align: center;
@@ -1851,14 +1845,14 @@ li > .outline-item:hover::before,
   border-color: var(--border-color);
 }
 .megamenu-menu-header #megamenu-back-btn {
-  border-radius: 6px;
   margin-left: 10px;
+  border-radius: 6px;
   border-width: 2px;
 }
 .megamenu-menu-header #megamenu-back-btn > i {
   display: block;
-  line-height: 28px;
   font-size: 16px;
+  line-height: 28px;
 }
 .megamenu-menu-header #megamenu-menu-header-title:hover {
   color: var(--color-1);
@@ -1870,19 +1864,19 @@ li > .outline-item:hover::before,
   margin-top: 6px;
 }
 .megamenu-menu-list li a {
-  font-size: 16px;
-  border-radius: 5px;
   display: block;
+  border-radius: 5px;
   border: 1px solid transparent;
+  font-size: 16px;
   line-height: 34px;
 }
 .megamenu-menu-list li a .fa {
-  font-size: 18px;
-  line-height: 38px;
   display: inline-block;
   margin-left: 0;
   margin-right: 0;
   opacity: 1;
+  font-size: 18px;
+  line-height: 38px;
 }
 .megamenu-menu-list li a .fa + span {
   margin-left: 14px;
@@ -1894,9 +1888,9 @@ li > .outline-item:hover::before,
 }
 .megamenu-menu-list li a:hover,
 .megamenu-menu-list li a.active:hover {
-  color: var(--color-1) !important;
   background: var(--bg-color2) !important;
   border: 1px solid var(--color-1);
+  color: var(--color-1) !important;
 }
 .megamenu-menu-list li a.active {
   background: var(--bg-color2);
@@ -1930,18 +1924,18 @@ li > .outline-item:hover::before,
 .ty-show-search #info-panel-tab-search .info-panel-tab-border,
 .active-tab-files #info-panel-tab-file .info-panel-tab-border,
 .active-tab-outline #info-panel-tab-outline .info-panel-tab-border {
-  border-radius: 2px;
   height: 3px;
+  border-radius: 2px;
 }
 .megamenu-menu-panel {
   scrollbar-width: none !important;
 }
 #theme-preview-grid {
-  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   grid-gap: 32px;
+  max-width: 100%;
 }
 @media (max-width: 1440px) {
   #theme-preview-grid {
@@ -1964,13 +1958,13 @@ li > .outline-item:hover::before,
   }
 }
 .theme-preview-div {
-  border: 3px solid var(--border-color);
-  padding: 5px;
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
   overflow: hidden;
-  color: var(--color-1);
+  padding: 5px;
+  border: 3px solid var(--border-color);
   border-radius: 10px;
+  color: var(--color-1);
 }
 .theme-preview-content {
   width: 100%;
@@ -1990,8 +1984,8 @@ li > .outline-item:hover::before,
 
 /* context menu */
 .context-menu {
-  border-radius: 6px !important;
   padding: 6px !important;
+  border-radius: 6px !important;
   border: 1px solid var(--border-color);
 }
 .ext-context-menu {
@@ -2021,9 +2015,9 @@ li > .outline-item:hover::before,
 
 /* alert-msg */
 #searchpanel-msg {
-  background: var(--color-1-0-a);
   margin-top: 2px;
   margin-bottom: 8px;
+  background: var(--color-1-0-a);
 }
 .alert.alert-warning,
 .alert.alert-warning * {
@@ -2067,8 +2061,8 @@ li > .outline-item:hover::before,
 }
 #file-library-search-input,
 .native-window #file-library-search-input {
-  border-radius: 5px !important;
   height: 28px;
+  border-radius: 5px !important;
   font-size: 12px;
 }
 #ty-sidebar-search-panel .searchpanel-search-option-btn {
@@ -2102,9 +2096,9 @@ li > .outline-item:hover::before,
 }
 #ty-tooltip,
 .ty-tooltip.shown {
+  padding: 6px 12px;
   background: var(--bg-color2);
   border-radius: 6px;
-  padding: 6px 12px;
   color: var(--text-color);
 }
 
@@ -2131,8 +2125,8 @@ footer.ty-footer,
   bottom: 3px !important;
 }
 #footer-word-count-info {
-  border-radius: 5px;
   padding: 6px;
+  border-radius: 5px;
   border: 1px solid var(--border-color);
 }
 #footer-word-count-info table {
@@ -2153,11 +2147,11 @@ footer.ty-footer,
  * ---------------------------------
 */
 .sidebar-tab-btn {
+  margin-top: 11px !important;
+  color: var(--title-color);
   font-size: 16px !important;
   line-height: 20px !important;
   vertical-align: text-top;
-  margin-top: 11px !important;
-  color: var(--title-color);
 }
 .sidebar-tab-btn:hover {
   color: var(--color-1);
@@ -2170,13 +2164,13 @@ footer.ty-footer,
 }
 .mac-os #ty-sidebar-search-tabs input {
   top: 0;
+  margin-right: 0;
+  padding: 0;
   border-top: none;
   border-right: none;
   border-left: none;
   border-radius: 0 !important;
   border-bottom-width: 1px;
-  padding: 0;
-  margin-right: 0;
 }
 .mac-os #ty-sidebar-search-tabs .searchpanel-search-option-btn {
   top: 14px;
@@ -2207,9 +2201,9 @@ footer.ty-footer,
 }
 
 #typora-quick-open {
+  padding: 12px;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
-  padding: 12px;
   border-radius: 8px;
 }
 .typora-quick-open-item,
@@ -2250,8 +2244,8 @@ footer.ty-footer,
 
 .ty-preferences a {
   font-size: 12px !important;
-  color: var(--color-1);
   text-decoration: none;
+  color: var(--color-1);
 }
 .ty-preferences a:hover {
   text-decoration: underline;
@@ -2270,8 +2264,8 @@ footer.ty-footer,
   border-radius: 5px !important;
 }
 .export-detail .file-input input {
-  padding-left: 8px !important;
   height: 30px !important;
+  padding-left: 8px !important;
   border-color: var(--border-color) !important;
 }
 .search-input {
@@ -2280,9 +2274,9 @@ footer.ty-footer,
 }
 
 .label-input-group div {
-  border: none !important;
   margin: 0 !important;
   padding: 0 !important;
+  border: none !important;
 }
 .label-input-group div pre {
   border-radius: 5px !important;
@@ -2337,9 +2331,9 @@ footer.ty-footer,
 }
 #search-panel-replaceall-btn,
 #search-panel-replace-btn {
-  text-align: center !important;
   padding-right: 4px !important;
   padding-left: 4px !important;
+  text-align: center !important;
 }
 .ty-on-outline-filter .ty-outline-hit {
   color: var(--color-2);
@@ -2355,9 +2349,9 @@ footer.ty-footer,
 
 /* md-notification-container */
 .md-notification-container {
+  padding-top: calc(var(--title-bar-height) + 10px) !important;
   background: var(--bg-color);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-  padding-top: calc(var(--title-bar-height) + 10px) !important;
   font-size: 14px;
 }
 .native-window.os-windows .md-notification-container,
@@ -2365,8 +2359,8 @@ footer.ty-footer,
   padding-top: 1px !important;
 }
 .md-notification-container #md-notification::before {
-  font-size: 18px;
   top: 7px;
+  font-size: 18px;
 }
 #md-notification .md-notification-content {
   padding-bottom: 4px;
@@ -2414,7 +2408,7 @@ footer.ty-footer,
  * ------------------------
 */
 .md-diagram-panel {
-  margin-top: 21px;
+  margin-top: 23px;
   width: 100% !important;
   max-width: 100% !important;
   border-radius: 8px;
@@ -2485,11 +2479,11 @@ body.typora-export {
 }
 .typora-export-no-collapse-outline .outline-item-wrapper > .outline-children::before {
   content: '';
-  width: 1px;
-  height: calc(100% + 12px);
   position: absolute;
   left: -24px;
   top: -20px;
+  width: 1px;
+  height: calc(100% + 12px);
   background: transparent;
   border-left: 1px solid var(--border-color);
 }
@@ -2502,8 +2496,8 @@ body.typora-export {
 }
 .typora-export-no-collapse-outline .outline-children > li:first-child > .outline-item::before,
 .typora-export-no-collapse-outline .outline-content > li:nth-child(2) > .outline-item::before {
-  height: calc(50% + 9px);
   top: -9px;
+  height: calc(50% + 9px);
 }
 .typora-export-no-collapse-outline .outline-content > li.outline-item-wrapper:first-child > .outline-children::before {
   top: -15px;
@@ -2515,27 +2509,27 @@ body.typora-export {
   content: "" !important;
   width: 7px;
   height: 7px;
-  background: transparent;
   box-sizing: border-box;
+  padding: 0;
+  background: transparent;
   border-top: 1.5px solid var(--text-color);
   border-right: 1.5px solid var(--text-color);
   border-top-right-radius: 1px;
-  padding: 0;
 }
 .typora-export .outline-item-wrapper > .outline-item > .outline-expander::before,
 .typora-export .outline-item-wrapper:not(.outline-item-open) > .outline-item > .outline-expander::before {
+  margin-top: 13px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  margin-top: 13px;
 }
 .typora-export .outline-expander:hover::before,
 .typora-export .outline-item-wrapper:not(.outline-item-open) > .outline-item > .outline-expander:hover::before,
 .typora-export .outline-item-open > .outline-item > .outline-expander::before {
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
   margin-left: 2px;
   margin-top: 11px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
 }
 .typora-export .outline-expander:hover::before {
   margin-left: -2px;
@@ -2755,6 +2749,12 @@ body.typora-export {
   /*code colors*/
   .cm-s-inner .cm-header, .cm-s-inner.cm-header {color: #41cce9;}
 
+/*  .btn:hover{
+    border-color: var(--color-2) !important;
+    color: var(--color-2) !important;
+    background: var(--color-2-0-b) !important;
+  }*/
+
 }
 /*
  * ------------------------
@@ -2767,16 +2767,16 @@ body.typora-export {
   body #write,
   body content,
   body .typora-export-content {
-    height: auto !important; /*解决浏览器打印只有一页问题*/
-    padding: 0 !important;
     margin: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
+    height: auto !important; /*解决浏览器打印只有一页问题*/
+    padding: 0 !important;
     border: none !important;
   }
   body .typora-export-sidebar {
-    width: 0 !important;
     display: none !important;
+    width: 0 !important;
   }
   ::-webkit-scrollbar {
     width: 0 !important;
@@ -2825,9 +2825,9 @@ body.typora-export {
   }
 
   @page {
-    size: auto;
     margin: 15mm !important;
     background: white !important;
+    size: auto;
     /*谷歌浏览器打印设置*/
     @top-center {
       content: '';
