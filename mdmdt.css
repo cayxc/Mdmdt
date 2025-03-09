@@ -235,7 +235,7 @@ p:has(span.md-image) {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 800;
   color: var(--title-color);
 }
 
@@ -291,7 +291,7 @@ a:hover,
 #write blockquote a,
 #write .md-alert a,
 #write li a {
-  padding-left: 1px;
+  padding-left: 2px;
 }
 #write p a::before,
 #write table a::before,
@@ -302,7 +302,7 @@ a:hover,
   display: inline-block;
   position: relative;
   top: 2px;
-  right: 1px;
+  right: 2px;
   z-index: 30;
   width: 14px;
   height: 14px;
@@ -2708,7 +2708,8 @@ body.typora-export {
   ::-webkit-scrollbar-track {
     background: var(--bg-color2) !important;
   }
-  * {
+  html,
+  html * {
     scrollbar-width: thin !important;
     scrollbar-color: var(--text-grey) var(--bg-color2) !important;
   }
@@ -2716,15 +2717,15 @@ body.typora-export {
     color: #cfdfff;
   }
   mark {
-    color: var(--text-color);
+    color: rgb(250,250,250);
   }
   kbd {
     background: var(--color-2);
-    color: rgb(250, 250, 250);
+    color: rgb(250,250,250);
   }
   body > header,
   .md-notification-container {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   }
   .md-notification-container {
     border-bottom: 1px solid var(--border-color);
@@ -2739,11 +2740,6 @@ body.typora-export {
   .CodeMirror div.CodeMirror-cursor {
     border-color: var(--text-color);
   }
-/*  .os-windows .ty-footer .footer-item:hover,
-  .os-windows .ty-footer .footer-item:hover i::before {
-    color: var(--color-2);
-  }*/
-
   .export-detail,
   .export-item.active,
   .export-items-list-control {
@@ -2751,12 +2747,6 @@ body.typora-export {
   }
   /*code colors*/
   .cm-s-inner .cm-header, .cm-s-inner.cm-header {color: #41cce9;}
-
-/*  .btn:hover{
-    border-color: var(--color-2) !important;
-    color: var(--color-2) !important;
-    background: var(--color-2-0-b) !important;
-  }*/
 
 }
 /*
@@ -2829,7 +2819,7 @@ body.typora-export {
 
   @page {
     margin: 15mm !important;
-    background: white !important;
+    background: transparent !important;
     size: auto;
     /*谷歌浏览器打印设置*/
     @top-center {
