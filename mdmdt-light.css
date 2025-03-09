@@ -1556,6 +1556,7 @@ li > .outline-item:hover::before,
 
 
 #write div.md-toc-tooltip {
+  z-index: 100;
   top: -52px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -2458,7 +2459,7 @@ body.typora-export {
   margin: 0;
 }
 
-/* sideba */
+/* sidebar */
 #typora-sidebar {
   border-right-color: var(--border-color);
 }
