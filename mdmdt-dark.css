@@ -259,7 +259,7 @@ mark {
   border-radius: 5px;
   background-color: var(--color-1);
   padding: 0 4px;
-  color: rgb(250,250,250);
+  color: rgb(250, 250, 250);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
@@ -492,7 +492,9 @@ pre {
   border-radius: 8px;
   font-size: 14px !important;
   color: var(--text-code);
-  white-space: nowrap !important;
+}
+#write pre {
+  white-space: pre !important;
 }
 pre pre {
   background: transparent !important;
@@ -500,10 +502,9 @@ pre pre {
   border: none;
 }
 pre .CodeMirror-wrap {
-  padding: 16px 0;
+  padding: 16px 16px 16px 0;
 }
 pre .CodeMirror-wrap .CodeMirror-scroll {
-  padding-right: 16px;
   overflow-x: auto;
 }
 pre .CodeMirror-sizer {
@@ -618,7 +619,7 @@ kbd {
   -webkit-box-decoration-break: clone;
   font-size: 14px;
   font-weight: 900;
-  color: rgb(250,250,250);
+  color: rgb(250, 250, 250);
 }
 ::selection {
   background: var(--color-2-0-c);
@@ -1552,7 +1553,7 @@ li > .outline-item:hover::before,
   background: var(--color-2-0-a);
   color: var(--color-2);
 }
-.md-toc-item a{
+.md-toc-item a {
   padding-left: 18px !important;
 }
 
@@ -2420,7 +2421,7 @@ footer.ty-footer,
   border-color: var(--border-color) !important;
   background: var(--bg-color2) !important;
 }
-pre.md-focus .md-diagram-panel{
+pre.md-focus .md-diagram-panel {
   margin-top: 4px;
 }
 .md-diagram {
@@ -2704,12 +2705,10 @@ body.typora-export {
   pre,
   img,
   blockquote,
-  .md-alert,
-  .md-diagram-panel {
+  .md-alert {
     page-break-inside: avoid;
   }
-  pre {
-    word-wrap: break-word;
+  #write pre {
     white-space: pre-wrap !important;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -2740,7 +2739,6 @@ body.typora-export {
 
   @page {
     margin: 15mm !important;
-    background: var(--bg-color) !important;
     size: auto;
     /*谷歌浏览器打印设置*/
     @top-center {
