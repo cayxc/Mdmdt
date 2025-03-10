@@ -493,9 +493,6 @@ pre {
   font-size: 14px !important;
   color: var(--text-code);
 }
-#write pre {
-  white-space: pre !important;
-}
 pre pre {
   background: transparent !important;
   padding: 5px 10px;
@@ -992,9 +989,6 @@ span.md-comment {
  * typora-source
  * ------------------------
 */
-#typora-source pre {
-  white-space: pre-wrap !important;
-}
 #typora-source .CodeMirror-sizer {
   padding-right: 0 !important;
 }
@@ -2707,9 +2701,6 @@ body.typora-export {
   blockquote,
   .md-alert {
     page-break-inside: avoid;
-  }
-  #write pre {
-    white-space: pre-wrap !important;
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 24pt 0 12pt;
