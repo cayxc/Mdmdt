@@ -50,7 +50,7 @@ Compared to the default theme style, the following aspects have been mainly modi
 Using custom themes is very simple, as follows:
 
 1. Open `Preferences` -> `Appearance` -> `Open Theme Folder`
-2. Copy the downloaded `mdmdt.cs`  file to the theme folder.
+2. Copy the downloaded `mdmdt.css`  file to the theme folder.
 3. **Exit Typora and reopen**，In the `Menu Bar` -> `Themes`, Select **Mdmdt** theme and complete the theme switch.
 
 > [!NOTE]
