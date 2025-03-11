@@ -224,11 +224,8 @@ p {
   margin-bottom: -5px;
   white-space: pre-wrap !important;
 }
-p + p {
+#write > p + p {
   margin-top: 24px;
-}
-p:has(span.md-image) + p {
-  margin-top: 16px;
 }
 p:has(span.md-image) {
   margin-bottom: 0;
@@ -355,7 +352,11 @@ ul, ol {
   margin-left: 0;
 }
 #write > p + ul,
-#write > p + ol {
+#write > p + ol,
+blockquote > ul,
+blockquote > ol,
+.md-alert > ul,
+.md-alert > ol{
   margin-top: 11px;
 }
 ul {
@@ -410,7 +411,6 @@ li > p {
 */
 img,
 span.md-image {
-  display: block !important;
   margin: 16px auto 0 auto !important;
   border-radius: 8px !important;
   border: none !important;
@@ -538,14 +538,6 @@ blockquote > *:first-child,
 blockquote > *:last-child,
 .md-alert > *:last-child {
   margin-bottom: 0 !important;
-}
-.md-alert.md-alert-note > *:first-child,
-.md-alert.md-alert-caution > *:first-child,
-.md-alert.md-alert-tip > *:first-child,
-.md-alert.md-alert-important > *:first-child,
-.md-alert.md-alert-warning > *:first-child {
-  line-height: 1;
-  margin-bottom: -12px;
 }
 .md-alert.md-alert-note {
   border-left-color: var(--color-1);
