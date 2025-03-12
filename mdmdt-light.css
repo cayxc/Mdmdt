@@ -237,7 +237,6 @@ strong {
 }
 
 u {
-  text-decoration-color: var(--title-color);
   text-underline-offset: 4px;
   text-decoration-thickness: 1.5px;
 }
@@ -443,6 +442,47 @@ span.md-image-btn:hover::before {
 }
 span.md-image span.md-image-pick-file-btn {
   border-left-color: var(--border-color);
+}
+.typora-export #write section:has(img),
+.md-htmlblock-container section:has(img) {
+  display: grid;
+  grid-gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(16px, auto));
+  grid-auto-rows: minmax(16px, auto);
+}
+.typora-export #write > section:has(img) {
+  margin-top: 16px;
+}
+.typora-export #write section img,
+.md-htmlblock-container section img {
+  margin: 0 !important;
+}
+.typora-export #write section:has(img) span,
+.md-htmlblock-container section:has(img) span {
+  display: block;
+  margin: 8px 0;
+}
+.typora-export #write section span > img,
+.md-htmlblock-container section span > img {
+  margin: 8px 0 !important;
+}
+.typora-export #write section span > img:first-of-type,
+.md-htmlblock-container section span > img:first-of-type {
+  margin-top: 0 !important;
+}
+.typora-export #write section span > img:last-of-type,
+.md-htmlblock-container section span > img:last-of-type {
+  margin-bottom: 0 !important;
+}
+.typora-export #write > section:has(img):hover,
+.md-htmlblock-container > section:has(img):hover{
+  border-radius: 8px;
+  background: var(--bg-color2);
+  padding: 16px;
+  transition: padding .3s linear;
+  -webkit-transition: padding .3s linear;
 }
 
 /*
@@ -874,11 +914,9 @@ body > header {
 /*
  * ------------------------
  * md-htmlblock
+ * md-mathblock
  * ------------------------
 */
-.md-htmlblock {
-  overflow: auto;
-}
 .md-htmlblock-panel,
 .md-htmlblock-container,
 .md-htmlblock-container .md-htmlblock-panel-placeholder {
@@ -2687,7 +2725,8 @@ body.typora-export {
   pre,
   img,
   blockquote,
-  .md-alert {
+  section,
+  .md-alert{
     page-break-inside: avoid;
   }
   h1, h2, h3, h4, h5, h6 {
