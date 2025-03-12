@@ -45,6 +45,14 @@ Compared to the default theme style, the following aspects have been mainly modi
 ![mdmdt-ui-3](./img/mdmdt-ui-3.png)
 ![mdmdt-ui-4](./img/mdmdt-ui-4.png)
 
+# Personalized graphic layout
+
+This theme provides some personalized graphic and text layout solutions. For specific usage methods, please refer to the "<u>个性化图文布局</u>" chapter in the "**Mdmdt主题演示demo.md**".
+
+**Personalized graphic layout preview:**
+
+![性化图文排列](./img/mdmdt-imgs.png)
+
 # How to use it
 
 Using custom themes is very simple, as follows:
