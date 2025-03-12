@@ -115,8 +115,18 @@ setLevelNumber(tag){
 
 > [!TIP]
 >
-> This is a Tip text box ......
+> - `this is code` This is a Tip text box ......
 >
+> - ```bash
+>  these are  codes...
+>   ...
+>   ```
+>
+> - This is a Tip text box ......
+>
+> 1. This is itemA
+> 1. This is itemB
+> 1. This is itemC
 
 > [!IMPORTANT]
 >
@@ -129,12 +139,270 @@ setLevelNumber(tag){
 
 > [!CAUTION]
 >
-> This is a Caution text box ......
+> `this is  code` This is a Caution text box ......
 
-# 图片
+# 个性化图文布局
+## 单张图片
+<img src="./img/mdmdt.png" />
 
-![](./img/mdmdt.png)
 
+
+## 多图并排
+
+图片的个性化排列使用方式是将图片放到一个容器中，该容器为 `<section>`  标签，如下所示:
+
+1. 直接输入`<section>` 然后回车，如下：
+
+2. ```html
+   <section>
+            
+   </section>
+   ```
+
+3. 在 `<section>` 标签中插入图片，如下：
+
+4. ```html
+   <section>
+     <!-- 想要几张图并排，就在此处插入几个 <img> 标签: <img src="图片的相对路径/绝对路径"></img> -->   
+     <img src="./img/mdmdt-code.png"></img>
+     <img src="./img/mdmdt-source.png" style="width: 200px"></img> <!-- 单独设置图片的宽度为200px -->
+     <img src="./img/mdmdt-title.png"></img>
+   </section>
+   ```
+
+**效果预览**：
+
+<section>
+ <img src="./img/mdmdt-math.png"></img>
+ <img src="./img/mdmdt-list.png"></img>
+</section>
+
+---
+
+<section>
+ <img src="./img/mdmdt-code.png"></img>
+ <img src="./img/mdmdt-ui-1.png" style="width: 200px"></img>
+ <img src="./img/mdmdt-title.png"></img>
+</section>
+
+---
+
+
+
+## 多张图其他排列方式
+
+一张大图在左，多张小图在右的图片排列，如下：
+
+```html
+<!-- 一张大图在左，多张小图在右 -->
+<section> 
+  <img src="./img/mdmdt-ui-1.png"></img> <!-- 这是第1列 -->
+  <span style="width: 240px">  <!-- 这是第2列 -->
+     <img src="./img/mdmdt-ui-2.png"></img>
+ 	 <img src="./img/mdmdt-code.png"></img>
+	 <img src="./img/mdtht-dark.png"></img>
+  </span>
+</section>
+```
+**效果预览**：
+
+<section>
+ <img src="./img/mdtht-light.png"></img>
+ <span style="width: 240px">
+    <img src="./img/mdmdt-ui-1.png"></img>
+ 	<img src="./img/mdmdt-code.png"></img>
+	<img src="./img/mdtht-dark.png"></img>
+ </span>
+</section>
+
+---
+
+一张大图在右，多张小图在左的图片排列，如下：
+
+```html
+<!-- 一张大图在右，多张小图在左 -->
+<section> 
+ <span style="width: 240px"> <!-- 这是第1列 -->
+    <img src="./img/mdmdt-ui-2.png"></img>
+ 	<img src="./img/mdmdt-code.png"></img>
+	<img src="./img/mdtht-dark.png"></img>
+ </span>
+ <img src="./img/mdmdt-ui-1.png"></img> <!-- 这是第2列 -->
+</section>
+```
+**效果预览**：
+
+<section> 
+ <span style="width: 240px">
+    <img src="./img/mdmdt-ui-1.png"></img>
+    <img src="./img/mdmdt-ui-2.png"></img>
+	<img src="./img/mdtht-dark.png"></img>
+ </span>
+ <img src="./img/mdtht-light.png"></img>
+</section>
+
+
+## 图文并排
+
+图文的个性化排列使用方式是将图片和文字放到一个容器中，该容器为 `<section>`  标签，如下所示:
+
+1. 直接输入 `<section>` 然后回车，如下：
+
+2. ```html
+   <section>
+            
+   </section>
+   ```
+
+3. 在 `<section>` 标签中插入图片和文字，如下：
+
+4. ```html
+   <!-- 图片和单段文字排列示例 -->
+   <section>
+       <img src="./img/mdmdt-title.png"></img>  <!-- 这是第1列 -->
+   	<span>这是文字在右，图片在左，图片和文字各占总宽度的50%的图文并排的样式。</span> <!-- 这是第2列 -->
+   </section>
+   
+   
+   <!-- 图片和单段文字排列示例 -->
+   <section>
+   	<span>这是文字在左，图片在右，图片和文字各占总宽度的50%的图文并排的样式。</span> 
+       <img src="./img/mdmdt-title.png"></img>  
+   </section>
+   
+   
+   <!-- 图片和多段文字排列示例 -->
+   <section>
+       <img src="./img/mdmdt-title.png"></img> <!-- 这是第1列 -->
+       <span style="width: 150px">  <!-- 这是第2列，且单独设置该列的宽度为150px -->
+           <span>这是多段文字......</span> 
+           <span>这是文字在右，图片在左，图片和文字各占总宽度的50%的图文并排的样式。</span>
+           <span>这是多段文字......</span> 
+   	</span>
+   </section>
+   
+   
+   <!-- 图片居中，文字在两边的排列示例 -->
+   <section>
+       <span>这是第1列，这是图片居中，文字在两边的样式</span> <!-- 这是第1列 -->
+       <img src="./img/mdtht-dark.png"></img>  <!-- 这是第2列, 单独设置图片的宽度为200px -->
+   	<span>这是第3列，列的宽度比第1列小</span>          <!-- 这是第3列 -->
+   </section>
+   ```
+
+**效果预览**：
+
+<section>
+    <img src="./img/mdmdt-title.png"></img> 
+	<span>这是单段文字，文字在右，图片在左，图片和文字各占总宽度的50%的图文并排的样式。</span> 
+</section>
+
+---
+
+<section>
+	<span>这是单段文字，文字在左，图片在右，图片和文字各占总宽度的50%的图文并排的样式。</span> <!-- 这是第1列 -->
+    <img src="./img/mdmdt-title.png"></img>  <!-- 这是第2列 -->
+</section>
+
+---
+
+<section>
+    <img src="./img/mdmdt-title.png"></img>
+    <span>
+        <span>这是多段文字......</span>
+        <span>这是文字在右，图片在左，图片和文字各占总宽度的50%的图文并排的样式。</span>
+        <span>这是多段文字......</span>
+	</span>
+</section>
+
+---
+
+<section>
+    <span>这是第1列内容<br>这是图片居中，两边是文字，且两边文字设置相同宽度的样式</span> <!-- 这是第1列 -->
+    <img src="./img/mdtht-dark.png"></img> <!-- 这是第2列 -->
+	<span>这是第3列内容<br>这是图片居中，两边是文字，且两边文字设置相同宽度的样式</span> <!-- 这是第3列 -->
+</section>
+
+
+
+
+<section>
+    <span>这是中间是图片，两边是文字的图文样式<br>需要注意：该列文字内容较多，且未设置宽度。<strong>列的宽度比第3列大</strong></span>
+    <img src="./img/mdtht-dark.png"></img>
+	<span>这是第3列内容</span>
+</section>
+
+
+---
+
+图片和文字，图片设置宽度示例：
+
+```html
+<!-- 这是文字在右，图片在左的示例 -->
+<section>
+   <img src="./img/mdmdt-title.png" style="width:200px"></img>
+   <span>这是文字在右，图片在左，且设置图片的宽度（如图片宽可以设置为：200px）的图文并排的样式。</span>
+</section>
+
+<!-- 这是文字在左，图片在右的示例 -->
+<section>
+    <span>这是文字在左，图片在右，设置图片宽度为 200px 的图文并排的样式！</span>
+    <img src="./img/mdmdt-title.png" style="width:200px"></img>
+</section>
+```
+**效果预览**：
+
+---
+
+<section>
+   <img src="./img/mdmdt-title.png" style="width:200px"></img>
+   <span>这是文字在右，图片在左，且设置图片宽度（如图片宽可以设置为：200px）的图文并排的样式。</span>
+</section>
+
+<section>
+    <span>这是文字在左，图片在右，且设置图片宽度为 200px 的图文并排的样式！</span>
+    <img src="./img/mdmdt-title.png" style="width:200px"></img>
+</section>
+
+
+
+---
+
+> [!Important]
+>
+> **注意：**
+>
+> 由于图片排列的容器 `<section>` 采用的是grid布局，会根据 `<section>` 中有几列和每列里的内容自动分配每一列的宽度。
+>
+> 在进行图片、图片和文字排列时，如果将某一列的宽度设置为 xx%的形式，则该列的实际宽度并<u>不一定是内容区宽度的 xx%</u>，而是 `<section>` 容器中当前列宽度的 xx%，且当前列的宽度还受到了里面内容的影响。
+>
+> **基于以上原因，建议在单独设置某一列宽度的时候，尽可能采用具体的值（如: style="width: 200px"），不要采用 xx%（如: style="width: 50%"）的形式。**
+>
+> 示例：
+>
+> ```html
+> <!-- <section> 排列图片的容器，宽度为内容区（也就是书写区）的宽度 -->
+> <section>
+>    	<!-- 此时是2列 -->
+>    	<img src="./img/mdtht-dark.png"></img>
+>  	<!-- 此处的 width:50% ，实际只有内容区宽度的25%（一共2列，每一列宽度50%，50%*50% => 25%）-->
+>      <img src="./img/mdtht-dark.png" style="width:50%"></img> 
+> </section>
+> 
+> <section>
+>    	<!-- 此时是3列： img, span, span -->
+>    	<img src="./img/mdmdt-title.png"></img>  <!-- 第1列 -->
+> 	<span>....</span>  <!-- 第2列 -->
+> 	<span>             <!-- 第3列 -->
+>    	<span>这是其段落他文字...</span>
+>             <!-- 此处的 width:50% ，实际只有内容区宽度的16.5%（一共3列，每一列宽度33.33%，33.33%*50% => 16.65%）-->
+>             <span style="width:50%">这是多段文字</span>
+>             <span>这是其段落他文字...</span>
+> 	</span>
+> </section>
+> ```
+
+除了以上展示的排列方式，更多的排列形式，还请自行探索 ......
 
 # 图表Mermaid
 
