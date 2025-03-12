@@ -51,7 +51,7 @@ This theme provides some personalized graphic and text layout solutions. For spe
 
 **Personalized graphic layout preview:**
 
-![性化图文排列](./img/mdmdt-imgs.png)
+![性化图文排列](./img/mdmdt-layout.png)
 
 # How to use it
 

@@ -52,7 +52,7 @@
 
 **个性化图文布局预览:**
 
-![性化图文排列](./img/mdmdt-imgs.png)
+![性化图文排列](./img/mdmdt-layout.png)
 
 # 如何使用
 
