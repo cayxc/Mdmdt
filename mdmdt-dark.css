@@ -2437,32 +2437,13 @@ footer.ty-footer,
  * diagram
  * ------------------------
 */
-.md-diagram-panel {
-  margin-top: 23px;
-  width: 100% !important;
-  max-width: 100% !important;
+.md-diagram .md-diagram-panel {
   border-radius: 8px;
-  border-color: var(--border-color) !important;
-  background: var(--bg-color2) !important;
+  border-color: transparent !important;
+  background: var(--bg-color2);
 }
 pre.md-focus .md-diagram-panel {
   margin-top: 4px;
-}
-.md-diagram {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-}
-.md-diagram + .md-diagram {
-  margin-top: -7px;
-}
-.md-diagram-panel > svg {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-p:has( + .md-diagram ) {
-  margin-bottom: -12px;
 }
 
 /*
