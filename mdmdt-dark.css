@@ -587,12 +587,12 @@ blockquote > *:last-child,
   color: var(--color-1);
 }
 .md-alert.md-alert-caution {
-  border-left-color: var(--color-2);
-  background: var(--color-2-0-b);
-  color: var(--color-2);
+  border-left-color: var(--color-5);
+  background: var(--color-5-0-b);
+  color: var(--color-5);
 }
 .md-alert.md-alert-caution .md-alert-text-caution {
-  color: var(--color-2);
+  color: var(--color-5);
 }
 .md-alert.md-alert-tip {
   border-left-color: var(--color-3);
@@ -611,12 +611,12 @@ blockquote > *:last-child,
   color: var(--color-4);
 }
 .md-alert.md-alert-warning {
-  border-left-color: var(--color-5);
-  background: var(--color-5-0-b);
-  color: var(--color-5);
+  border-left-color: var(--color-2);
+  background: var(--color-2-0-b);
+  color: var(--color-2);
 }
 .md-alert.md-alert-warning .md-alert-text-warning {
-  color: var(--color-5);
+  color: var(--color-2);
 }
 
 /*
